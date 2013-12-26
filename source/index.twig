@@ -8,11 +8,11 @@ use:
     - posts
 ---
 {% for post in page.pagination.items %}
-  <article>
+  <article itemscope itemtype="http://schema.org/BlogPosting">
     <header>
-      <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a href="{{ site.url }}{{ post.url }}" itemprop="name">{{ post.title }}</a></h2>
     </header>
-    <div>
+    <div itemprop="articleBody">
       {{ post.blocks.content|raw }}
     </div>
     {% include 'post_tags.html' with {'tags' : post.tags} %}
