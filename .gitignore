@@ -1,0 +1,5 @@
+.sculpin
+build.properties.prod
+build.properties.dev
+output_dev
+output_prod

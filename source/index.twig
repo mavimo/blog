@@ -1,0 +1,22 @@
+---
+layout: default
+title: Home
+generator: pagination
+pagination:
+    max_per_page: 3
+use:
+    - posts
+---
+{% for post in page.pagination.items %}
+  <article>
+    <header>
+      <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+    </header>
+    <div>
+      {{ post.blocks.content|raw }}
+    </div>
+    {% include 'post_tags.html' with {'tags' : post.tags} %}
+  </article>
+{% endfor %}
+
+{% include 'pager.html' with {'prev' : 'Newer Posts', 'next' : 'Older Posts'} %}

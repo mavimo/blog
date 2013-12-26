@@ -1,0 +1,19 @@
+{% if site.google_analytics_tracking_id %}
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '{{ site.google_analytics_tracking_id }}']);
+  _gaq.push(['_trackPageview']);
+
+  (function () {
+    var ga = document.createElement('script');
+    var s = document.getElementsByTagName('script')[0];
+
+    ga.type = 'text/javascript';
+    ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www');
+    ga.src = ga.src + '.google-analytics.com/ga.js';
+
+    s.parentNode.insertBefore(ga, s);
+  }());
+</script>
+{% endif %}

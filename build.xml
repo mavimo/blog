@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="MavimoBlog" default="build">
+  <!-- Remove all build files -->
+  <target name="clean">
+    <delete dir="output_dev" />
+    <delete dir="output_prod" />
+  </target>
+
+  <!-- Build a new file -->
+  <target name="build">
+
+  </target>
+
+  <!-- Deploy current site on S3 -->
+  <target name="deploy_s3" depends="build">
+    <s3put
+      bucket="${amazon.bucket}"
+      key="${amazon.key}"
+      secret="${amazon.secret}">
+      <fileset dir="./output_prod">
+        <include name="**" />
+      </fileset>
+    </s3put>
+  </target>
+
+  <!-- Deploy current site on FTP -->
+  <target name="deploy_ftp" depends="build">
+    <ftpdeploy
+      host="${ftp.host}"
+      port="${ftp.port}"
+      username="${ftp.username}"
+      password="${ftp.password}"
+      dir="${ftp.dir}"
+      passive="false"
+      mode="${ftp.mode}">
+      <fileset dir="./output_prod">
+        <include name="**"/>
+      </fileset>
+    </ftpdeploy>
+  </target>
+</project>

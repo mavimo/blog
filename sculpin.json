@@ -1,0 +1,28 @@
+{
+    "name": "mavimo/blog",
+    "description": "Mavimo's Blog",
+    "type": "sculpin-skeleton",
+    "authors": [
+        {
+            "name": "Marco Vito Moscaritolo",
+            "email": "marco@mavimo.org",
+            "homepage": "http://www.mavimo.org"
+        },
+        {
+            "name": "Dragonfly Development Inc.",
+            "email": "info@dflydev.com",
+            "homepage": "http://dflydev.com"
+        },
+        {
+            "name": "Beau Simensen",
+            "email": "beau@dflydev.com",
+            "homepage": "http://beausimensen.com"
+        }
+    ],
+    "require": {
+        "mavimo/sculpin-projects-bundle": "@dev"
+    },
+    "config": {
+        "component-dir": "source/components"
+    }
+}

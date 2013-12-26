@@ -1,0 +1,28 @@
+---
+layout: default
+title: Projects
+generator: pagination
+pagination:
+    max_per_page: 3
+    provider: projects
+use:
+    - projects
+---
+{{ dump(projects) }}
+{{ dump(posts) }}
+<h2>Projects</h2>
+<ul>
+{% for project in page.pagination.items %}
+  <li><a href="{{ site.url }}{{ project.url }}">{{ project.title }}</a></li>
+{% endfor %}
+</ul>
+
+{% include 'pager.html' with {'next' : 'Next Project', 'prev' : 'Previous Project'} %}
+
+
+<!--
+generator: pagination
+pagination:
+    max_per_page: 3
+    provider: projects
+ -->
