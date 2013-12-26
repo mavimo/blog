@@ -14,7 +14,7 @@
   <!-- Deploy current site on S3 -->
   <target name="deploy_s3" depends="build">
     <s3put
-      contentType="true"
+      contentType="auto"
       bucket="${amazon.bucket}"
       key="${amazon.key}"
       secret="${amazon.secret}">
