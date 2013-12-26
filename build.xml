@@ -3,8 +3,7 @@
 <project name="MavimoBlog" default="build">
   <!-- Remove all build files -->
   <target name="clean">
-    <delete dir="output_dev" />
-    <delete dir="output_prod" />
+    <delete dir="${sculpin.source}" />
   </target>
 
   <!-- Build a new file -->
@@ -18,7 +17,7 @@
       bucket="${amazon.bucket}"
       key="${amazon.key}"
       secret="${amazon.secret}">
-      <fileset dir="./output_prod">
+      <fileset dir="./${sculpin.source}">
         <include name="**" />
       </fileset>
     </s3put>
@@ -34,7 +33,7 @@
       dir="${ftp.dir}"
       passive="false"
       mode="${ftp.mode}">
-      <fileset dir="./output_prod">
+      <fileset dir="./${sculpin.source}">
         <include name="**"/>
       </fileset>
     </ftpdeploy>
