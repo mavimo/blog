@@ -8,7 +8,7 @@ title: About me
 
   <img src="picture.jpg" itemprop="image" />
   <p>On real life my name is <span itemprop="givenName">Marco</span> <span itemprop="additionalName">Vito</span> <span itemprop="familyName">Moscaritolo</span>, but on web you can find me as <span itemprop="alternateName">mavimo</span>.</p>
-  <p>You can contact me by phone <span itemprop="telephone">+39 393 9249923</span> or by mail at <a href="mailto:marco@agavee.com" itemprop="email">marco@mavimo.org</a> or read what I write on <a href="http://www.mavimo.org" itemprop="url">mavimo.org</a>.</p>
+  <p>You can contact me by phone <span itemprop="telephone">+39 393 9249923</span> or by mail at <a href="mailto:marco@mavimo.org" itemprop="email">marco@mavimo.org</a> or read what I write on <a href="http://www.mavimo.org" itemprop="url">mavimo.org</a>.</p>
 
   <p>I live in
   <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
