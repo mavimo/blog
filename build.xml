@@ -7,8 +7,8 @@
   </target>
 
   <!-- Build a new file -->
-  <target name="build">
-
+  <target name="build" depends="clean">
+    <exec command="../../utils/sculpin/bin/sculpin generate" dir="." />
   </target>
 
   <!-- Deploy current site on S3 -->
