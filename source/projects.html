@@ -6,14 +6,19 @@ pagination:
     max_per_page: 3
     provider: data.projects
 ---
-<h2>Projects</h2>
+<h3>Projects</h3>
 
 <p>I'm involved in some open source projects, and relased some tools, you can find my projects above.</p>
+
 {% for project in page.pagination.items %}
-  <article itemscope itemtype="http://schema.org/SoftwareApplication">
-    <h3 itemprop="name">{{ project.title }}</h3>
-    <div itemprop="description">{{ project.content|raw }}</div>
-  </article>
+  {% include 'project.html' %}
 {% endfor %}
+
+<p>I also contributed to</p>
+<ul>
+  <li>Drupal 5, 6, 7, 8</li>
+  <li>Ansible</li>
+  <li>AngularJS</li>
+</ul>
 
 {% include 'pager.html' with {'next' : 'Next Project', 'prev' : 'Previous Project'} %}

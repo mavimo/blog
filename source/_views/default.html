@@ -1,46 +1,88 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+  Striped 2.5 by HTML5 Up!
+  html5up.net | @n33co
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
   <head>
     <title>{% block title %}{{ page.title }}{% endblock %} &mdash; {{ site.title }} &mdash; {{ site.subtitle }}</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href='http://fonts.googleapis.com/css?family=Rosario:400,400italic,700,700italic' rel='stylesheet' type='text/css'> -->
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:300italic,300,400italic,400,600italic,600,700italic,700,800italic,800" rel="stylesheet" type="text/css">
-    <link href="{{ site.url }}/css/style.css" rel="stylesheet" type="text/css" />
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700|Open+Sans+Condensed:300,700" rel="stylesheet" />
+    <script src="{{ site.url }}/js/jquery.min.js"></script>
+    <script src="{{ site.url }}/js/skel.min.js"></script>
+    <script src="{{ site.url }}/js/skel-panels.min.js"></script>
+    <script src="{{ site.url }}/js/init.js"></script>
+    <noscript>
+      <link rel="stylesheet" href="{{ site.url }}/css/skel-noscript.css" />
+      <link rel="stylesheet" href="{{ site.url }}/css/style.css" />
+      <link rel="stylesheet" href="{{ site.url }}/css/style-desktop.css" />
+      <link rel="stylesheet" href="{{ site.url }}/css/style-wide.css" />
+    </noscript>
+    <!--[if lte IE 9]>
+    <link rel="stylesheet" href="{{ site.url }}/css/ie9.css" />
     <![endif]-->
-    <!-- <link rel="stylesheet" href="{{ site.url }}/components/highlightjs/styles/github.css" /> -->
+    <!--[if lte IE 8]>
+    <script src="{{ site.url }}/js/html5shiv.js"></script>
+    <link rel="stylesheet" href="{{ site.url }}/css/ie8.css" /><![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" href="{{ site.url }}/css/ie7.css" />
+    <![endif]-->
   </head>
-  <body>
-    <header>
-      <a class="brand" href="{{ site.url }}/">{{ site.title }}</a>
-      <nav class="nav-collapse">
-        <ul>
-          <li><a href="{{ site.url }}/blog">Archive</a></li>
-          <li><a href="{{ site.url }}/projects">Projects</a></li>
-          <li><a href="{{ site.url }}/about">About</a></li>
-        </ul>
-      </nav>
-    </header>
+  <body class="left-sidebar">
 
-    <div class="content">
-      {% block content_wrapper %}
-        {% block content %}{% endblock %}
-      {% endblock %}
-      <div class="well">
-          <h4>{{ site.title }}{% if site.subtitle %} <small>{{ site.subtitle }}</small>{% endif %}</h4>
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Content area -->
+      <div id="content">
+        {% block content_wrapper %}
+          {% block content %}{% endblock %}
+        {% endblock %}
       </div>
-      <h4>Links</h4>
-      <ul class="nav">
-          <li><a href="http://agavee.com">Agavee GmbH</a></li>
-          <li><a href="http://twitter.com/mavimo">@mavimo</a></li>
-      </ul>
-    </div>
 
-    <footer class="container">
-      &copy; {{ site.title }}
-    </footer>
+      <!-- Sidebar -->
+      <div id="sidebar">
+
+        <!-- Logo -->
+        <div id="logo">
+          <h1>{{ site.title }}</h1>
+        </div>
+
+        {% if site.subtitle %}
+          <div>{{ site.subtitle }}</div>
+        {% endif %}
+
+        <!-- Navigation -->
+        <nav id="nav">
+          <ul>
+            <li><a href="{{ site.url }}/">Home page</a></li>
+            <li><a href="{{ site.url }}/blog">Archive</a></li>
+            <li><a href="{{ site.url }}/projects">Projects</a></li>
+            <li><a href="{{ site.url }}/about">About Me</a></li>
+          </ul>
+        </nav>
+
+        <!-- Blogroll -->
+        <section class="is-text-style1">
+          <div class="inner">
+            <ul class="nav">
+              <li><a href="http://agavee.com">Agavee GmbH</a></li>
+              <li><a href="http://twitter.com/mavimo">@mavimo</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Copyright -->
+        <div id="copyright">
+          <p>
+            &copy; 2013 Marco Vito Moscaritolo<br />
+          </p>
+        </div>
+      </div>
+    </div>
 
     {% include 'ga.html' %}
     {% include 'scripts.html' %}

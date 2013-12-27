@@ -1,16 +1,14 @@
-{% extends "default" %}
-
-{% block content_wrapper %}
 <article class="is-post is-post-excerpt" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <h2><a href="{{ site.url }}{{ post.url }}"  itemprop="name">{{ page.title }}</a></h2>
-    <span class="byline">
+    <h2><a href="{{ site.url }}{{ post.url }}" itemprop="name">{{ post.title }}</a></h2>
+    <span class="byline">{{ post.excerpt }}
       {% include 'post_category.html' %}
       {% include 'post_tags.html' %}
     </span>
   </header>
   <div class="info">
-    <span class="date"><span class="month">{{ post.date | date("M") }}<span>{{ post.date | date("F") }}</span></span>
+    <span class="date">
+      <span class="month">{{ post.date | date("M") }}<span>{{ post.date | date("F") }}</span></span>
       <span class="day">{{ post.date | date("d") }}</span>
       <span class="year">, {{ post.date | date("Y") }}</span>
     </span>
@@ -22,12 +20,8 @@
       <li><a href="#" class="fa fa-facebook">0</a></li>
     </ul>
   </div>
-  <a href="#" class="image image-full"><img src="" alt="" /></a>
+  <a href="{{ site.url }}{{ post.url }}" class="image image-full"><img src="{{ post.image }}" alt="" /></a>
   <div itemprop="articleBody">
-    {{ page.blocks.content|raw }}
+    {{ post.blocks.content|raw }}
   </div>
 </article>
-
-{% include 'disquis.html' %}
-
-{% endblock %}

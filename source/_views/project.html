@@ -1,12 +1,17 @@
-{% extends "default" %}
-{% block content_wrapper %}
-<article>
+<article class="is-post is-post-excerpt" itemscope itemtype="http://schema.org/SoftwareApplication">
   <header>
-    <h2>{{ page.title }}</h2>
+    <h2><a href="{{ site.url }}{{ post.url }}"  itemprop="name">{{ project.title }}</a></h2>
   </header>
-
-  <div class="content">
-    {{ page.blocks.content|raw }}
+  <div class="info">
+    <ul class="stats">
+      <li><a href="#" class="fa fa-github">0</a></li>
+      <li><a href="#" class="fa fa-google-plus">0</a></li>
+      <li><a href="#" class="fa fa-twitter">0</a></li>
+      <li><a href="#" class="fa fa-facebook">0</a></li>
+    </ul>
+  </div>
+  <a href="#" class="image image-full"><img src="" alt="" /></a>
+  <div itemprop="description">
+    {{ project.blocks.content|raw }}
   </div>
 </article>
-{% endblock %}

@@ -8,15 +8,7 @@ use:
     - posts
 ---
 {% for post in page.pagination.items %}
-  <article itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <h2><a href="{{ site.url }}{{ post.url }}" itemprop="name">{{ post.title }}</a></h2>
-    </header>
-    <div itemprop="articleBody">
-      {{ post.blocks.content|raw }}
-    </div>
-    {% include 'post_tags.html' with {'tags' : post.tags} %}
-  </article>
+  {% include 'post_excerpt.html' %}
 {% endfor %}
 
 {% include 'pager.html' with {'prev' : 'Newer Posts', 'next' : 'Older Posts'} %}
