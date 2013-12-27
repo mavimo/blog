@@ -4,6 +4,6 @@ class SculpinKernel extends \Sculpin\Bundle\SculpinBundle\HttpKernel\AbstractKer
 {
     protected function getAdditionalSculpinBundles()
     {
-        return array('Mavimo\Bundle\ProjectsBundle\SculpinProjectsBundle');
+        return array('Mavimo\Sculpin\Bundle\ProjectsBundle\SculpinProjectsBundle');
     }
 }

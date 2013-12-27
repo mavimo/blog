@@ -8,16 +8,16 @@
         {
             "name": "mavimo/sculpin-projects-bundle",
             "version": "dev-master",
-            "target-dir": "Mavimo/Bundle/ProjectsBundle",
+            "target-dir": "Mavimo/Sculpin/Bundle/ProjectsBundle",
             "source": {
                 "type": "git",
                 "url": "https://github.com/mavimo/sculpin-projects-bundle.git",
-                "reference": "9791e6dbbf7b395121ce9250e6e73440918cdaea"
+                "reference": "fdd9391d8ff32575e4a5349c3663eb06989f8fed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mavimo/sculpin-projects-bundle/zipball/9791e6dbbf7b395121ce9250e6e73440918cdaea",
-                "reference": "9791e6dbbf7b395121ce9250e6e73440918cdaea",
+                "url": "https://api.github.com/repos/mavimo/sculpin-projects-bundle/zipball/fdd9391d8ff32575e4a5349c3663eb06989f8fed",
+                "reference": "fdd9391d8ff32575e4a5349c3663eb06989f8fed",
                 "shasum": ""
             },
             "require": {
@@ -26,7 +26,7 @@
             "type": "library",
             "autoload": {
                 "psr-0": {
-                    "Mavimo\\Bundle\\ProjectsBundle": ""
+                    "Mavimo\\Sculpin\\Bundle\\ProjectsBundle": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -49,7 +49,7 @@
                 "site",
                 "static"
             ],
-            "time": "2013-12-26 15:36:12"
+            "time": "2013-12-27 19:33:30"
         }
     ],
     "packages-dev": [
