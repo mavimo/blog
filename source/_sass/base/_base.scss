@@ -1,0 +1,22 @@
+body {
+  @include susy-grid-background;
+
+  background-color: $background;
+}
+
+::-moz-selection {
+  background-color: $selected-bg;
+  color: $selected-txt;
+}
+
+::selection {
+  background-color: $selected-bg;
+  color: $selected-txt;
+}
+
+a,
+a:hover,
+a:visited,
+a:link {
+  color: $link;
+}
