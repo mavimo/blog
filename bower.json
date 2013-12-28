@@ -2,7 +2,7 @@
   "name": "mavimo-blog",
   "version": "1.0.0",
   "dependencies": {
-    "responsive-nav": "~1.0.25",
-    "highlightjs": "~7.5.0"
+    "prism": "gh-pages",
+    "html5shiv": "~3.7.0"
   }
 }
