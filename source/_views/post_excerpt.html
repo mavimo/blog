@@ -22,7 +22,7 @@
   </div>
   <a href="{{ site.url }}{{ post.url }}" class="image image-full"><img src="{{ post.image }}" alt="" /></a>
   <div itemprop="articleBody">
-    {% set break_array =  post.blocks.content|split('<!--break-->', 2) %}
+    {% set break_array = post.blocks.content|split('<!--break-->', 2) %}
     {{ break_array[0]|raw }}
   </div>
 </article>
