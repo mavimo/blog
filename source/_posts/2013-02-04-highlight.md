@@ -7,23 +7,62 @@ powered blog? Yeah. So you want some highlighting with your static site generati
 Here you go!
 
 ~~~language-php
-namespace Foo;
+/**
+ * This file is a part of Sculpin.
+ *
+ * (c) Dragonfly Development Inc.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+namespace Mavimo\Sculpin\Bundle\ProjectsBundle;
+
+use Sculpin\Contrib\ProxySourceCollection\ProxySourceItem;
 
 /**
- * Awesome Contrived Example.
+ * Project.
+ *
+ * @author Marco Vito Moscaritolo <marco@mavimo.org>
+ * @author Beau Simensen <beau@dflydev.com>
  */
-class Bar implements BarInterface
+class Project extends ProxySourceItem
 {
-    private $baz;
-
-    public function __construct(BazInterface $baz)
+    public function date()
     {
-        $this->baz = $baz;
+        self::test();
+        return $this->data()->get('calculated_date');
     }
 
-    public function doIt()
+    public function title()
     {
-        return $this->baz->do('it');
+        return $this->data()->get('title');
+    }
+
+    public function previousProject()
+    {
+        return $this->previousItem();
+    }
+
+    public function setPreviousItem(ProxySourceItem $item = null)
+    {
+        parent::setPreviousItem($item);
+
+        // expose additional metadata
+        $this->data()->set('previous_project', $item);
+    }
+
+    public function nextProject()
+    {
+        return $this->nextItem();
+    }
+
+    public function setNextItem(ProxySourceItem $item = null)
+    {
+        parent::setNextItem($item);
+
+        // expose additional metadata
+        $this->data()->set('next_project', $item);
     }
 }
 ~~~

@@ -1,3 +1,4 @@
+/*global skel, jQuery, window, document*/
 /*
   Striped 2.5 by HTML5 Up!
   html5up.net | @n33co
@@ -73,12 +74,12 @@ skel.init(
   }
 );
 
-$(function() {
+(function ($) {
   var $window = $(window), $document = $(document), $sc = $('#sidebar, #content'), tid;
   $window.load(function () {
     $window.resize(function () {
       window.clearTimeout(tid);
-      tid = window.setTimeout(function() {
+      tid = window.setTimeout(function () {
         if (skel.isActive('mobile') || skel.isActive('narrower')) {
           $sc.css('min-height', '0').css('height', 'auto');
         } else {
