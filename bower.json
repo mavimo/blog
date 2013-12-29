@@ -4,6 +4,7 @@
   "dependencies": {
     "jquery": "~1.10.2",
     "prism": "gh-pages",
+    "prism-monokai-php": "*",
     "html5shiv": "~3.7.0"
   }
 }
