@@ -1,6 +1,6 @@
 ---
 title: Patres UI
 tags: [monitoring]
-categories: [personal]
+homepage: https://github.com/mavimo/patres_ui
 ---
 This is a UI for server monitoring
