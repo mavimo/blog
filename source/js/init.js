@@ -105,11 +105,9 @@ skel.init(
   $('article').each(function (i, art) {
     var url = $('h2 a', art).attr('href') || window.location.href;
     $.sharedCount(qualifyURL(url), function (data) {
-      console.dir(data);
       $(".fa-twitter", art).text(getCode(data.Twitter));
       $(".fa-facebook", art).text(getCode((typeof data.Facebook === 'object') ? data.Facebook.like_count : 0));
       $(".fa-google-plus", art).text(getCode(data.GooglePlusOne));
-      // $(".fa-comment").fadeIn();
     });
   });
 }(jQuery));
