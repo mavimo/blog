@@ -1,5 +1,12 @@
 sculpin.source=output_prod
 
-amazon.bucket=example.com
-amazon.key=01234567890123456789
-amazon.secret=0123456789abcdefghilmnopqrstuvwxyz123456
+amazon.bucket=
+amazon.key=
+amazon.secret=
+
+ftp.host=
+ftp.port=
+ftp.username=
+ftp.password=
+ftp.dir=
+ftp.mode=
