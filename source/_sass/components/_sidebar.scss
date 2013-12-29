@@ -1,5 +1,5 @@
 #sidebar {
-  color: #929da4;
+  color: $gray-light;
   @include text-shadow(-1px -1px 0px rgba(0, 0, 0, 0.5));
 
   section,
@@ -13,7 +13,6 @@
       content: '';
       border-top: solid 1px;
       border-bottom: solid 1px;
-      border-color: #171E29;
       border-color: rgba(0, 0, 0, 0.25);
       @include box-shadow(inset 0px 1px 0px 0px rgba(255, 255, 255, 0.075), 0px 1px 0px 0px rgba(255, 255, 255, 0.075));
       display: block;
@@ -22,13 +21,13 @@
 
   strong,
   b {
-    color: #fff;
+    color: $white;
   }
   a {
-    color: #d4dde0;
+    color: $gray-extralight;
   }
   h2, h3, h4, h5, h6 {
-    color: #fff;
+    color: $white;
   }
   header {
     margin: 0 0 1.25em 0;
@@ -36,7 +35,6 @@
 
   .is-text-style1 .inner {
     position: relative;
-    background-color: #272E39;
     background-color: rgba(0, 0, 0, 0.15);
     @include border-radius(0.4em);
     padding: 1.25em;

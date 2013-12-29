@@ -7,24 +7,23 @@
 body {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 400;
-  color: #565656;
-  background-color: #e8e8e8;
-  background-image: image-url('bg2.png');
+  color: $gray-uberlight;
+  background: $white-dark image-url('bg2.png');
 }
 
 a {
-  color: #c94663;
+  color: $red;
 }
 
 strong, b {
   font-weight: 700;
-  color: #1b252a;
+  color: $gray-dark;
 }
 
 h2, h3, h4, h5, h6 {
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
-  color: #1b252a;
+  color: $gray-dark;
 
   a {
     text-decoration: none;
@@ -37,7 +36,7 @@ h2, h3, h4, h5, h6 {
   font-weight: 300;
   display: block;
   margin-top: 1em;
-  color: #999;
+  color: $gray;
 }
 
 header {
@@ -77,7 +76,7 @@ table {
   width: 100%;
   &.style1 {
     tbody tr:nth-child(2n+2) {
-      background: #f4f4f4;
+      background: $white-light;
     }
     td {
       padding: 0.5em 1em 0.5em 1em;
@@ -165,7 +164,7 @@ ol.style1 {
 
 #content {
   position: relative;
-  background-color: #fff;
+  background-color: $white;
   &:after {
     content: '';
     display: block;

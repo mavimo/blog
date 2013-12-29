@@ -1,6 +1,5 @@
 #logo {
-  background-color: #c94663;
-  background-image: image-url('bg1.png');
+  background: $red image-url('bg1.png');
   padding: 1.75em 0.5em 1.75em 0.5em;
   @include border-radius(0.4em);
   text-align: center;
@@ -8,7 +7,7 @@
   a {
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;
-    color: #fff;
+    color: $white;
     font-size: 2em;
     letter-spacing: 0.1em;
     text-decoration: none;

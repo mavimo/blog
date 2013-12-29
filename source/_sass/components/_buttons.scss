@@ -1,10 +1,9 @@
 .button {
-  background-color: #c94663;
-  background-image: image-url('bg1.png');
+  background: $red image-url('bg1.png');
   @include border-radius(0.4em);
   text-align: center;
   @include box-shadow(inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15));
-  color: #fff;
+  color: $white;
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: 700;
   text-decoration: none;
@@ -18,10 +17,10 @@
 
 a.button {
   &:hover {
-    background-color: #d95673;
+    background-color: $red-light;
   }
   &:active {
-    background-color: #b93653;
+    background-color: $red-dark;
   }
 }
 

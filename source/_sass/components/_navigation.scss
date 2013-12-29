@@ -31,15 +31,14 @@
       transition: background-color .25s ease-in-out, color .25s ease-in-out;
     }
     &.current_page_item a {
-      background-color: #272E39 !important;
       background-color: rgba(0, 0, 0, 0.15) !important;
       @include box-shadow(0 0 0 1px rgba(255, 255, 255, 0.05), inset 0 0 0.25em 0 rgba(0, 0, 0, 0.25));
       font-weight: 700;
-      color: #fff;
+      color: $white;
     }
     &:hover a {
       background-color: rgba(200, 225, 255, 0.1);
-      color: #fff;
+      color: $white;
     }
   }
 }

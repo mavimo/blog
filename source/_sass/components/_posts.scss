@@ -5,7 +5,7 @@
     a {
       font-size: 0.8em;
       text-decoration: none;
-      color: #1b252a;
+      color: $gray-dark;
       font-weight: 700;
     }
   }
@@ -72,7 +72,7 @@
       transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
     }
     &:hover a {
-      background-color: #f4f4f4;
+      background-color: $white-light;
       opacity: 1.0;
     }
   }
@@ -150,7 +150,7 @@
       position: absolute;
       width: 5.5em;
       overflow: hidden;
-      background-color: #fff;
+      background-color: $white;
       left: -10.5em;
       top: 0;
       padding: 1.5em 1em 1.5em 1em;
@@ -177,7 +177,7 @@
         text-align: center;
         display: block;
         font-size: 1.5em;
-        color: #999;
+        color: $gray;
         border-bottom: solid 1px #ddd;
         padding: 0 0 1em 0;
         margin: 0 0 0.75em 0;
@@ -189,7 +189,7 @@
           margin: 0.25em 0 0 0;
           font-size: 1.5em;
           font-weight: 700;
-          color: #1b252a;
+          color: $gray-dark;
         }
       }
       .stats {
