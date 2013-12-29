@@ -1,0 +1,78 @@
+
+.button {
+  background-color: #c94663;
+  background-image: url('images/bg1.png');
+  border-radius: 0.4em;
+  text-align: center;
+  box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  -moz-transition: background-color .25s ease-in-out, color .25s ease-in-out;
+  -webkit-transition: background-color .25s ease-in-out, color .25s ease-in-out;
+  -o-transition: background-color .25s ease-in-out, color .25s ease-in-out;
+  -ms-transition: background-color .25s ease-in-out, color .25s ease-in-out;
+  transition: background-color .25s ease-in-out, color .25s ease-in-out;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
+}
+
+span.button {
+  opacity: 0.35;
+  cursor: default;
+}
+
+a.button:hover, input.button:hover {
+  background-color: #d95673;
+}
+
+a.button:active, input.button:active {
+  background-color: #b93653;
+}
+
+.button-alt {
+  background-color: #364050;
+  background-image: url('images/bg1.png');
+}
+
+a.button-alt:hover, input.button-alt:hover {
+  background-color: #465060;
+}
+
+a.button-alt:active, input.button-alt:active {
+  background-color: #263040;
+}
+
+.button-small!, .button-big!, .button-huge! {}
+
+@media (max-width: 640px) {
+  .button {
+    display: block;
+    width: 100%;
+    font-size: 1.25em;
+    padding: 0.75em 0 0.75em 0;
+    margin: 0.5em 0 0.5em 0;
+  }
+}
+
+@media (min-width: 641px) {
+  .button {
+    display: inline-block;
+    padding: 0.5em 2em 0.5em 2em;
+  }
+
+  .button-small {
+    font-size: 0.85em;
+    padding: 0.35em 1.5em 0.35em 1.5em;
+  }
+
+  .button-big {
+    font-size: 1.25em;
+    padding: 0.75em 2em 0.75em 2em;
+  }
+
+  .button-huge {
+    font-size: 1.5em;
+    padding: 0.75em 2em 0.75em 2em;
+  }
+}
