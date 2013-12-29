@@ -195,8 +195,10 @@
       .stats {
         position: relative;
         z-index: 1;
+        padding-left: 0;
         li {
           margin: 0.35em 0 0 0;
+          list-style: none;
           a {
             position: relative;
             display: block;
