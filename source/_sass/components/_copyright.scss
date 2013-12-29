@@ -1,6 +1,10 @@
 #copyright {
+  margin: 2em 0 0 0;
+  text-align: center;
   p {
     opacity: 0.75;
+    font-size: 0.8em;
+    line-height: 2em;
   }
   a {
     color: inherit !important;
@@ -11,37 +15,9 @@
     border-bottom: solid 1px;
     border-color: #171E29;
     border-color: rgba(0, 0, 0, 0.25);
-    box-shadow: inset 0px 1px 0px 0px rgba(255, 255, 255, 0.075), 0px 1px 0px 0px rgba(255, 255, 255, 0.075);
+    @include box-shadow(inset 0px 1px 0px 0px rgba(255, 255, 255, 0.075), 0px 1px 0px 0px rgba(255, 255, 255, 0.075));
     display: block;
-  }
-}
-
-@media (max-width: 640px) {
-  #copyright {
-    margin: 2em 0 0 0;
-    text-align: center;
-    p {
-      font-size: 0.9em;
-      line-height: 2em;
-    }
-    &:before {
-      height: 0.5em;
-      margin: 0 0 2em 0;
-    }
-  }
-}
-
-@media (min-width: 641px) {
-  #copyright {
-    margin: 2em 0 0 0;
-    text-align: center;
-    p {
-      font-size: 0.8em;
-      line-height: 2em;
-    }
-    &:before {
-      height: 0.5em;
-      margin: 0 0 2em 0;
-    }
+    height: 0.5em;
+    margin: 0 0 2em 0;
   }
 }

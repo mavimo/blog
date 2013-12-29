@@ -4,6 +4,7 @@
   html5up.net | @n33co
   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+/*
 skel.init(
   {
     prefix: '/css/style',
@@ -89,7 +90,7 @@ skel.init(
     }).trigger('resize');
   });
 }(jQuery));
-
+*/
 (function ($) {
   var qualifyURL = function (url) {
     var a = document.createElement('a');

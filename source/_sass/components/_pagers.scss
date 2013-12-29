@@ -1,63 +1,11 @@
-.pager .pages {
-  display: inline-block;
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-weight: 700;
-  span {
-    display: inline-block;
-    width: 1.5em;
-    text-align: center;
-    margin: 0 0.4em 0 0;
-  }
-  a {
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-    text-decoration: none;
-    color: inherit;
-    background-color: #e8e8e8;
-    background-image: url('images/bg2.png');
-    color: #565656;
-    margin: 0 0.4em 0 0;
-    border-radius: 0.4em;
-    -moz-transition: background-color .25s ease-in-out;
-    -webkit-transition: background-color .25s ease-in-out;
-    -o-transition: background-color .25s ease-in-out;
-    -ms-transition: background-color .25s ease-in-out;
-    transition: background-color .25s ease-in-out;
-    box-shadow: inset 0 0.075em 0.25em 0 rgba(0, 0, 0, 0.1);
-    &:hover {
-      background-color: #dadada;
-    }
-    &.active {
-      background-color: #364050;
-      background-image: url('images/bg1.png');
-      color: #fff;
-      box-shadow: none;
-      text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
-    }
-  }
-}
-
-@media (max-width: 640px) {
-  .pager .pages {
-    display: none;
-  }
-}
-
-@media (min-width: 641px) {
+@media (min-width: $mobile + 1px) {
   .pager {
     padding: 3em 0 0 0;
-    .pages! {}
     .previous {
       margin-right: 0.6em;
     }
     .next {
       margin-left: 0.2em;
-    }
-    .pages a {
-      width: 2.75em;
-      height: 2.75em;
-      line-height: 2.75em;
     }
     .button {
       height: 2.75em;

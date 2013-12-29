@@ -80,7 +80,7 @@
 .fa-border {
   padding: .2em .25em .15em;
   border: solid .08em #eee;
-  border-radius: .1em;
+  @include border-radius(0.1em);
 }
 
 .pull-right {

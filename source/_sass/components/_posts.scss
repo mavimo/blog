@@ -11,7 +11,7 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: $mobile) {
   .is-post {
     padding-bottom: 5em;
     margin-bottom: 6em;
@@ -60,10 +60,10 @@
   }
 }
 
-@media (min-width: 641px) {
+@media (min-width: $mobile + 1px) {
   .is-post .info .stats li {
     a {
-      border-radius: 0.4em;
+      @include border-radius(0.4em);
       opacity: 0.5;
       -moz-transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
       -webkit-transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
@@ -78,7 +78,7 @@
   }
 }
 
-@media (min-width: 641px) and (max-width: 1200px) {
+@media (min-width: $mobile + 1px) and (max-width: $wide) {
   .is-post {
     h2 {
       font-size: 3.25em;
@@ -129,7 +129,7 @@
   }
 }
 
-@media (min-width: 1201px) {
+@media (min-width: $wide + 1px) {
   .is-post {
     h2 {
       font-size: 3.25em;
@@ -156,7 +156,7 @@
       padding: 1.5em 1em 1.5em 1em;
       border-top-left-radius: 0.4em;
       border-bottom-left-radius: 0.4em;
-      box-shadow: 0.25em 0 0 0 #fbfbfb, 0 0 0.25em 0em rgba(0, 0, 0, 0.25);
+      @include box-shadow(0.25em 0 0 0 #fbfbfb, 0 0 0.25em 0em rgba(0, 0, 0, 0.25));
       &:after {
         content: '';
         display: block;
@@ -165,7 +165,7 @@
         top: 0;
         width: 100%;
         height: 100%;
-        background-image: url('images/bg2.png');
+        background-image: image-url('bg2.png');
         opacity: 0.5;
         z-index: 0;
       }

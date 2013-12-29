@@ -1,6 +1,6 @@
-@media (max-width: 640px) {
+@media (max-width: $mobile) {
   #titleBar {
-    background: #364050 url('images/bg1.png');
+    background: #364050 image-url('bg1.png');
     .title {
       color: #fff;
       line-height: 44px;
@@ -8,8 +8,8 @@
       font-family: 'Open Sans Condensed', sans-serif;
       font-weight: 700;
       letter-spacing: 0.1em;
-      text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
-      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+      @include text-shadow(-1px -1px 0px rgba(0, 0, 0, 0.5));
+      @include box-shadow(0px 1px 4px 0px rgba(0, 0, 0, 0.25));
       text-align: center;
     }
     .toggle {
@@ -27,9 +27,9 @@
         top: 7px;
         width: 50px;
         height: 30px;
-        background: #c94663 url('images/bg1.png');
-        border-radius: 5px;
-        box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0 0.025em 0.15em 0em rgba(0, 0, 0, 0.25);
+        background: #c94663 image-url('bg1.png');
+        @include border-radius(5px);
+        @include box-shadow(inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0 0.025em 0.15em 0em rgba(0, 0, 0, 0.25));
       }
       &:after {
         content: '';
@@ -54,9 +54,9 @@
   }
 }
 
-@media (min-width: 641px) and (max-width: 1000px) {
+@media (min-width: $mobile + 1px) and (max-width: $tablet) {
   #titleBarNarrower {
-    background: #364050 url('images/bg1.png');
+    background: #364050 image-url('bg1.png');
     .title {
       color: #fff;
       line-height: 60px;
@@ -64,9 +64,9 @@
       font-family: 'Open Sans Condensed', sans-serif;
       font-weight: 700;
       letter-spacing: 0.1em;
-      text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.5);
-      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
       text-align: center;
+      @include text-shadow(-1px -1px 0px rgba(0, 0, 0, 0.5));
+      @include box-shadow(0px 1px 4px 0px rgba(0, 0, 0, 0.25));
     }
     .toggle {
       text-indent: -9999px;
@@ -83,9 +83,9 @@
         top: 7px;
         width: 80px;
         height: 45px;
-        background: #c94663 url('images/bg1.png');
-        border-radius: 5px;
-        box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0 0.025em 0.15em 0em rgba(0, 0, 0, 0.25);
+        background: #c94663 image-url('bg1.png');
+        @include border-radius(5px);
+        @include box-shadow(inset 0px 0px 0px 1px rgba(255, 255, 255, 0.15), 0 0.025em 0.15em 0em rgba(0, 0, 0, 0.25));
       }
       &:after {
         content: '';
@@ -95,7 +95,7 @@
         top: 22px;
         width: 60px;
         height: 30px;
-        background: url('images/mobileUI-site-nav-opener-bg.svg') 0 0 no-repeat;
+        background: image-url('mobileUI-site-nav-opener-bg.svg') 0 0 no-repeat;
         opacity: 0.75;
       }
       &:active {
