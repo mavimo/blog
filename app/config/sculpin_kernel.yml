@@ -1,2 +1,4 @@
 sculpin_posts:
     permalink: :year/:month/:day/:filename/
+sculpin_projects:
+    permalink: projects/:filename/
