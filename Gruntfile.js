@@ -32,6 +32,20 @@ module.exports = function (grunt) {
         dest: 'source/js/mavimo-blog.js'
       }
     },
+    cssmin: {
+      options: {
+        banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+      },
+      combine: {
+        files: {
+          'source/css/mavimo-blog.css': [
+            'source/css/style.css',
+            'source/libraries/prism-monokai-php/dist/prism-monokai-php.min.css',
+            'source/libraries/prism/plugins/line-numbers/prism-line-numbers.css'
+          ]
+        }
+      }
+    },
     uglify: {
       options: {
         banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - <%= grunt.template.today("yyyy-mm-dd") %> */\n'
@@ -60,5 +74,5 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Default task(s).
-  grunt.registerTask('default', ['jshint', 'concat', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'concat', 'uglify', 'cssmin']);
 };
