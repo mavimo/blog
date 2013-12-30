@@ -1,34 +1,74 @@
 <?php
 
-// require_once "phing/Task.php";
 require_once "phing/tasks/ext/Service/Amazon/S3/S3PutTask.php";
-// require_once "/usr/local/php5/lib/php/phing/tasks/ext/Service/Amazon/S3/S3PutTask.php";
 
-class S3UploadTask extends S3PutTask
+/**
+ * Task to upload object in S3 adding some metadata.
+ */
+class S3UploadTask extends \S3PutTask
 {
+    /**
+     * Object maxage (in seconds).
+     *
+     * @var int
+     */
     protected $_maxage = null;
+
+    /**
+     * Content is gzipped.
+     *
+     * @var boolean
+     */
     protected $_gzipped = false;
 
+    /**
+     * Set seconds in max-age, null value exclude max-age setup.
+     *
+     * @param int $seconds
+     */
     public function setMaxage($seconds)
     {
         $this->_maxage = $seconds;
     }
 
-    public function getMaxage($seconds)
+    /**
+     * Get seconds in max-age or null.
+     *
+     * @return int
+     *   Number of seconds in maxage or null.
+     */
+    public function getMaxage()
     {
         return $this->_maxage;
     }
 
+    /**
+     * Set if content is gzipped.
+     *
+     * @param boolean $gzipped
+     */
     public function setGzip($gzipped)
     {
         $this->_gzipped = $gzipped;
     }
 
-    public function getGzip($gzipped)
+    /**
+     * Return if content is gzipped.
+     *
+     * @return booleand
+     *   Indicate if content is gzipped.
+     */
+    public function getGzip()
     {
         return $this->_gzipped;
     }
 
+    /**
+     * Generate HTTPHEader array sent to S3.
+     *
+     * @return array
+     *   HttpHeader to set in S3 Object.
+     */
     protected function getHttpHeaders()
     {
         $headers = array();
@@ -41,6 +81,9 @@ class S3UploadTask extends S3PutTask
         return $headers;
     }
 
+    /**
+     * {@ineritDocs}
+     */
     protected function saveObject($object, $data)
     {
         $object = $this->getObjectInstance($object);
@@ -50,7 +93,7 @@ class S3UploadTask extends S3PutTask
         $object->httpHeaders = $this->getHttpHeaders();
         $object->save();
 
-        if(!$this->isObjectAvailable($object->key)) {
+        if (!$this->isObjectAvailable($object->key)) {
             throw new BuildException('Upload failed');
         }
     }
