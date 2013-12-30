@@ -96,19 +96,24 @@
 }
 
 @media screen and (min-width: $mobile + 1px) {
-  .is-post .info .stats li {
-    a {
-      @include border-radius(0.4em);
-      opacity: 0.5;
-      -moz-transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
-      -webkit-transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
-      -o-transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
-      -ms-transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
-      transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
+  .is-post {
+    h2 {
+      margin-top: 0em;
     }
-    &:hover a {
-      background-color: $white-light;
-      opacity: 1.0;
+    .info .stats li {
+      a {
+        @include border-radius(0.4em);
+        opacity: 0.5;
+        -moz-transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
+        -o-transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
+        -ms-transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
+        transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
+      }
+      &:hover a {
+        background-color: $white-light;
+        opacity: 1.0;
+      }
     }
   }
 }
