@@ -10,3 +10,5 @@ ftp.username=
 ftp.password=
 ftp.dir=
 ftp.mode=
+
+delivery.maxage=

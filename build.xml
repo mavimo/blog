@@ -56,7 +56,7 @@
       bucket="${amazon.bucket}"
       key="${amazon.key}"
       secret="${amazon.secret}"
-      maxage="3600" >
+      maxage="${delivery.maxage}" >
       <fileset dir="./${sculpin.source}">
         <include name="**" />
         <exclude name="${sculpin.source}/css/mavimo-blog.min.css.gz" />
@@ -64,20 +64,20 @@
       </fileset>
     </s3upload>
     <s3upload
-      contentType="auto"
+      contentType="text/css"
       bucket="${amazon.bucket}"
       key="${amazon.key}"
       secret="${amazon.secret}"
-      maxage="3600"
+      maxage="${delivery.maxage}"
       gzip="true"
       source="${sculpin.source}/css/mavimo-blog.min.css.gz"
       object="css/mavimo-blog.min.css" />
     <s3upload
-      contentType="auto"
+      contentType="text/javascript; charset=UTF-8"
       bucket="${amazon.bucket}"
       key="${amazon.key}"
       secret="${amazon.secret}"
-      maxage="3600"
+      maxage="${delivery.maxage}"
       gzip="true"
       source="${sculpin.source}/js/mavimo-blog.min.js.gz"
       object="js/mavimo-blog.min.js" />
