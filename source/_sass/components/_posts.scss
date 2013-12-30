@@ -11,6 +11,28 @@
   }
 }
 
+.post-archive {
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+  .is-post {
+    &.first {
+      .info {
+        border: none;
+      }
+    }
+    .info {
+      padding: 0.5em 1em;
+      .date {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+    }
+  }
+}
+
 @media screen and (max-width: $mobile) {
   .is-post {
     padding-bottom: 5em;
@@ -55,6 +77,19 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .post-archive {
+    .is-post {
+      padding: 0;
+      .info {
+        position: relative;
+        padding: 0;
+      }
+      h2 {
+        margin: 0 0 1em 0;
       }
     }
   }
@@ -124,6 +159,18 @@
             }
           }
         }
+      }
+    }
+  }
+
+  .post-archive {
+    .is-post {
+      .info {
+        padding: 0;
+        top: 0;
+      }
+      h2 {
+        margin: 0 0 0.5em 0;
       }
     }
   }

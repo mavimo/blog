@@ -9,15 +9,19 @@ use:
 ---
 
 <h2>Posts Archive</h2>
-<ul>
+<ul class="post-archive">
 {% for post in page.pagination.items %}
-  <li style="clear: both">
-    <div style="float: left;">
-      <div>{{ post.date | date("d") }}.{{ post.date | date("m") }}</div>
-      <div>{{ post.date | date("Y") }}</div>
-    </div>
-    <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
   <li>
+    <article class="is-post {% if loop.first %}first{% endif %}" itemscope itemtype="http://schema.org/BlogPosting">
+      <div class="info">
+        <span class="date">
+          <span class="day">{{ post.date | date("d") }} </span>
+          <span class="month">{{ post.date | date("M") }}</span>
+        </span>
+      </div>
+      <h2><a href="{{ site.url }}{{ post.url }}" itemprop="name">{{ post.title }}</a></h2>
+    </article>
+  </li>
 {% endfor %}
 </ul>
 
