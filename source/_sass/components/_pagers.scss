@@ -1,4 +1,4 @@
-@media (min-width: $mobile + 1px) {
+@media screen and (min-width: $mobile + 1px) {
   .pager {
     padding: 3em 0 0 0;
     .previous {

@@ -11,7 +11,7 @@
   }
 }
 
-@media (max-width: $mobile) {
+@media screen and (max-width: $mobile) {
   .is-post {
     padding-bottom: 5em;
     margin-bottom: 6em;
@@ -60,7 +60,7 @@
   }
 }
 
-@media (min-width: $mobile + 1px) {
+@media screen and (min-width: $mobile + 1px) {
   .is-post .info .stats li {
     a {
       @include border-radius(0.4em);
@@ -78,7 +78,7 @@
   }
 }
 
-@media (min-width: $mobile + 1px) and (max-width: $wide) {
+@media screen and (min-width: $mobile + 1px) and (max-width: $wide) {
   .is-post {
     h2 {
       font-size: 3.25em;
@@ -129,7 +129,7 @@
   }
 }
 
-@media (min-width: $wide + 1px) {
+@media screen and (min-width: $wide + 1px) {
   .is-post {
     h2 {
       font-size: 3.25em;

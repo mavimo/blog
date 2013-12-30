@@ -50,49 +50,69 @@
   }
 }
 
-@media (max-width: $mobile) {
-  #sidePanel {
-    background: #28303a image-url('bg1.png');
-  }
-
+@media screen and (max-width: $tablet) {
   #sidebar {
-    padding: 20px 12px 20px 10px;
+    position: fixed;
+    top: 44px;
+    width: 100%;
+    z-index: 1000;
+    background: #28303a image-url('bg1.png');
     background: #364050 image-url('bg1.png');
     @include box-shadow(inset -1px 0 0 0 rgba(255, 255, 255, 0.15), inset -0.1em 0 0.5em 0 rgba(0, 0, 0, 0.25));
+    .subtitle,
+    section {
+      display: none;
+    }
+    #nav {
+      top: 1em;
+      margin: 2em 0 2em 0;
+    }
+    .nav-toggle {
+      position: fixed;
+      top: 4px;
+      left: 0;
+      color: $white;
+      z-index: 1002;
+      width: 0;
+      text-decoration: none;
+      visibility: hidden;
+
+      &:before {
+        content: "≡";
+        padding: 10px;
+        font-size: 4em;
+        visibility: visible;
+      }
+    }
+  }
+  .js .nav-collapse.opened {
+    max-height: 9999px
   }
 }
 
-@media (min-width: $mobile + 1px) {
+@media screen and (min-width: $mobile + 1px) and (max-width: $tablet) {
+  #sidebar {
+    top: 60px;
+  }
+}
+
+@media screen and (min-width: $tablet + 1px) {
   #sidebar {
     position: absolute;
     top: 0;
     padding: 3em 1.35em 1em 1.15em;
     width: 14em;
-    /* = whatever you want */
     background: #364050 image-url('bg1.png');
     @include box-shadow(inset -0.1em 0em 0.35em 0em rgba(0, 0, 0, 0.15));
   }
 
-  body {
-    &.left-sidebar #sidebar {
-      left: 0;
-    }
-    &.right-sidebar #sidebar {
-      right: 0;
-    }
-  }
+  // body {
+  //   &.left-sidebar #sidebar {
+  //     left: 0;
+  //   }
+  //   &.right-sidebar #sidebar {
+  //     right: 0;
+  //   }
+  // }
 }
 
-@media (min-width: $mobile + 1px) and (max-width: $tablet) {
-  #sidebar {
-    width: auto;
-    background: none;
-    padding: 30px 20px 30px 20px;
-    display: none;
-  }
-
-  #sidePanelNarrower {
-    background: #364050 image-url('bg1.png');
-    @include box-shadow(inset -1px 0 0 0 rgba(255, 255, 255, 0.15), inset -0.1em 0 0.5em 0 rgba(0, 0, 0, 0.25));
-  }
-}

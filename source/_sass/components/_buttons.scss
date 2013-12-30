@@ -24,7 +24,7 @@ a.button {
   }
 }
 
-@media (max-width: $mobile) {
+@media screen and (max-width: $mobile) {
   .button {
     display: block;
     width: 100%;
@@ -34,7 +34,7 @@ a.button {
   }
 }
 
-@media (min-width: $mobile + 1px) {
+@media screen and (min-width: $mobile + 1px) {
   .button {
     display: inline-block;
     padding: 0.5em 2em 0.5em 2em;

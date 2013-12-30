@@ -26,6 +26,12 @@
 
       <!-- Sidebar -->
       <div id="sidebar">
+        <!-- Responsive toolbar  -->
+        <div id="titleBar">
+          <div class="title">
+            <a href="/">{{ site.title }}</a>
+          </div>
+        </div>
 
         <!-- Logo -->
         <div id="logo">
@@ -33,12 +39,12 @@
         </div>
 
         {% if site.subtitle %}
-          <div>{{ site.subtitle }}</div>
+          <div class="subtitle">{{ site.subtitle }}</div>
         {% endif %}
 
         <!-- Navigation -->
-        <nav id="nav">
-          <ul>
+        <nav id="nav" class="nav-collapse">
+          <ul class="nav">
             <li><a href="{{ site.url }}/">Home page</a></li>
             <li><a href="{{ site.url }}/blog">Archive</a></li>
             <li><a href="{{ site.url }}/projects">Projects</a></li>
@@ -49,7 +55,7 @@
         <!-- Blogroll -->
         <section class="is-text-style1">
           <div class="inner">
-            <ul class="nav">
+            <ul>
               <li><a href="http://agavee.com">Agavee GmbH</a></li>
               <li><a href="http://twitter.com/mavimo">@mavimo</a></li>
             </ul>
@@ -68,6 +74,9 @@
 
     {% block scripts %}
     {% endblock %}
+    <script>
+      var nav = responsiveNav(".nav-collapse");
+    </script>
   </body>
 </html>
 {% endspaceless %}
