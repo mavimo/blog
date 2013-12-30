@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project name="MavimoBlog" default="build">
+  <includepath classpath="phing" />
+  <taskdef name="s3upload" classname="S3UploadTask" />
+
   <!-- Remove all build files -->
   <target name="clean">
     <delete dir="${sculpin.source}" />
@@ -11,19 +14,73 @@
     <exec command="bower update" dir="." />
     <exec command="grunt" dir="." />
     <exec command="../../utils/sculpin/bin/sculpin generate" dir="." />
+    <echo>GZip CSS and JS</echo>
+    <exec command="gzip -9 ${sculpin.source}/js/mavimo-blog.min.js" dir="." />
+    <exec command="gzip -9 ${sculpin.source}/css/mavimo-blog.min.css" dir="." />
+
+    <echo>Delete all file that must not be deployed</echo>
+    <delete dir="${sculpin.source}/_sass" includeemptydirs="true" verbose="true" failonerror="true" />
+    <delete>
+      <fileset dir="${sculpin.source}/js">
+        <include name="**" />
+        <exclude name="mavimo-blog.min.js.gz" />
+      </fileset>
+    </delete>
+    <delete includeemptydirs="true" verbose="true" failonerror="true" >
+      <fileset dir="${sculpin.source}/css">
+        <include name="**" />
+        <exclude name="font/**" />
+        <exclude name="mavimo-blog.min.css.gz" />
+      </fileset>
+    </delete>
+    <delete includeemptydirs="true" verbose="true" failonerror="true" >
+      <fileset dir="${sculpin.source}/libraries">
+        <include name="**" />
+        <exclude name="html5shiv/dist/**"/>
+        <exclude name="jquery/jquery.min.*"/>
+      </fileset>
+    </delete>
+
+    <delete includeemptydirs="true" verbose="true" failonerror="true">
+      <fileset dir="${sculpin.source}/projects">
+        <include name="**" />
+        <exclude name="index.html" />
+      </fileset>
+    </delete>
   </target>
 
   <!-- Deploy current site on S3 -->
   <target name="deploy_s3" depends="build">
-    <s3put
+    <s3upload
       contentType="auto"
       bucket="${amazon.bucket}"
       key="${amazon.key}"
-      secret="${amazon.secret}">
+      secret="${amazon.secret}"
+      maxage="3600" >
       <fileset dir="./${sculpin.source}">
         <include name="**" />
+        <exclude name="${sculpin.source}/css/mavimo-blog.min.css.gz" />
+        <exclude name="${sculpin.source}/js/mavimo-blog.min.js.gz" />
       </fileset>
-    </s3put>
+    </s3upload>
+    <s3upload
+      contentType="auto"
+      bucket="${amazon.bucket}"
+      key="${amazon.key}"
+      secret="${amazon.secret}"
+      maxage="3600"
+      gzip="true"
+      source="${sculpin.source}/css/mavimo-blog.min.css.gz"
+      object="css/mavimo-blog.min.css" />
+    <s3upload
+      contentType="auto"
+      bucket="${amazon.bucket}"
+      key="${amazon.key}"
+      secret="${amazon.secret}"
+      maxage="3600"
+      gzip="true"
+      source="${sculpin.source}/js/mavimo-blog.min.js.gz"
+      object="js/mavimo-blog.min.js" />
   </target>
 
   <!-- Deploy current site on FTP -->
