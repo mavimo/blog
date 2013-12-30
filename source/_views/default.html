@@ -28,55 +28,7 @@
 
       <!-- Sidebar -->
       <div id="sidebar">
-        <!-- Responsive toolbar  -->
-        <div id="titleBar">
-          <div class="title">
-            <a href="/">{{ site.title }}</a>
-          </div>
-        </div>
-
-        <!-- Logo -->
-        <div id="logo">
-          <a href="/">{{ site.title }}</a>
-        </div>
-
-        {% if site.subtitle %}
-          <div class="subtitle">{{ site.subtitle }}</div>
-        {% endif %}
-
-        <div class="social-button">
-          <a href="https://twitter.com/mavimo" class="fa fa-twitter-square"></a>
-          <a href="https://plus.google.com/+MarcoVitoMoscaritolo" class="fa fa-google-plus-square"></a>
-          <a href="https://www.facebook.com/marco.moscaritolo" class="fa fa-facebook-square"></a>
-          <a href="https://github.com/mavimo" class="fa fa-github-square"></a>
-          <a href="https://bitbucket.com/mavimo" class="fa fa-bitbucket-square"></a>
-          <a href="http://www.linkedin.com/in/mavimo" class="fa fa-linkedin-square"></a>
-        </div>
-
-        <!-- Navigation -->
-        <nav id="nav" class="nav-collapse">
-          <ul class="nav">
-            <li><a href="{{ site.url }}/">Home page</a></li>
-            <li><a href="{{ site.url }}/blog">Archive</a></li>
-            <li><a href="{{ site.url }}/projects">Projects</a></li>
-            <li><a href="{{ site.url }}/about">About Me</a></li>
-          </ul>
-        </nav>
-
-        <!-- Blogroll -->
-        <section class="is-text-style1">
-          <div class="inner">
-            <ul>
-              <li><a href="http://agavee.com">Agavee GmbH</a></li>
-              <li><a href="http://twitter.com/mavimo">@mavimo</a></li>
-            </ul>
-          </div>
-        </section>
-
-        <!-- Copyright -->
-        <div id="copyright">
-          <p>&copy; 2013 Marco Vito Moscaritolo</p>
-        </div>
+        {% include 'sidebar.html' %}
       </div>
     </div>
 
