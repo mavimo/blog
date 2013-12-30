@@ -29,6 +29,9 @@
   <div itemprop="articleBody">
     {{ page.blocks.content|raw }}
   </div>
+  <footer itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <p>By <a href="https://plus.google.com/u/0/{{ site.google_author }}?rel=author" itemprop="name">Marco Vito Moscaritolo</a>.</p>
+  </footer>
 </article>
 
 {% include 'disquis.html' %}
