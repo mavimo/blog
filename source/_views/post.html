@@ -23,7 +23,9 @@
       <li><a href="#" class="fa fa-facebook">0</a></li>
     </ul>
   </div>
-  <a href="#" class="image image-full"><img src="" alt="" /></a>
+  {% if page.image %}
+    <img src="{{ site.url }}{{ post.image }}" alt="" />
+  {% endif %}
   <div itemprop="articleBody">
     {{ page.blocks.content|raw }}
   </div>

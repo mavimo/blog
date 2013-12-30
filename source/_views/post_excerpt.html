@@ -20,7 +20,11 @@
       <li><a href="#" class="fa fa-facebook">0</a></li>
     </ul>
   </div>
-  <a href="{{ site.url }}{{ post.url }}" class="image image-full"><img src="{{ post.image }}" alt="" /></a>
+  {% if post.image %}
+    <a href="{{ site.url }}{{ post.url }}" class="image image-full">
+      <img src="{{ site.url }}{{ post.image }}" alt="" />
+    </a>
+  {% endif %}
   <div itemprop="articleBody">
     {% set break_array = post.blocks.content|split('<!--break-->', 2) %}
     {{ break_array[0]|raw }}
