@@ -38,7 +38,7 @@ module.exports = function (grunt) {
       },
       combine: {
         files: {
-          'source/css/mavimo-blog.css': [
+          'source/css/mavimo-blog.min.css': [
             'source/css/style.css',
             'source/libraries/prism-monokai-php/dist/prism-monokai-php.min.css',
             'source/libraries/prism/plugins/line-numbers/prism-line-numbers.css'
