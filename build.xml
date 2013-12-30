@@ -8,6 +8,8 @@
 
   <!-- Build a new file -->
   <target name="build" depends="clean">
+    <exec command="bower update" dir="." />
+    <exec command="grunt" dir="." />
     <exec command="../../utils/sculpin/bin/sculpin generate" dir="." />
   </target>
 

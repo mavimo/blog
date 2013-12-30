@@ -4,4 +4,6 @@ build.properties.prod
 build.properties.dev
 output_dev
 output_prod
+node_modules
 source/libraries
+source/js/mavimo-blog*

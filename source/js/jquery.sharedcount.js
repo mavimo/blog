@@ -11,7 +11,7 @@ jQuery.sharedCount = function (url, fn) {
     dataType: "json"
   };
 
-  if ('withCredentials' in new XMLHttpRequest) {
+  if ('withCredentials' in new XMLHttpRequest()) {
     arg.success = fn;
   }
   else {
