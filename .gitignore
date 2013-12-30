@@ -6,4 +6,5 @@ output_dev
 output_prod
 node_modules
 source/libraries
-source/js/mavimo-blog*
+source/css/mavimo-blog.*
+source/js/mavimo-blog.*
