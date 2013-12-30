@@ -17,10 +17,10 @@
     </span>
 
     <ul class="stats">
-      <li><a href="#" class="fa fa-comment">0</a></li>
-      <li><a href="#" class="fa fa-google-plus">0</a></li>
-      <li><a href="#" class="fa fa-twitter">0</a></li>
-      <li><a href="#" class="fa fa-facebook">0</a></li>
+      <li><a href="{{ site.url }}{{ post.url }}#disqus_thread" class="fa fa-comment">0</a></li>
+      <li><a href="https://plusone.google.com/_/+1/confirm?url={{ site.url }}{{ post.url }}&amp;title={{ post.title }}" class="fa fa-google-plus">0</a></li>
+      <li><a href="http://twitter.com/intent/tweet?source=mavimo&amp;text={{ page.title }}&amp;url={{ site.url }}{{ post.url }}" class="fa fa-twitter">0</a></li>
+      <li><a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ post.url }}&amp;t={{ post.title }}" class="fa fa-facebook">0</a></li>
     </ul>
   </div>
   {% if page.image %}
