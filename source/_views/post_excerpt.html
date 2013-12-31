@@ -20,11 +20,23 @@
       <li><a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ post.url }}&amp;t={{ post.title }}" class="fa fa-facebook">0</a></li>
     </ul>
   </div>
+
   {% if post.image %}
-    <a href="{{ site.url }}{{ post.url }}" class="image image-full">
-      <img src="{{ site.url }}{{ post.image }}" alt="" />
-    </a>
+  <figure>
+    <picture>
+      <source src="{{ site.url }}/images/posts/{{ post.image.folder }}/small.png" media="(max-width: 640px)" />
+      <source src="{{ site.url }}/images/posts/{{ post.image.folder }}/mid.png"   media="(min-width: 641px) and (max-width: 1200px)" />
+      <source src="{{ site.url }}/images/posts/{{ post.image.folder }}/large.png" media="(min-width: 1200px)" />
+      <source src="{{ site.url }}/images/posts/{{ post.image.folder }}/gray.png"  media="monochrome" />
+      <source src="{{ site.url }}/images/posts/{{ post.image.folder }}/gray.png"  media="print" />
+      <!-- fallback img if picture is not supported -->
+      <img src="{{ site.url }}/images/posts/{{ post.image.folder }}/mid.png" alt="{{ post.image.alt | striptags }}" />
+    </picture>
+    <!-- alternate text -->
+    <figcaption>{{ post.image.alt }}</figcaption>
+  </figure>
   {% endif %}
+
   <div itemprop="articleBody">
     {% set break_array = post.blocks.content|split('<!--break-->', 2) %}
     {{ break_array[0]|raw }}

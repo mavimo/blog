@@ -1,6 +1,9 @@
 ---
 title: Syntax Highlighting
 categories: [features]
+image:
+    folder: blog-1
+    alt: This is a test image
 ---
 You're all programmers, right? And you're writing code snippets on your Sculpin
 powered blog? Yeah. So you want some highlighting with your static site generation?

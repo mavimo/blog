@@ -17,14 +17,26 @@
     </span>
 
     <ul class="stats">
-      <li><a href="{{ site.url }}{{ post.url }}#disqus_thread" class="fa fa-comment">0</a></li>
-      <li><a href="https://plusone.google.com/_/+1/confirm?url={{ site.url }}{{ post.url }}&amp;title={{ post.title }}" class="fa fa-google-plus">0</a></li>
-      <li><a href="http://twitter.com/intent/tweet?source=mavimo&amp;text={{ page.title }}&amp;url={{ site.url }}{{ post.url }}" class="fa fa-twitter">0</a></li>
-      <li><a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ post.url }}&amp;t={{ post.title }}" class="fa fa-facebook">0</a></li>
+      <li><a href="{{ site.url }}{{ page.url }}#disqus_thread" class="fa fa-comment">0</a></li>
+      <li><a href="https://plusone.google.com/_/+1/confirm?url={{ site.url }}{{ page.url }}&amp;title={{ page.title }}" class="fa fa-google-plus">0</a></li>
+      <li><a href="http://twitter.com/intent/tweet?source=mavimo&amp;text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}" class="fa fa-twitter">0</a></li>
+      <li><a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}&amp;t={{ page.title }}" class="fa fa-facebook">0</a></li>
     </ul>
   </div>
   {% if page.image %}
-    <img src="{{ site.url }}{{ post.image }}" alt="" />
+  <figure>
+    <picture>
+      <source src="{{ site.url }}/images/posts/{{ page.image.folder }}/small.png" media="(max-width: 640px)" />
+      <source src="{{ site.url }}/images/posts/{{ page.image.folder }}/mid.png"   media="(min-width: 641px) and (max-width: 1200px)" />
+      <source src="{{ site.url }}/images/posts/{{ page.image.folder }}/large.png" media="(min-width: 1200px)" />
+      <source src="{{ site.url }}/images/posts/{{ page.image.folder }}/gray.png"  media="monochrome" />
+      <source src="{{ site.url }}/images/posts/{{ page.image.folder }}/gray.png"  media="print" />
+      <!-- fallback img if picture is not supported -->
+      <img src="{{ site.url }}/images/posts/{{ page.image.folder }}/mid.png" alt="{{ page.image.alt | striptags }}" />
+    </picture>
+    <!-- alternate text -->
+    <figcaption>{{ page.image.alt }}</figcaption>
+  </figure>
   {% endif %}
   <div itemprop="articleBody">
     {{ page.blocks.content|raw }}
