@@ -25,15 +25,22 @@
   </div>
   {% if page.image %}
   <figure>
-    <picture>
-      <source src="{{ site.url }}/images/posts/{{ page.image.folder }}/small.png" media="(max-width: 640px)" />
-      <source src="{{ site.url }}/images/posts/{{ page.image.folder }}/mid.png"   media="(min-width: 641px) and (max-width: 1200px)" />
-      <source src="{{ site.url }}/images/posts/{{ page.image.folder }}/large.png" media="(min-width: 1200px)" />
-      <source src="{{ site.url }}/images/posts/{{ page.image.folder }}/gray.png"  media="monochrome" />
-      <source src="{{ site.url }}/images/posts/{{ page.image.folder }}/gray.png"  media="print" />
-      <!-- fallback img if picture is not supported -->
-      <img src="{{ site.url }}/images/posts/{{ page.image.folder }}/mid.png" alt="{{ page.image.alt | striptags }}" />
-    </picture>
+    <span data-picture data-alt="{{ page.image.alt | striptags }}">
+      {% set img_folder %}{{ site.url }}/images/posts/{{ page.image.folder }}{% endset %}
+      <span data-src="{{ img_folder}}/small.png" data-media="(max-width: 640px)"></span>
+      <span data-src="{{ img_folder}}/mid.png"   data-media="(min-width: 641px) and (max-width: 1200px)"></span>
+      <span data-src="{{ img_folder}}/large.png" data-media="(min-width: 1201px)"></span>
+      <span data-src="{{ img_folder}}/gray.png"  data-media="monochrome"></span>
+      <span data-src="{{ img_folder}}/gray.png"  data-media="print"></span>
+      <!--[if (lt IE 9) & (!IEMobile)]>
+        <img src="{{ img_folder}}/mid.png" />
+      <![endif]-->
+
+      <!-- Fallback content for non-JS browsers. -->
+      <noscript>
+        <img src="{{ img_folder}}/mid.png" alt="{{ page.image.alt | striptags }}" />
+      </noscript>
+    </span>
     <!-- alternate text -->
     <figcaption>{{ page.image.alt }}</figcaption>
   </figure>

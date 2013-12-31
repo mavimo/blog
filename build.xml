@@ -42,6 +42,7 @@
         <include name="**" />
         <exclude name="html5shiv/dist/**"/>
         <exclude name="jquery/jquery.min.*"/>
+        <exclude name="picturefill/picturefill.js"/>
       </fileset>
     </delete>
     <delete includeemptydirs="true" verbose="true" failonerror="true">

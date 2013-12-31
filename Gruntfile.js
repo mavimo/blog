@@ -26,6 +26,7 @@ module.exports = function (grunt) {
           'source/libraries/prism/components/prism-core.min.js',
           'source/libraries/prism/plugins/line-numbers/prism-line-numbers.min.js',
           'source/libraries/responsive-nav/responsive-nav.js',
+          'source/libraries/picturefill/picturefill.js',
           'source/js/jquery.sharedcount.js',
           'source/js/init.js'
         ],
