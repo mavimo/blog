@@ -1,0 +1,22 @@
+#!/bin/sh
+IMG=$1
+FOLDER=$2
+echo "Creating images"
+echo " - small"
+convert $IMG -resize  640 images/$FOLDER/small.png
+echo " - medium"
+convert $IMG -resize 1000 images/$FOLDER/mid.png
+echo " - large"
+convert $IMG -resize 1900 images/$FOLDER/large.png
+echo " - grays"
+convert $IMG -grayscale Rec709Luminance images/$FOLDER/gray.png
+
+echo "Optimize images"
+echo " - small"
+optipng images/$FOLDER/small.png
+echo " - medium"
+optipng images/$FOLDER/mid.png
+echo " - large"
+optipng images/$FOLDER/large.png
+echo " - grays"
+optipng images/$FOLDER/gray.png
