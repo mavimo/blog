@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<project name="MavimoBlog" default="build">
+<project name="MavimoBlog" description="Build and deploy Mavimo's blog" default="build">
   <includepath classpath="phing" />
   <taskdef name="s3upload" classname="S3UploadTask" />
 
@@ -11,9 +11,13 @@
 
   <!-- Build a new file -->
   <target name="build" depends="clean">
+    <echo>Build dependencies</echo>
     <exec command="bower update" dir="." />
     <exec command="grunt" dir="." />
+
+    <echo>Build website</echo>
     <exec command="../../utils/sculpin/bin/sculpin generate" dir="." />
+
     <echo>GZip CSS and JS</echo>
     <exec command="gzip -9 ${sculpin.source}/js/mavimo-blog.min.js" dir="." />
     <exec command="gzip -9 ${sculpin.source}/css/mavimo-blog.min.css" dir="." />
@@ -40,7 +44,6 @@
         <exclude name="jquery/jquery.min.*"/>
       </fileset>
     </delete>
-
     <delete includeemptydirs="true" verbose="true" failonerror="true">
       <fileset dir="${sculpin.source}/projects">
         <include name="**" />
@@ -51,6 +54,7 @@
 
   <!-- Deploy current site on S3 -->
   <target name="deploy_s3" depends="build">
+    <echo>Deploy files on S3</echo>
     <s3upload
       contentType="auto"
       bucket="${amazon.bucket}"
@@ -85,6 +89,7 @@
 
   <!-- Deploy current site on FTP -->
   <target name="deploy_ftp" depends="build">
+    <echo>Deploy site on FTP</echo>
     <ftpdeploy
       host="${ftp.host}"
       port="${ftp.port}"
