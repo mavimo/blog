@@ -9,13 +9,15 @@
   $('article').each(function (i, art) {
     var url = $('h2 a', art).attr('href') || window.location.href;
     $.sharedCount(qualifyURL(url), function (data) {
-      $(".fa-twitter", art).text(data.Twitter);
-      $(".fa-facebook", art).text((typeof data.Facebook === 'object') ? data.Facebook.like_count : 0);
-      $(".fa-google-plus", art).text(data.GooglePlusOne);
+      $(".fa-twitter", art)
+        .text(data.Twitter)
+        .attr('target', '_blank');
+      $(".fa-facebook", art)
+        .text((typeof data.Facebook === 'object') ? data.Facebook.like_count : 0)
+        .attr('target', '_blank');
+      $(".fa-google-plus", art)
+        .text(data.GooglePlusOne)
+        .attr('target', '_blank');
     });
-  });
-
-  $(window).on('resize', function () {
-    var width = window.innerWidth;
   });
 }(jQuery));
