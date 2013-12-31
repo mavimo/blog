@@ -9,7 +9,7 @@ end
 # Location of the theme's resources.
 css_dir = "source/css"
 sass_dir = "source/_sass"
-images_dir = "source/images"
+images_dir = "source/images/style"
 generated_images_dir = images_dir + "/generated"
 javascripts_dir = "js"
 
