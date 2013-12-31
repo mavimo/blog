@@ -82,7 +82,7 @@
     }
 
     .social-button {
-      font-size: 1.4em;
+      font-size: 1.6em;
       position: fixed;
       z-index: 1002;
       top: 0;
@@ -90,6 +90,7 @@
       a {
         display: inline-block;
         margin: 13px 5px;
+        text-decoration: none;
       }
     }
   }
@@ -102,6 +103,13 @@
 @media screen and (min-width: $mobile + 1px) and (max-width: $tablet) {
   #sidebar {
     top: 60px;
+
+    .social-button {
+      font-size: 2em;
+      a {
+        text-decoration: none;
+      }
+    }
   }
 }
 
@@ -116,23 +124,14 @@
   }
 
   .social-button {
-    font-size: 2em;
+    font-size: 3em;
     a {
       display: inline-block;
       width: 20%;
       margin: 6%;
+      text-decoration: none;
     }
   }
-
-
-  // body {
-  //   &.left-sidebar #sidebar {
-  //     left: 0;
-  //   }
-  //   &.right-sidebar #sidebar {
-  //     right: 0;
-  //   }
-  // }
 }
 
 @media screen and (max-width: $mobile) {
@@ -144,6 +143,7 @@
         display: none;
       }
       a {
+        text-decoration: none;
         margin: 10px 5px;
       }
     }
