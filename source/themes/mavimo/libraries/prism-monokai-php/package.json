@@ -1,0 +1,25 @@
+{
+  "name": "prism-monokai-php",
+  "version": "0.0.1",
+  "author": {
+    "name": "Marco Vito Moscaritolo",
+    "email": "marco@mavimo.org",
+    "url": "http://mavimo.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mavimo/prism-monokai-php.git"
+  },
+  "keywords": [
+    "prism",
+    "monokai",
+    "php"
+  ],
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-uglify": "~0.2.2",
+    "load-grunt-tasks": "~0.2.1",
+    "grunt-contrib-sass": "~0.6.0"
+  }
+}

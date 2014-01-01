@@ -1,0 +1,53 @@
+<!-- Responsive toolbar  -->
+<div id="titleBar">
+  <div class="title">
+    <a href="/">{{ site.title }}</a>
+  </div>
+</div>
+
+{% if site.title %}
+<div id="logo">
+  <a href="/">{{ site.title }}</a>
+</div>
+{% endif %}
+
+{% if site.subtitle %}
+<div class="subtitle">
+  {{ site.subtitle }}
+</div>
+{% endif %}
+
+<!-- Social share -->
+<div class="social-button">
+  <a class="fa fa-twitter-square"     href="https://twitter.com/mavimo"></a>
+  <a class="fa fa-google-plus-square" href="https://plus.google.com/+MarcoVitoMoscaritolo"></a>
+  <a class="fa fa-facebook-square"    href="https://www.facebook.com/marco.moscaritolo"></a>
+  <a class="fa fa-github-square"      href="https://github.com/mavimo"></a>
+  <a class="fa fa-bitbucket-square"   href="https://bitbucket.com/mavimo"></a>
+  <a class="fa fa-linkedin-square"    href="http://www.linkedin.com/in/mavimo"></a>
+</div>
+
+<!-- Navigation -->
+<nav id="nav" class="nav-collapse">
+  <ul class="nav">
+    <li><a href="{{ site.url }}/">Home page</a></li>
+    <li><a href="{{ site.url }}/blog.html">Archive</a></li>
+    <li><a href="{{ site.url }}/projects.html">Projects</a></li>
+    <li><a href="{{ site.url }}/about.html">About Me</a></li>
+  </ul>
+</nav>
+
+<!-- Blogroll -->
+<section class="is-text-style1">
+  <div class="inner">
+    <ul>
+      <li><a href="http://agavee.com">Agavee GmbH</a></li>
+      <li><a href="http://twitter.com/mavimo">@mavimo</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Copyright -->
+<div id="copyright">
+  <p>&copy; 2013 Marco Vito Moscaritolo</p>
+</div>

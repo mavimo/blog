@@ -1,0 +1,17 @@
+<article class="is-post is-post-excerpt" itemscope itemtype="http://schema.org/SoftwareApplication">
+  <header>
+    <h2><a href="{{ project.homepage }}" itemprop="name">{{ project.title }}</a></h2>
+  </header>
+  <div class="info">
+    <ul class="stats">
+      <li><a href="#" class="fa fa-github-square">0</a></li>
+      <li><a href="#" class="fa fa-google-plus-square">0</a></li>
+      <li><a href="#" class="fa fa-twitter-square">0</a></li>
+      <li><a href="#" class="fa fa-facebook-square">0</a></li>
+    </ul>
+  </div>
+  <a href="#" class="image image-full"><img src="" alt="" /></a>
+  <div itemprop="description">
+    {{ project.blocks.content|raw }}
+  </div>
+</article>

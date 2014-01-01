@@ -1,0 +1,288 @@
+@charset "UTF-8";
+
+* {
+  @include box-sizing('border-box');
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  color: $gray-uberlight;
+  background: $white-dark image-url('bg2.png');
+}
+
+a {
+  color: $red;
+}
+
+strong, b {
+  font-weight: 700;
+  color: $gray-dark;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 700;
+  color: $gray-dark;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.byline {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  display: block;
+  margin-top: 1em;
+  color: $gray;
+}
+
+header {
+  margin: 0 0 2em 0;
+}
+
+blockquote {
+  border-left: solid 5px #ddd;
+  padding: 1em 0 1em 2em;
+  font-style: italic;
+}
+
+em, i {
+  font-style: italic;
+}
+
+hr {
+  border: 0;
+  border-top: solid 1px #ddd;
+  padding: 1.5em 0 0 0;
+  margin: 1.75em 0 0 0;
+}
+
+sub {
+  position: relative;
+  top: 0.5em;
+  font-size: 0.8em;
+}
+
+sup {
+  position: relative;
+  top: -0.5em;
+  font-size: 0.8em;
+}
+
+table {
+  width: 100%;
+  &.style1 {
+    tbody tr:nth-child(2n+2) {
+      background: $white-light;
+    }
+    td {
+      padding: 0.5em 1em 0.5em 1em;
+    }
+    th {
+      text-align: left;
+      font-weight: 700;
+      padding: 0.75em 1em 0.75em 1em;
+    }
+    thead {
+      border-bottom: solid 1px #ddd;
+    }
+    tfoot {
+      border-top: solid 1px #ddd;
+      background: #eee;
+    }
+  }
+}
+
+br.clear {
+  clear: both;
+}
+
+p, ul, ol, dl, table {
+  margin-bottom: 1em;
+}
+
+section, article {
+  margin-bottom: 3em;
+
+  > :last-child,
+  > .inner > :last-child,
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.image {
+  display: inline-block;
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.image-full {
+  display: block;
+  width: 100%;
+  margin: 0 0 2em 0;
+}
+
+.image-left {
+  float: left;
+  margin: 0 2em 2em 0;
+}
+
+.image-centered {
+  display: block;
+  margin: 0 0 2em 0;
+  img {
+    margin: 0 auto;
+    width: auto;
+  }
+}
+
+ul.style1 {
+  list-style: disc;
+  padding-left: 1em;
+  li {
+    padding-left: 0.5em;
+  }
+}
+
+ol.style1 {
+  list-style: decimal;
+  padding-left: 1.25em;
+  li {
+    padding-left: 0.25em;
+  }
+}
+
+#wrapper {
+  position: relative;
+}
+
+#content {
+  position: relative;
+  background-color: $white;
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: image-url('bg2.png');
+    opacity: 0.5;
+  }
+}
+
+#content-inner {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: $mobile) {
+  body {
+    line-height: 1.75em;
+    font-size: 11pt;
+    letter-spacing: 0;
+  }
+
+  h2, h3, h4, h5, h6 {
+    font-size: 1.5em;
+  }
+
+  section, article {
+    clear: both;
+  }
+
+  #content {
+    margin-top: 44px;
+    padding: 1em 20px 2em 20px;
+  }
+}
+
+@media (min-width: $mobile + 1px) {
+  body {
+    line-height: 1.75em;
+    height: 100%;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
+  h3, h4, h5, h6 {
+    font-size: 1em;
+  }
+
+  #content {
+    @include box-shadow(0 0 0.25em 0em rgba(0, 0, 0, 0.25));
+  }
+
+  #content-inner {
+    max-width: $tablet + 1px;
+  }
+}
+
+@media (min-width: $mobile + 1px) and (max-width: $tablet) {
+  body {
+    min-width: $mobile + 1px;
+    font-size: 14pt;
+
+    &.left-sidebar #content {
+      margin-left: 0;
+    }
+    &.right-sidebar #content {
+      margin-right: 0;
+    }
+  }
+
+  #content {
+    margin-top: 60px;
+    padding: 0 2em;
+  }
+}
+
+@media (min-width: $tablet + 1px) and (max-width: $wide) {
+  body {
+    min-width: $tablet;
+    font-size: 11pt;
+
+    &.left-sidebar #content {
+      margin-left: 14em;
+      /* = sidebar width */
+    }
+    &.right-sidebar #content {
+      margin-right: 14em;
+      /* = sidebar width */
+    }
+  }
+
+  #content {
+    padding: 2em 3em 6em 3em;
+  }
+}
+
+@media (min-width: $wide + 1px) {
+  body {
+    min-width: $wide;
+    font-size: 12pt;
+
+    &.left-sidebar #content {
+      margin-left: 21em;
+      /* = sidebar width + 7 */
+    }
+    &.right-sidebar #content {
+      margin-right: 14em;
+      /* = sidebar width */
+      margin-left: 7em;
+    }
+  }
+
+  #content {
+    padding: 3em 5em 8em 5em;
+  }
+}

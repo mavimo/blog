@@ -1,0 +1,58 @@
+{% extends "default" %}
+
+{% block content_wrapper %}
+<article class="is-post is-post-excerpt" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <h2><a href="{{ site.url }}{{ post.url }}" itemprop="name">{{ page.title }}</a></h2>
+    <span class="byline">
+      {% include 'post_category.html' %}
+      {% include 'post_tags.html' %}
+    </span>
+  </header>
+  <div class="info">
+    <span class="date">
+      <span class="day">{{ page.date | date("d") }} </span>
+      <span class="month">{{ page.date | date("M") }}<span>{{ page.date | date("F") | slice(3) }}</span></span>
+      <span class="year">, {{ page.date | date("Y") }}</span>
+    </span>
+
+    <ul class="stats">
+      <li><a href="{{ site.url }}{{ page.url }}#disqus_thread" class="fa fa-comment">0</a></li>
+      <li><a href="https://plusone.google.com/_/+1/confirm?url={{ site.url }}{{ page.url }}&amp;title={{ page.title }}" class="fa fa-google-plus-square">0</a></li>
+      <li><a href="http://twitter.com/intent/tweet?source=mavimo&amp;text={{ page.title }}&amp;url={{ site.url }}{{ page.url }}" class="fa fa-twitter-square">0</a></li>
+      <li><a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ page.url }}&amp;t={{ page.title }}" class="fa fa-facebook-square">0</a></li>
+    </ul>
+  </div>
+  {% if page.image %}
+  <figure>
+    <span data-picture data-alt="{{ page.image.alt | striptags }}">
+      {% set img_folder %}{{ site.url }}/images/posts/{{ page.image.folder }}{% endset %}
+      <span data-src="{{ img_folder }}/small.png" data-media="(max-width: 640px)"></span>
+      <span data-src="{{ img_folder }}/mid.png"   data-media="(min-width: 641px) and (max-width: 1200px)"></span>
+      <span data-src="{{ img_folder }}/large.png" data-media="(min-width: 1201px)"></span>
+      <span data-src="{{ img_folder }}/gray.png"  data-media="monochrome"></span>
+      <span data-src="{{ img_folder }}/gray.png"  data-media="print"></span>
+      <!--[if (lt IE 9) & (!IEMobile)]>
+        <img src="{{ img_folder }}/mid.png" />
+      <![endif]-->
+
+      <!-- Fallback content for non-JS browsers. -->
+      <noscript>
+        <img src="{{ img_folder }}/mid.png" alt="{{ page.image.alt | striptags }}" />
+      </noscript>
+    </span>
+    <!-- alternate text -->
+    <figcaption>{{ page.image.alt }}</figcaption>
+  </figure>
+  {% endif %}
+  <div itemprop="articleBody">
+    {{ page.blocks.content|raw }}
+  </div>
+  <footer itemscope itemprop="author" itemtype="http://schema.org/Person">
+    <p>By <a href="https://plus.google.com/u/0/{{ site.google_author }}?rel=author" itemprop="name">Marco Vito Moscaritolo</a>.</p>
+  </footer>
+</article>
+
+{% include 'disquis.html' %}
+
+{% endblock %}

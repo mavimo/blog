@@ -1,0 +1,12 @@
+{
+  "name": "mavimo-blog",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "prism": "gh-pages",
+    "prism-monokai-php": "*",
+    "responsive-nav": "~1.0.25",
+    "picturefill": "~1.2.1",
+    "html5shiv": "~3.7.0"
+  }
+}

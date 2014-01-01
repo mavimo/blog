@@ -1,0 +1,19 @@
+{
+  "name": "prism-monokai-php",
+  "main": "dist/prism-monokai-php.min.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mavimo/prism-monokai-php",
+  "authors": [
+    "Marco Vito Moscaritolo <marco@agavee.com> (http://mavimo.org)"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendors",
+    "src"
+  ],
+  "devDependencies": {
+    "sass-prism-theme-base": "git@github.com:MoOx/sass-prism-theme-base.git"
+  }
+}

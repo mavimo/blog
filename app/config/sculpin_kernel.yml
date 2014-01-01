@@ -1,5 +1,7 @@
 sculpin:
     permalink: none
+sculpin_theme:
+    theme: mavimo
 sculpin_posts:
     permalink: :year/:month/:day/:filename
 sculpin_projects:

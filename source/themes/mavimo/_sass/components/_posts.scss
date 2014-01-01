@@ -1,0 +1,288 @@
+.is-post {
+  position: relative;
+  .info .stats {
+    margin: 0;
+    a {
+      font-size: 0.8em;
+      text-decoration: none;
+      color: $gray-dark;
+      font-weight: 700;
+    }
+  }
+  figure {
+    picture,
+    img {
+      width: 100%;
+    }
+    figcaption {
+      font-style: italic;
+      text-align: center;
+    }
+  }
+}
+
+.post-archive {
+  padding-left: 0;
+  li {
+    list-style: none;
+  }
+  .is-post {
+    &.first {
+      .info {
+        border: none;
+      }
+    }
+    .info {
+      padding: 0.5em 1em;
+      .date {
+        margin: 0;
+        padding: 0;
+        border: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: $mobile) {
+  .is-post {
+    padding-bottom: 5em;
+    margin-bottom: 6em;
+    .byline {
+      font-size: 1em;
+      font-family: 'Source Sans Pro', sans-serif;
+      line-height: 1.5em;
+    }
+    .info {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-top: solid 1px #ddd;
+      padding-top: 0.5em;
+      .date {
+        display: inline;
+        .year, .month span {
+          display: none;
+        }
+      }
+      .stats {
+        display: inline;
+        border-left: solid 1px #ddd;
+        margin-left: 0.75em;
+        padding-left: 0.75em;
+        li {
+          display: inline-block;
+          margin-right: 0.85em;
+          a {
+            display: inline-block;
+            opacity: 0.5;
+            &:before {
+              position: relative;
+              top: 0.1em;
+              margin-right: 0.5em;
+              opacity: 0.35;
+            }
+            &:active {
+              opacity: 1.0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .post-archive {
+    .is-post {
+      padding: 0;
+      .info {
+        position: relative;
+        padding: 0;
+      }
+      h2 {
+        margin: 0 0 1em 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $mobile + 1px) {
+  .is-post {
+    h2 {
+      margin-top: 0em;
+    }
+    .info .stats li {
+      a {
+        @include border-radius(0.4em);
+        opacity: 0.5;
+        -moz-transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
+        -o-transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
+        -ms-transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
+        transition: opacity .25s ease-in-out, background-color .25s ease-in-out;
+      }
+      &:hover a {
+        background-color: $white-light;
+        opacity: 1.0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $mobile + 1px) and (max-width: $wide) {
+  .is-post {
+    h2 {
+      font-size: 3.25em;
+      line-height: 1.25em;
+    }
+    header {
+      padding: 1.5em 0 0 0;
+      margin: 0 0 3em 0;
+    }
+    .byline {
+      font-size: 1.75em;
+      line-height: 1.5em;
+      position: relative;
+      top: -0.75em;
+      margin-bottom: -0.75em;
+    }
+    .info {
+      width: 100%;
+      padding: 1em 0 0 0;
+      position: relative;
+      top: -2em;
+      .date {
+        display: inline;
+      }
+      .stats {
+        display: inline;
+        border-left: solid 1px #ddd;
+        margin-left: 1.15em;
+        padding-left: 0.25em;
+        li {
+          display: inline-block;
+          margin-left: 0.25em;
+          a {
+            display: inline-block;
+            padding-right: 0.5em;
+            &:before {
+              position: relative;
+              width: 1.75em;
+              text-align: center;
+              margin-right: 0.25em;
+              opacity: 0.35;
+              top: 0.1em;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .post-archive {
+    .is-post {
+      .info {
+        padding: 0;
+        top: 0;
+      }
+      h2 {
+        margin: 0 0 0.5em 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $wide + 1px) {
+  .is-post {
+    h2 {
+      font-size: 3.25em;
+      line-height: 1.25em;
+    }
+    header {
+      margin: 0 0 3em 0;
+    }
+    .byline {
+      font-size: 2.25em;
+      line-height: 1.5em;
+      position: relative;
+      top: -0.65em;
+      margin-bottom: -0.65em;
+    }
+    .info {
+      position: absolute;
+      width: 5.5em;
+      overflow: hidden;
+      background-color: $white;
+      left: -10.5em;
+      top: 0;
+      padding: 1.5em 1em 1.5em 1em;
+      border-top-left-radius: 0.4em;
+      border-bottom-left-radius: 0.4em;
+      @include box-shadow(0.25em 0 0 0 #fbfbfb, 0 0 0.25em 0em rgba(0, 0, 0, 0.25));
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: image-url('bg2.png');
+        opacity: 0.5;
+        z-index: 0;
+      }
+      .date {
+        position: relative;
+        z-index: 1;
+        font-family: 'Open Sans Condensed', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        display: block;
+        font-size: 1.5em;
+        color: $gray;
+        border-bottom: solid 1px #ddd;
+        padding: 0 0 1em 0;
+        margin: 0 0 0.75em 0;
+        .year, .month span {
+          display: none;
+        }
+        .day {
+          display: block;
+          margin: 0.25em 0 0 0;
+          font-size: 1.5em;
+          font-weight: 700;
+          color: $gray-dark;
+        }
+      }
+      .stats {
+        position: relative;
+        z-index: 1;
+        padding-left: 0;
+        li {
+          margin: 0.35em 0 0 0;
+          list-style: none;
+          a {
+            position: relative;
+            display: block;
+            text-align: right;
+            padding: 1em 0.5em;
+            &:before {
+              position: absolute;
+              left: 0;
+              top: 50%;
+              margin-top: -0.5em;
+              font-size: 1.35em;
+              width: 1.5em;
+              text-align: center;
+              opacity: 0.35;
+            }
+          }
+        }
+      }
+    }
+  }
+  .post-archive {
+    .is-post {
+      margin: 2em 0;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{% if post.categories %}
+  <p class="categories" itemprop="keywords">
+  {% for tag in post.categories %}
+    <a href="{{ site.url }}/blog/category/{{ tag | url_encode(true) }}">{{ category }}</a>
+    {% if not loop.last %}, {% endif %}
+  {% endfor %}
+  </p>
+{% endif %}
