@@ -1,22 +1,26 @@
 #!/bin/sh
 IMG=$1
 FOLDER=$2
+
+echo "Create folder"
+mkdir -p source/images/posts/$FOLDER
+
 echo "Creating images"
 echo " - small"
-convert $IMG -resize  640 images/$FOLDER/small.png
+convert $IMG -resize  600 source/images/posts/$FOLDER/small.png
 echo " - medium"
-convert $IMG -resize 1000 images/$FOLDER/mid.png
+convert $IMG -resize 1000 source/images/posts/$FOLDER/mid.png
 echo " - large"
-convert $IMG -resize 1900 images/$FOLDER/large.png
+convert $IMG -resize 1200 source/images/posts/$FOLDER/large.png
 echo " - grays"
-convert $IMG -grayscale Rec709Luminance images/$FOLDER/gray.png
+convert $IMG -grayscale Rec709Luminance source/images/posts/$FOLDER/gray.png
 
 echo "Optimize images"
 echo " - small"
-optipng images/$FOLDER/small.png
+optipng source/images/posts/$FOLDER/small.png
 echo " - medium"
-optipng images/$FOLDER/mid.png
+optipng source/images/posts/$FOLDER/mid.png
 echo " - large"
-optipng images/$FOLDER/large.png
+optipng source/images/posts/$FOLDER/large.png
 echo " - grays"
-optipng images/$FOLDER/gray.png
+optipng source/images/posts/$FOLDER/gray.png
