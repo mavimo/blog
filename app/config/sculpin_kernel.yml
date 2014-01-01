@@ -1,6 +1,6 @@
 sculpin:
     permalink: none
 sculpin_posts:
-    permalink: :year/:month/:day/:filename
+    permalink: :year/:month/:day/:filename.html
 sculpin_projects:
     permalink: projects/:filename
