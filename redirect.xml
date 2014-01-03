@@ -63,4 +63,36 @@
       <ReplaceKeyPrefixWith>2011/06/13/omega-3-aggiungiamo-griglie.html</ReplaceKeyPrefixWith>
     </Redirect>
   </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>node/112</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyPrefixWith>2011/01/04/redmine-ubuntu-drupal.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>linux/redmine_ubuntu_drupal</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyPrefixWith>2011/01/04/redmine-ubuntu-drupal.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>node/111</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyPrefixWith>2011/01/03/redmine-gitosis-ubuntu-installazione.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
+  <RoutingRule>
+    <Condition>
+      <KeyPrefixEquals>linux/redmine_gitosis_ubuntu_1010_guida_allinstallazione</KeyPrefixEquals>
+    </Condition>
+    <Redirect>
+      <ReplaceKeyPrefixWith>2011/01/03/redmine-gitosis-ubuntu-installazione.html</ReplaceKeyPrefixWith>
+    </Redirect>
+  </RoutingRule>
 </RoutingRules>
