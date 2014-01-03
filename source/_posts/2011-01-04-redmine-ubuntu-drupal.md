@@ -5,7 +5,7 @@ tags: [git, gitosis, redmine, ubuntu]
 ---
 Nell'[articolo precedente](http://mavimo.org/linux/redmine_gitosis_ubuntu_1010_guida_allinstallazione) abbiamo visto come procedere all'installazione di [redmine](http://www.redmine.org) su apache, abbiamo visto come integrare [git](http://git-scm.com/) e [gitosis](http://eagain.net/gitweb/?p=gitosis.git) per la gestione delle credenziali degli utenti.. ma alla fine avevamo specificato che c'era ancora qualche problema da risolver. Di seguito vediamo come correggere alcune delle problematiche indicate.
 <!--break-->
-## Aggiornare redmine
+### Aggiornare redmine
 
 Innanzitutto la versione presente nei repository di ubuntu 10.10 è la versione 1.0.0, purtroppo questa ha qualche bug (di troppo) sopratutto nella gestione dei repository di git, pertanto dobbiamo procedere con l'aggiornamento alla versione 1.0.5 (l'ultima rilasciata) per poter correggere questi problemi.
 Per fare questo utilizzeremo il pacchetto gentilmente messo a disposizione da _Michael Kuhn_, per fare questo inseriamo il sorgente del repository sl server:
@@ -46,7 +46,7 @@ A questo punto andando nell'interfaccia di amministrazione dovremmo verificare c
 
 come sempre inserite il nome del server corretto.
 
-## Browsing del repository
+### Browsing del repository
 
 Purtroppo i nostri repository non sono ancora visitabili utilizzando l'interfaccia di redmine, vediamo quindi di risolvere questo problema! Il tutto è dovuto al fatto che il repository è dell'utente _git_, mentre redmiine gira con l'utente _www-data_. Per fare questo facciamo in modo che il comando git venga eseguito dall'utente git.
 Per fare questo iniziamo a dare i permessi all'utente www-data di sudare con l'utente git senza password (solo per lanciare il comando git):
@@ -89,7 +89,7 @@ con:
 
 a questo punto andando all'interno della pagina di visualizzazione dei repository potremmo vedere i sorgenti del nostro codice dall'interfaccia web.
 
-## E la syntax highlight per Drupal?
+### E la syntax highlight per Drupal?
 
 Effettivamente andando ad utilizzare Drupal, l'evidenziazione della sintassi per i file module, install e inc non è quella che dovrebbe essere, vengono interpretati come file plain text, anziché come file PHP. Per correggere è sufficiente andare a modificare il file:
 
