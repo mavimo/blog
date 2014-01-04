@@ -1,5 +1,6 @@
 <article class="is-post is-post-excerpt" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
+    <h2><a href="{{ site.url }}{{ post.url }}" itemprop="name">{{ post.title }}</a></h2>
     <p class="byline-excerpt">
       {% if post.meta.categories %}
         {% for category in post.meta.categories %}
@@ -13,7 +14,6 @@
         {% endfor %}
       {% endif %}
     </p>
-    <h2><a href="{{ site.url }}{{ post.url }}" itemprop="name">{{ post.title }}</a></h2>
   </header>
   <div class="info">
     <span class="date">
