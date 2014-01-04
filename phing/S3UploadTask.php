@@ -93,6 +93,8 @@ class S3UploadTask extends \S3PutTask
         $object->httpHeaders = $this->getHttpHeaders();
         $object->save();
 
+        $this->log($object->key);
+
         if (!$this->isObjectAvailable($object->key)) {
             throw new BuildException('Upload failed');
         }
