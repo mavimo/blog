@@ -20,7 +20,9 @@
         }
     ],
     "require": {
-        "mavimo/sculpin-projects-bundle": "@dev"
+        "mavimo/sculpin-projects-bundle": "@dev",
+        "mavimo/sculpin-editor-bundle":   "@dev",
+        "mavimo/sculpin-redirect-bundle": "@dev"
     },
     "config": {
         "component-dir": "source/components"

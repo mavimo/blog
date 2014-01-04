@@ -3,8 +3,54 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "ce1bf0ce5a57a75d446dd42309008ebb",
+    "hash": "c51285d949653c5eeb07357e1300d387",
     "packages": [
+        {
+            "name": "mavimo/sculpin-editor-bundle",
+            "version": "dev-master",
+            "target-dir": "Mavimo/Sculpin/Bundle/EditorBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mavimo/sculpin-editor-bundle.git",
+                "reference": "b740383232a236156426ca721b229ec47408c7c7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mavimo/sculpin-editor-bundle/zipball/b740383232a236156426ca721b229ec47408c7c7",
+                "reference": "b740383232a236156426ca721b229ec47408c7c7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mavimo\\Sculpin\\Bundle\\EditorBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Vito Moscaritolo",
+                    "email": "marco@mavimo.org",
+                    "homepage": "http://www.mavimo.org"
+                }
+            ],
+            "description": "Sculpin Editor Bundle",
+            "homepage": "https://sculpin.io",
+            "keywords": [
+                "blog",
+                "blogging",
+                "projects",
+                "site",
+                "static"
+            ],
+            "time": "2014-01-04 16:34:28"
+        },
         {
             "name": "mavimo/sculpin-projects-bundle",
             "version": "dev-master",
@@ -12,12 +58,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mavimo/sculpin-projects-bundle.git",
-                "reference": "fdd9391d8ff32575e4a5349c3663eb06989f8fed"
+                "reference": "18b53f6aa9952908f376918f1f77ee0c5cd72658"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mavimo/sculpin-projects-bundle/zipball/fdd9391d8ff32575e4a5349c3663eb06989f8fed",
-                "reference": "fdd9391d8ff32575e4a5349c3663eb06989f8fed",
+                "url": "https://api.github.com/repos/mavimo/sculpin-projects-bundle/zipball/18b53f6aa9952908f376918f1f77ee0c5cd72658",
+                "reference": "18b53f6aa9952908f376918f1f77ee0c5cd72658",
                 "shasum": ""
             },
             "require": {
@@ -49,7 +95,53 @@
                 "site",
                 "static"
             ],
-            "time": "2013-12-27 19:33:30"
+            "time": "2014-01-02 17:58:05"
+        },
+        {
+            "name": "mavimo/sculpin-redirect-bundle",
+            "version": "dev-master",
+            "target-dir": "Mavimo/Sculpin/Bundle/RedirectBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mavimo/sculpin-redirect-bundle.git",
+                "reference": "5c42c401942008de04aa1e1d64161ca105568e2a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mavimo/sculpin-redirect-bundle/zipball/5c42c401942008de04aa1e1d64161ca105568e2a",
+                "reference": "5c42c401942008de04aa1e1d64161ca105568e2a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mavimo\\Sculpin\\Bundle\\RedirectBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Vito Moscaritolo",
+                    "email": "marco@mavimo.org",
+                    "homepage": "http://www.mavimo.org"
+                }
+            ],
+            "description": "Sculpin Redirect Bundle",
+            "homepage": "https://sculpin.io",
+            "keywords": [
+                "blog",
+                "blogging",
+                "redirect",
+                "site",
+                "static"
+            ],
+            "time": "2014-01-04 14:40:02"
         }
     ],
     "packages-dev": [
@@ -60,7 +152,9 @@
     ],
     "minimum-stability": "stable",
     "stability-flags": {
-        "mavimo/sculpin-projects-bundle": 20
+        "mavimo/sculpin-projects-bundle": 20,
+        "mavimo/sculpin-editor-bundle": 20,
+        "mavimo/sculpin-redirect-bundle": 20
     },
     "platform": [
 
