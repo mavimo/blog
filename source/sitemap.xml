@@ -11,13 +11,13 @@ permalink: sitemap.xml
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/projects</loc>
+    <loc>{{ site.url }}/projects.html</loc>
     <lastmod>{{ site.calculated_date | date('Y-m-d') }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>{{ site.url }}/about</loc>
+    <loc>{{ site.url }}/about.html</loc>
     <lastmod>{{ site.calculated_date | date('Y-m-d') }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
