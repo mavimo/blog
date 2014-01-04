@@ -4,10 +4,19 @@
 <article class="is-post is-post-excerpt" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
     <h2><a href="{{ site.url }}{{ post.url }}" itemprop="name">{{ page.title }}</a></h2>
-    <span class="byline">
-      {% include 'post_category.html' %}
-      {% include 'post_tags.html' %}
-    </span>
+    <p class="byline">
+      {% if page.categories %}
+        {% for category in page.categories %}
+          <a href="{{ site.url }}/blog/category/{{ tag | url_encode(true) }}" class="categories" itemprop="keywords">{{ category }}</a>
+        {% endfor %}
+        {% if page.tags %}, {% endif %}
+      {% endif %}
+      {% if page.tags %}
+        {% for tag in page.tags %}
+          <a href="{{ site.url }}/blog/tags/{{ tag | url_encode(true) }}" class="tags" itemprop="keywords">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+        {% endfor %}
+      {% endif %}
+    </p>
   </header>
   <div class="info">
     <span class="date">

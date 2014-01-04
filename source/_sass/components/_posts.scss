@@ -19,6 +19,19 @@
       text-align: center;
     }
   }
+  .byline,
+  .byline-excerpt {
+    text-align: right;
+    a {
+      font-weight: 600;
+      text-decoration: none;
+      font-style: italic;
+    }
+  }
+  .byline-excerpt {
+    a {
+    }
+  }
 }
 
 .post-archive {
