@@ -4,13 +4,13 @@
     <p class="byline-excerpt">
       {% if post.meta.categories %}
         {% for category in post.meta.categories %}
-          <a href="{{ site.url }}/blog/category/{{ tag | url_encode(true) }}" class="categories" itemprop="keywords">{{ category }}</a>
+          <a href="{{ site.url }}/blog/categories/{{ category | url_encode(true) }}/index.html" class="categories" itemprop="keywords">{{ category }}</a>
         {% endfor %}
         {% if post.meta.tags %}, {% endif %}
       {% endif %}
       {% if post.meta.tags %}
         {% for tag in post.meta.tags %}
-          <a href="{{ site.url }}/blog/tags/{{ tag | url_encode(true) }}" class="tags" itemprop="keywords">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+          <a href="{{ site.url }}/blog/tags/{{ tag | url_encode(true) }}/index.html" class="tags" itemprop="keywords">{{ tag }}</a>{% if not loop.last %}, {% endif %}
         {% endfor %}
       {% endif %}
     </p>

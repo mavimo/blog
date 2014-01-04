@@ -7,13 +7,13 @@
     <p class="byline">
       {% if page.categories %}
         {% for category in page.categories %}
-          <a href="{{ site.url }}/blog/category/{{ tag | url_encode(true) }}" class="categories" itemprop="keywords">{{ category }}</a>
+          <a href="{{ site.url }}/blog/categories/{{ category | url_encode(true) }}/index.html" class="categories" itemprop="keywords">{{ category }}</a>
         {% endfor %}
         {% if page.tags %}, {% endif %}
       {% endif %}
       {% if page.tags %}
         {% for tag in page.tags %}
-          <a href="{{ site.url }}/blog/tags/{{ tag | url_encode(true) }}" class="tags" itemprop="keywords">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+          <a href="{{ site.url }}/blog/tags/{{ tag | url_encode(true) }}/index.html" class="tags" itemprop="keywords">{{ tag }}</a>{% if not loop.last %}, {% endif %}
         {% endfor %}
       {% endif %}
     </p>
