@@ -16,7 +16,7 @@
     <exec command="grunt" dir="." />
 
     <echo>Build website</echo>
-    <exec command="../../utils/sculpin/bin/sculpin generate" dir="." />
+    <exec command="../../utils/sculpin/bin/sculpin generate --env ${sculpin.env}" dir="." />
 
     <echo>GZip CSS and JS</echo>
     <exec command="gzip -9 ${sculpin.source}/js/mavimo-blog.min.js" dir="." />

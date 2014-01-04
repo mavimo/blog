@@ -1,4 +1,5 @@
 sculpin.source=output_prod
+sculpin.env=prod
 
 amazon.bucket=
 amazon.key=
