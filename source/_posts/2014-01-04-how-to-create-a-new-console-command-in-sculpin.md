@@ -1,6 +1,5 @@
 ---
 title: How to create a new console command in sculpin
-draft: true
 categories: [development]
 tags: [sculpin, bundle, php]
 image:
