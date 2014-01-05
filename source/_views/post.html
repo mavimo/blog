@@ -25,7 +25,7 @@
 {% block content_wrapper %}
 <article class="is-post is-post-excerpt" itemscope itemtype="http://schema.org/BlogPosting">
   <header>
-    <h2><a href="{{ site.url }}{{ post.url }}" itemprop="name">{{ page.title }}</a></h2>
+    <h2><a href="{{ site.url }}{{ page.url }}" itemprop="name">{{ page.title }}</a></h2>
     <p class="byline">
       {% if page.categories %}
         {% for category in page.categories %}
