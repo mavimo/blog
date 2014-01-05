@@ -22,6 +22,7 @@ class S3UploadTask extends \S3PutTask
       'jpg' => 'image/jpeg',
       'jpeg'  => 'image/jpeg',
       'txt' => 'text/plain',
+      'ico' => 'image/x-icon',
       'xml' => 'application/xml'
     );
 
