@@ -117,4 +117,18 @@ class S3UploadTask extends \S3PutTask
             throw new BuildException('Upload failed');
         }
     }
+
+    public function getContentType()
+    {
+        if ($this->_contentType === 'auto') {
+            $ext = strtolower(substr(strrchr($this->getSource(), '.'), 1));
+            if (isset($this->_extensionContentTypeMapper[$ext])) {
+                return $this->_extensionContentTypeMapper[$ext];
+            } else {
+                return 'text/html';
+            }
+        } else {
+            return $this->_contentType;
+        }
+    }
 }
