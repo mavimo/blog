@@ -10,6 +10,13 @@ use:
 {% block meta_description %}Blog with Marco Vito Moscaritolo's rant. Information related to development, with particolar focus on PHP and Drupal.{% endblock %}
 {% block meta_keywords %}mavimo, blog, development, php, drupal{% endblock %}
 
+{% block meta_og %}
+<meta property="og:title" content="{{ site.name }}" />
+<meta property="og:description" content="{{ site.subtitle|striptags }}" />
+<meta property="og:url" content="{{ site.url }}" />
+<meta property="og:type" content="website" />
+{% endblock %}
+
 {% block content_wrapper %}
 {% for post in page.pagination.items %}
   {% include 'post_excerpt.html' %}
