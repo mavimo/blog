@@ -1,4 +1,4 @@
-s---
+---
 title: jQuery e validazione lato client
 categories: [drupal]
 tags: [javascript, jquery, validazione client]
