@@ -8,6 +8,24 @@ require_once "phing/tasks/ext/Service/Amazon/S3/S3PutTask.php";
 class S3UploadTask extends \S3PutTask
 {
     /**
+     * Extension content type mapper
+     *
+     * @var array
+     * @access protected
+     */
+    protected $_extensionContentTypeMapper = array(
+      'js'  => 'application/x-javascript',
+      'css' => 'text/css',
+      'html'  => 'text/html',
+      'gif' => 'image/gif',
+      'png' => 'image/png',
+      'jpg' => 'image/jpeg',
+      'jpeg'  => 'image/jpeg',
+      'txt' => 'text/plain',
+      'xml' => 'application/xml'
+    );
+
+    /**
      * Object maxage (in seconds).
      *
      * @var int
