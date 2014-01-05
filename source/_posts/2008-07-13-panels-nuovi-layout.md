@@ -1,7 +1,11 @@
 ---
 title: Panels, nuovi layout
-categories: [Drupal]
+categories: [drupal]
 tags: [css, estensione, layout, panels, template, theme]
+redirect: [drupal/panels_nuovi_layout, node/55]
+meta:
+    description: Se vi fosse mai capitato di lavorare con Panels (o Panels2) quasi sicuramente vi sarà capitato di dover creare un pagina con una struttura completamente diversa da quelle presenti tra le disponibili di default del modulo, come possiamo ovviare a questo problema?
+    tags: [drupal, css, estensione, layout, panels, template, theme]
 ---
 Se vi fosse mai capitato di lavorare con Panels (o Panels2) quasi sicuramente vi sarà capitato di dover creare un pagina con una struttura completamente diversa da quelle presenti tra le disponibili di default del modulo, come possiamo ovviare a questo problema?
 
@@ -127,7 +131,7 @@ Il CSS che verrà caricato e che genererà la struttura della nostra pagina:
 <?php
 'css' => 'layouts/mylayout_stacked.css',
 ?>
-Infine le diverse regioni da cui è composto il nostro layout: 
+Infine le diverse regioni da cui è composto il nostro layout:
 <?php
 'panels' => array( ... );
 ?>

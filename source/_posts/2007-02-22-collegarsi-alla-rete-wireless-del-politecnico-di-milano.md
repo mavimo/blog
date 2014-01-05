@@ -1,7 +1,11 @@
 ---
 title: Collegarsi alla rete wireless del Politecnico di Milano
-categories: [Linux]
-tags: [Politecnico di Milano, wireless]
+categories: [linux]
+tags: [politecnico di milano, wireless]
+redirect: [linux/wireless_polimi_networkmanager, node/31]
+meta:
+    description: Vorrei iniziare questa miniguida ringraziando Slackwarelife  (non cito il nome e cognome per regole sulla privacy :D ) che ha contribuito dandomi alcune indicazioni per la configurazione di <em>network-manager</em>, un interfaccia grafica per la gestione delle reti wireless, per la connessione alla rete internet dal <a href="http://www.polimi.it">Politecnico di Milano</a>.
+    tags: [linux, politecnico di milano, wireless]
 ---
 Vorrei iniziare questa miniguida ringraziando Slackwarelife  (non cito il nome e cognome per regole sulla privacy :D ) che ha contribuito dandomi alcune indicazioni per la configurazione di _network-manager_, un interfaccia grafica per la gestione delle reti wireless, per la connessione alla rete internet dal <a href="http://www.polimi.it">Politecnico di Milano</a>.
 <!--break-->

@@ -1,7 +1,11 @@
 ---
 title: Registrare da TV per Zen Vision:M
-categories: [Linux]
-tags: [mencoder, mplayer, MTP, saa7134, Zen Vision:M]
+categories: [linux]
+tags: [mencoder, mplayer, mtp, saa7134, zen vision:m]
+redirect: [linux/registrare_tv_mplayer, node/5]
+meta:
+    description: Ultimamente, avendo una scheda di acquisizione video sul PC (Empire Enjoy TV), volevo registrare alcuni programmi da trasferire sul <a href="/zen_vision_m">Zen Vision:M</a> e da vedere in un secondo momento. Purtroppo il software fornito in dotazione alla scheda (ovviamente solo per Windows) fa abbastanza schifo e sul mio PC (AMD 1700+ con 760MB di ram) registra un gran male, quindi ho provato a registrare utilizzando <strong>mencoder</strong> su linux.
+    tags: [linux, mencoder, mplayer, mtp, saa7134, zen vision:m]
 ---
 Ultimamente, avendo una scheda di acquisizione video sul PC (Empire Enjoy TV), volevo registrare alcuni programmi da trasferire sul <a href="/zen_vision_m">Zen Vision:M</a> e da vedere in un secondo momento. Purtroppo il software fornito in dotazione alla scheda (ovviamente solo per Windows) fa abbastanza schifo e sul mio PC (AMD 1700+ con 760MB di ram) registra un gran male, quindi ho provato a registrare utilizzando **mencoder** su linux.<!--break-->
 La prima operazione da fare sar&agrave; qualla di configurare <a href="http://mplayerhq.hu/">mplayer</a> per vedere le trasmissioni televisive sul monitor del PC.

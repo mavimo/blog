@@ -1,7 +1,11 @@
 ---
 title: Migliorare le performance di Drupal
-categories: [Drupal]
-tags: [caricamento, dns, Javascript, minifier, performance, yahoo, YSlow]
+categories: [drupal]
+tags: [caricamento, dns, javascript, minifier, performance, yahoo, yslow]
+redirect: [drupal/migliorare_performance_drupal, node/66]
+meta:
+    description: A chi capita di relaizzare siti, dopo la fase iniziale di produzione e prima configurazione non può tralasciare al seconda fase, ma non meno importante, di messa a punto del sistema. Per fare questo uno strumento che non può mancare è <a href="http://getfirebug.com/">FireBug</a> con l'accoppiata di <a href="http://developer.yahoo.com/yslow/">YSlow</a>.
+    tags: [drupal, caricamento, dns, javascript, minifier, performance, yahoo, yslow]
 ---
 A chi capita di relaizzare siti, dopo la fase iniziale di produzione e prima configurazione non può tralasciare al seconda fase, ma non meno importante, di messa a punto del sistema. Per fare questo uno strumento che non può mancare è <a href="http://getfirebug.com/">FireBug</a> con l'accoppiata di <a href="http://developer.yahoo.com/yslow/">YSlow</a>.
 
@@ -60,7 +64,7 @@ Facendo solo questo semplice passaggio e ricaricando al nostra pagina se analizz
 </dl>
 aumentando il punteggio ottenuto.
 
-Un ulteriore vantaggio si può ottenere andando ad abilitare gli ETags, per fare questo dovete andare a controllare le configurazioni del vostro server, ma potrebbe essere sufficiente andare a inserire nel vostro _.htaccess_ 
+Un ulteriore vantaggio si può ottenere andando ad abilitare gli ETags, per fare questo dovete andare a controllare le configurazioni del vostro server, ma potrebbe essere sufficiente andare a inserire nel vostro _.htaccess_
 ~~~language-php
 # Requires mod_expires to be enabled.
 <IfModule mod_expires.c>

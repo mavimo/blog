@@ -1,7 +1,11 @@
 ---
 title: Rendere valida una pagina con Views e Fivestar
-categories: [Drupal]
-tags: [fivestar, theme, views, XHTML]
+categories: [drupal]
+tags: [fivestar, theme, views, xhtml]
+redirect: [drupal/rendere_valida_una_pagina_views_fivestar, node/69]
+meta:
+    description: Quando si crea un sito spesso si cerca di renderlo valito secondo lo standard XHTML, se non altro perché questo migliora la visibilità dello stesso e aumenta il suo punteggio alla vista dei motori di ricerca. Per fare questo, il nostro sistema di pubbilcazione contenuti preferito non ha problemi, tuttavia ci sono alcune situazioni in cui può essere necessario andare a fare qualche piccola modifica per ottenere il risultato sperato.
+    tags: [drupal, fivestar, theme, views, xhtml]
 ---
 Quando si crea un sito spesso si cerca di renderlo valito secondo lo standard XHTML, se non altro perché questo migliora la visibilità dello stesso e aumenta il suo punteggio alla vista dei motori di ricerca. Per fare questo, il nostro sistema di pubbilcazione contenuti preferito non ha problemi, tuttavia ci sono alcune situazioni in cui può essere necessario andare a fare qualche piccola modifica per ottenere il risultato sperato.
 

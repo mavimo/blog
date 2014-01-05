@@ -1,9 +1,13 @@
 ---
 title: drupal-snippet (update)
-categories: [Drupal]
+categories: [drupal]
 tags: [gedit, linux, snippet]
+redirect: [drupal/drupal_snippet_update, node/74]
+meta:
+    description: Questo è un aggiornamento del lavoro che sto portando avanti per gli <em>snippet</em> da caricare in <a href="http://projects.gnome.org/gedit/">gedit</a> per facilitare il alvoro su <a href="http://drupal.org">drupal</a>. Se il <a href="/drupal/coding_drupal_gedit_ancora_snippet">precedente articolo</a> vi interessava sono stati inseriti diversi miglioramenti (più che altro correzioni e ottimizzazioni date dall'uso sull'ordine dei placeholder).
+    tags: [drupal, gedit, linux, snippet]
 ---
-Questo è un aggiornamento del lavoro che sto portando avanti per gli _snippet_ da caricare in <a href="http://projects.gnome.org/gedit/">gedit</a> per facilitare il alvoro su <a href="http://drupal.org">drupal</a>. Se il <a href="/drupal/coding_drupal_gedit_ancora_snippet">precedente articolo</a> vi interessava sono stati inseriti diversi miglioramenti (più che altro correzioni e ottimizzazioni date dall'uso sull'ordine dei placeholder). 
+Questo è un aggiornamento del lavoro che sto portando avanti per gli _snippet_ da caricare in <a href="http://projects.gnome.org/gedit/">gedit</a> per facilitare il alvoro su <a href="http://drupal.org">drupal</a>. Se il <a href="/drupal/coding_drupal_gedit_ancora_snippet">precedente articolo</a> vi interessava sono stati inseriti diversi miglioramenti (più che altro correzioni e ottimizzazioni date dall'uso sull'ordine dei placeholder).
 Se non sapete ben di cosa stiamo parlando vediamolo nel dettaglio.
 <!--break-->
 In gedti è possibile creare degli snippet (dei pezzi di codice) che vengono inseriti nel momento in cui si preme tab, in questo modo  possibile andare ad inserire porzioni di codice senza doverli inserire a mano ogni volta. Per esempio se scriviamo _module_:

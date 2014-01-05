@@ -1,7 +1,11 @@
 ---
 title: Autocomplete in cascata
-categories: [Drupal]
-tags: [autocomplete, Javascript, jquery, usabilità]
+categories: [drupal]
+tags: [autocomplete, javascript, jquery, usabilità]
+redirect: [drupal/autocomplete_cascata, node/79]
+meta:
+    description: Vediamo ora come creare dei campi autocompletanti che hanno dipendenze tra di loro.
+    tags: [drupal, autocomplete, javascript, jquery, usabilità]
 ---
 Come spesso capita si utilizzano select per andare a far effettuare delle scelte agli utenti, e come abbiamo visto <a href="/tutorial/testahah">precentemente</a> è possibile usare le funzionalità ajax per fare in modo che delle select secondarie varino in funzione della prima scelta.
 

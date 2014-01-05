@@ -1,7 +1,11 @@
 ---
 title: Integrare un modulo con views
-categories: [Drupal]
+categories: [drupal]
 tags: [integrazione, moduli, sviluppo, views]
+redirect: [drupal/integrare_un_modulo_views, node/78]
+meta:
+    description: Vediamo ora come andare ad integrare delle tabelle del nostro modulo in modo che siano collegate a views.
+    tags: [drupal, integrazione, moduli, sviluppo, views]
 ---
 <ol>
   * Alzi la mano chi non ha mai usato views.
@@ -25,7 +29,7 @@ function viewsintegration_form_alter(&$form, $form_state, $form_id) {
   elseif (isset($form['type']) && isset($form['#node'])) {
     if ($form['type']['#value'] .'_node_form' == $form_id) {
       $node = $form['#node'];
-      
+
       $form['datainfo'] = array(
         '#type'          => 'fieldset',
         '#title'         => t('Informazioni varie'),
@@ -34,7 +38,7 @@ function viewsintegration_form_alter(&$form, $form_state, $form_id) {
         '#collapsible'   => true,
         '#collapsed'     => false,
       );
-      
+
       $form['datainfo']['aviable'] = array(
         '#type'          => 'checkbox',
         '#title'         => t('Disponibile'),
@@ -42,7 +46,7 @@ function viewsintegration_form_alter(&$form, $form_state, $form_id) {
         '#required'      => TRUE,
         '#default_value' => $node->aviable,
       );
-      
+
       $form['datainfo']['code'] = array(
         '#type'          => 'textfield',
         '#title'         => t('Codice del prodotto'),
@@ -69,26 +73,26 @@ function viewsintegration_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
       break;
     case 'insert':
       $obj = new stdClass();
-      
+
       $obj->aviable = $node->aviable;
       $obj->code    = $node->code;
       $obj->nid     = $node->nid;
-      
+
       drupal_write_record('viewsintegration', $obj);
       break;
     case 'load':
       $data = db_fetch_object(db_query("SELECT * FROM {viewsintegration} WHERE nid = %d", $node->nid));
-      
+
       $node->aviable = $data->aviable;
       $node->code    = $data->code;
       break;
     case 'update':
       $obj = new stdClass();
-      
+
       $obj->aviable = $node->aviable;
       $obj->code    = $node->code;
       $obj->nid     = $node->nid;
-      
+
       drupal_write_record('viewsintegration', $obj, array('nid'));
       if(! db_affected_rows()) {
         drupal_write_record('viewsintegration', $obj);
@@ -96,18 +100,18 @@ function viewsintegration_nodeapi(&$node, $op, $a3 = NULL, $a4 = NULL) {
       break;
     case 'view':
         $node = node_prepare($node, $teaser);
-        
+
         $header = array(t('Disponibile'), t('Codice'));
         $rows[] = array(
           $node->aviable ? t('Sì') : t('No'),
           $node->code
         );
-        
+
         $node->content['viewsintegration'] = array(
           '#value'  => theme('table', $header, $rows),
           '#weight' => -2,
         );
-        
+
         return $node;
       break;
   }
@@ -157,7 +161,7 @@ function viewsintegration_views_data() {
     'help'   => t("Tabella di esempio per l'integrazione con views"),
     'weight' => -10,
   );
-  
+
   // ======================================================================
   // Table join
   $data['node']['table']['join'] = array(
@@ -166,13 +170,13 @@ function viewsintegration_views_data() {
       'field'      => 'nid',
     ),
   );
-  
+
   // ======================================================================
   // Fields  of table
   $data['viewsintegration']['aviable'] = array(
     'title'  => t('Disponibilità'),
-    'help'   => t('Disponibilità del prodotto'), 
-    
+    'help'   => t('Disponibilità del prodotto'),
+
     'field'  => array(
       'handler'        => 'views_handler_field_boolean',
       'click sortable' => TRUE,
@@ -182,12 +186,12 @@ function viewsintegration_views_data() {
       'handler'        => 'views_handler_filter_boolean_operator',
     ),
   );
-  
+
   // Fields  of table
   $data['viewsintegration']['code'] = array(
     'title'  => t('codice'),
-    'help'   => t('codice del prodotto'), 
-    
+    'help'   => t('codice del prodotto'),
+
     'field'  => array(
       'handler'        => 'views_handler_field',
       'click sortable' => TRUE,
@@ -197,7 +201,7 @@ function viewsintegration_views_data() {
       'handler'        => 'views_handler_filter_string',
     ),
   );
-  
+
   return $data;
 }
 ?>

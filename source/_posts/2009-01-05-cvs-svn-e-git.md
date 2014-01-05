@@ -1,7 +1,11 @@
 ---
 title: CVS, SVN e GIT!
-categories: [Varie]
+categories: [varie]
 tags: [commit, cvs, git, repository, svn, versioni]
+redirect: [varie/cvs_svn_git, node/64]
+meta:
+    description: Spesso capita di dover sviluppare codice, a volte anche in colaborazione con altri, in ogni caso avere un reposotory in cui memorizzare i file risulta un ottima soluzione. Il perchè risulti comodo averlo potete immaginarlo, in ogni caso vediamo i motivi per cui ritengo che un repository in cui memorizzare i file risulti comodo, se non fondamentale.
+    tags: [varie, commit, cvs, git, repository, svn, versioni]
 ---
 Spesso capita di dover sviluppare codice, a volte anche in colaborazione con altri, in ogni caso avere un reposotory in cui memorizzare i file risulta un ottima soluzione. Il perchè risulti comodo averlo potete immaginarlo, in ogni caso vediamo i motivi per cui ritengo che un repository in cui memorizzare i file risulti comodo, se non fondamentale.
 
@@ -65,7 +69,7 @@ sudo apt-get install git-core
 
 per gli utenti di altri sistemi operativi consiglio una lettura della pagina per l'<a href="http://git.or.cz/gitwiki/GitDocumentation">installazione di git</a>.
 
-Come prima cosa dobbiamo creare un nostro account su <a href="http://github.com/">github</a>, fatto questo avremo la possibilità di realizzare tutti i repository che vogliamo e di riempirli con il codice dei nostri progetti, purchè siano rilasciati sotto licenza GPL o simile (leggetevi bene i ToS - term of service). 
+Come prima cosa dobbiamo creare un nostro account su <a href="http://github.com/">github</a>, fatto questo avremo la possibilità di realizzare tutti i repository che vogliamo e di riempirli con il codice dei nostri progetti, purchè siano rilasciati sotto licenza GPL o simile (leggetevi bene i ToS - term of service).
 
 L'utentente viene autenticato autenticato tramite chiavi pubbliche/private, in modo da farvi riconoscere dal server, per fare questo dobbiamo innanzitutto controllare se esiste la chiave privata sul nostro PC, altrimenti dovremo crearla. Mi limiterò a spiegare come funziona su sistemi linux, su sitemi MacOSX o Windows vi consiglio di seguire le <a href="http://github.com/guides/providing-your-ssh-key">indicazioni del sito ufficiale</a>.
 

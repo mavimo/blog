@@ -1,7 +1,11 @@
 ---
 title: Validatore automatico di test
-categories: [Varie]
-tags: [tdd, validatore, w3c, XHTML]
+categories: [varie]
+tags: [tdd, validatore, w3c, xhtml]
+redirect: [varie/validatore_automatico_test, node/97]
+meta:
+    description: Come parlavamo negli articoli precedenti, ogni progetto ben organizzato deve fare uso di strumenti di analisi del codice per prevenire l'inserimento di bug, creazione di errori nell'interfaccia o più genricamente dei "problemi" all'utente finale. Abbiamo anche visto l'importanza di realizzare pagine valide, di conseguenza vediamo come automatizzare il test di validazione delle pagine del nostro sito per prevenire errori di questo tipo.
+    tags: [varie, tdd, validatore, w3c, xhtml]
 ---
 Come parlavamo negli articoli precedenti, ogni progetto ben organizzato deve fare uso di strumenti di analisi del codice per prevenire l'inserimento di bug, creazione di errori nell'interfaccia o più genricamente dei "problemi" all'utente finale. Abbiamo anche visto l'importanza di realizzare pagine valide, di conseguenza vediamo come automatizzare il test di validazione delle pagine del nostro sito per prevenire errori di questo tipo.
 <!--break-->

@@ -1,7 +1,11 @@
 ---
 title: Ordinamento di array
-categories: [Varie]
-tags: [array, oop, ordinamento, PHP]
+categories: [varie]
+tags: [array, oop, ordinamento, php]
+redirect: [varie/ordinamento_array, node/95]
+meta:
+    description: Se vi capita di scrivere un array di oggetti (o di array) e di doverlo poi ordinare secondo criteri definiti, quale sono gli strumenti che php ci mette a disposizione? Vediamo ora come creare dei propri criteri di ordinamento e come ordinare questi array.
+    tags: [varie, array, oop, ordinamento, php]
 ---
 Se vi capita di scrivere un array di oggetti (o di array) e di doverlo poi ordinare secondo criteri definiti, quale sono gli strumenti che php ci mette a disposizione? Vediamo ora come creare dei propri criteri di ordinamento e come ordinare questi array.
 <!--break-->
@@ -12,7 +16,7 @@ Iniziamo definendo la classe:
 class rectangle {
   protected $w;
   protected $h;
-  
+
   // Constructor
   public function __construct($width = 0, $height = 0) {
     $this->w = $width;
@@ -20,7 +24,7 @@ class rectangle {
   }
   // Convert to string
   public function __toString() {
-  return "width:  " . $this->w . "\n" . 
+  return "width:  " . $this->w . "\n" .
          "height: " . $this->h . "\n" . "\n";
   }
   // Calculate rectangle area
@@ -38,11 +42,11 @@ for($i = 0; $i < 10; $i++ )
 {
   $width  = rand(1, 100);
   $height = rand(1, 100);
-  
+
   $rec = new rectangle($width, $height);
-  
+
   print $rec;
-  
+
   $rectangles[$rec->area()] = $rec;
 }
 ?>

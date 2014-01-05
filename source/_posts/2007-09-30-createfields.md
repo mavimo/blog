@@ -1,7 +1,11 @@
 ---
 title: createFields
-categories: [OpenFOAM]
+categories: [openfoam]
 tags: []
+redirect: [openfoam/createfields, node/41]
+meta:
+    description: Nello sviluppo di nuovi risolutori all'interno di OpenFOAM pu&ograve; risultare necessario dichiarare nuove variabili che assumono un valore costante (o variabile) all'interno del dominio analizzato. Queste variabili, solitamente dichiarate all'interno del file <em>createFields.H</em>, possono essere dei semplici scalari, dei vettori di scalari, dei tensori i scalari o dei <strong>dizionari</strong>. A loro volta questi valori possono essere associati all'interno campo del dominio (all'interno volume) o solamente alla superficie del dominio; in funzione del tipo di variabile da dichiarare si utilizzaranno degli oggetti differenti.
+    tags: [openfoam]
 ---
 Nello sviluppo di nuovi risolutori all'interno di OpenFOAM pu&ograve; risultare necessario dichiarare nuove variabili che assumono un valore costante (o variabile) all'interno del dominio analizzato. Queste variabili, solitamente dichiarate all'interno del file _createFields.H_, possono essere dei semplici scalari, dei vettori di scalari, dei tensori i scalari o dei **dizionari**. A loro volta questi valori possono essere associati all'interno campo del dominio (all'interno volume) o solamente alla superficie del dominio; in funzione del tipo di variabile da dichiarare si utilizzaranno degli oggetti differenti.<!--break-->
 Se consideriamo le variabili che hanno un valore solo sulla superficie abbiamo:

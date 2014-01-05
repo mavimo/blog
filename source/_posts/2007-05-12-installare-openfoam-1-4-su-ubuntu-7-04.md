@@ -1,7 +1,11 @@
 ---
 title: Installare OpenFOAM 1.4 su Ubuntu 7.04
-categories: [OpenFOAM]
+categories: [openfoam]
 tags: [installazione]
+redirect: [openfoam/installazione_versione_14_su_ubuntu_704, node/36]
+meta:
+    description: A seguito dell'uscita della nuova versione di <a href="http://www.ubuntu-it.org">Ubuntu</a> (ora alla versione 7.04) e di <a href="http://www.openfoam.org">OpenFOAM</a> (arrivato alla versione 1.4), vediamo come effettuare l'installazione su una macchina con il sistema operativo installato a cui non sono stati aggiunti altri pacchetti.
+    tags: [openfoam, installazione]
 ---
 A seguito dell'uscita della nuova versione di <a href="http://www.ubuntu-it.org">Ubuntu</a> (ora alla versione 7.04) e di <a href="http://www.openfoam.org">OpenFOAM</a> (arrivato alla versione 1.4), vediamo come effettuare l'installazione su una macchina con il sistema operativo installato a cui non sono stati aggiunti altri pacchetti.<!--break-->
 Come prima operazioni vanno installati alcuni pacchetti che non sono presenti nell'installazione di base di Ubuntu, in particolare è necessario installare il pacchetto per la compilazione~~~language-php

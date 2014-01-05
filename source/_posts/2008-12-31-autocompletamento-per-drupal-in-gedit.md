@@ -1,7 +1,11 @@
 ---
 title: Autocompletamento per drupal in gedit
-categories: [Drupal]
+categories: [drupal]
 tags: [autocomplete, code, fapi, gedit, hook, info, installazione, linux, moduli, snippet]
+redirect: [drupal/autocompletamento_drupal_gedit, node/61]
+meta:
+    description: Parlando sul forum di <a href="http://www.drupalitalia.org/node/5770" title="Buon IDE per Drupal, discussione su DrupalItalia">drupalitalia</a> su quale fosse il miglior IDE per sviluppare su drupal ognuno proponeva la sua soluzione, personalmente utilizzo PSPad quando mi trovo su sistemi windows mentre su Linux utilizzo <a href="http://live.gnome.org/Gedit" title="Pagina del progetto gedit">gedit</a>, un programma che di base è molto scarno, ma che grazie ai <a href="http://live.gnome.org/Gedit/Plugins" title="Pagina dei plugin di gedit">plugin</a> riesce a diventare uno strumento potentissimo.
+    tags: [drupal, autocomplete, code, fapi, gedit, hook, info, installazione, linux, moduli, snippet]
 ---
 Parlando sul forum di <a href="http://www.drupalitalia.org/node/5770" title="Buon IDE per Drupal, discussione su DrupalItalia">drupalitalia</a> su quale fosse il miglior IDE per sviluppare su drupal ognuno proponeva la sua soluzione, personalmente utilizzo PSPad quando mi trovo su sistemi windows mentre su Linux utilizzo <a href="http://live.gnome.org/Gedit" title="Pagina del progetto gedit">gedit</a>, un programma che di base è molto scarno, ma che grazie ai <a href="http://live.gnome.org/Gedit/Plugins" title="Pagina dei plugin di gedit">plugin</a> riesce a diventare uno strumento potentissimo.
 
@@ -51,7 +55,7 @@ Come prima cosa scarichiamo i pacchetti che trovate in allegato a questo articol
 Iniziamo a scrivere hook all'interno del nostro documento nel punto in cui vogliamo andare ad inserire l'hook, digitiamo la parola **hook** e quindi premiamo il tasto TAB; automaticamente ci comparirà un menu a tendina in cui potremo scegliere l'hook che ci serve (o potremmo scrivere il nome dell'hook che ci interessa).
 <img src="/files/61/drupal_hook.png" alt="Interfaccia di selezione degli hook" />
 
-Fatto questo preimiamo invio e automaticamente il fiel verrà popolato con il testo dell'hook che abbiamo scelto, in alcuni casi ci sarà molto più di quello che ci serve, sarà sufficiente andare a rimuovere quello che non ci serve. 
+Fatto questo preimiamo invio e automaticamente il fiel verrà popolato con il testo dell'hook che abbiamo scelto, in alcuni casi ci sarà molto più di quello che ci serve, sarà sufficiente andare a rimuovere quello che non ci serve.
 <img src="/files/61/drupal_hook_generated.png" alt="Hook inserito" />
 
 Da notare che una volta inseriti i vari snippet premento il pulsante TAB si passerà alle parti di codice da customizzare e in alcuni casi l'editazione di una sola parte di codice modifica automaticamente quelle correlate ad essa.

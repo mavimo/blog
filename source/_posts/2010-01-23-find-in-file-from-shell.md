@@ -1,7 +1,11 @@
 ---
 title: Find in file from shell
-categories: [Linux]
+categories: [linux]
 tags: [bash, find in file, grep, script]
+redirect: [linux/find_file_from_shell, node/102]
+meta:
+    description: Capita a volte di avere la necessità di cercare all'interno di un gruppo di file una stringa, ancora più spesso capita di dover scoprire in quale file all'interno di una cartella c'è la stringa che cerchiamo, e magari anche in che posizione, il tutto evitandoci di cercare nelle cartelle create dal nostro VCS. Vediamo ora come effettuare una ricerca in maniera veloce.
+    tags: [linux, bash, find in file, grep, script]
 ---
 Capita a volte di avere la necessità di cercare all'interno di un gruppo di file una stringa, ancora più spesso capita di dover scoprire in quale file all'interno di una cartella c'è la stringa che cerchiamo, e magari anche in che posizione, il tutto evitandoci di cercare nelle cartelle create dal nostro VCS. Vediamo ora come effettuare una ricerca in maniera veloce.
 <!--break-->

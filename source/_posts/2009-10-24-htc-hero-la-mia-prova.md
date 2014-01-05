@@ -1,7 +1,11 @@
 ---
 title: HTC Hero - la mia prova
-categories: [Varie]
+categories: [varie]
 tags: [android, htc hero, prova, smarthphone]
+redirect: [varie/htc_hero_prova, node/99]
+meta:
+    description: Ho avuto la fortuna di avere sotto mano per qualche giorno il terminale di punta con installato <a href="http://www.android.com">Andorid</a> (versione 1.5), si tratta dell'<a href="http://www.htc.com/it/product/hero/overview.html">Hero</a> commercializzato da <a href="http://www.htc.com/it/">HTC</a>, anticipo subito che non sono un grandissimo utilizzatore di telefono, e che l'uso che ne ho fatto è da tipico utente "non comune", ma a parte questo vedo di fare un breve sunto dell'imporessione che mi ha dato.
+    tags: [varie, android, htc hero, prova, smarthphone]
 ---
 Ho avuto la fortuna di avere sotto mano per qualche giorno il terminale di punta con installato <a href="http://www.android.com">Andorid</a> (versione 1.5), si tratta dell'<a href="http://www.htc.com/it/product/hero/overview.html">Hero</a> commercializzato da <a href="http://www.htc.com/it/">HTC</a>, anticipo subito che non sono un grandissimo utilizzatore di telefono, e che l'uso che ne ho fatto è da tipico utente "non comune", ma a parte questo vedo di fare un breve sunto dell'imporessione che mi ha dato.
 <!--break-->
@@ -30,7 +34,7 @@ In sistema di notifica a scorrimento verticale inizialmente può sembrare scomod
 
 <h3>L'hardware</h3>
 La parte hardware (non sto ad indicarvi le specifiche che trovate ovunque in rete) dello smartphone ha un **monitor** che lo rende visibile in praticamente tutte le situazioni; non ho avuto modo di provarlo in estate con il sole a picco, ma per il resto non da grossi problemi.
-Il **processore** pur non essendo di frequenza elevatissima svolge il suo dovere discretamente bene. Problema a moi avviso maggiore lo si ha nella **memoria RAM** disponibile. Questa viene riempita notevolmente, a terminale acceso e ripulento le applet non usate e lasciando solo le indispensabili (per questo tipo di terminale) il consumo è dell'86%, se poi iniziamo a installare applicazioni (da tenere aperte in background), o abilitiamo la navigazione con diverse shcede aperte questo spazio è decisamente ridotto. 
+Il **processore** pur non essendo di frequenza elevatissima svolge il suo dovere discretamente bene. Problema a moi avviso maggiore lo si ha nella **memoria RAM** disponibile. Questa viene riempita notevolmente, a terminale acceso e ripulento le applet non usate e lasciando solo le indispensabili (per questo tipo di terminale) il consumo è dell'86%, se poi iniziamo a installare applicazioni (da tenere aperte in background), o abilitiamo la navigazione con diverse shcede aperte questo spazio è decisamente ridotto.
 
 Il motivo per cui chiedevo la possibilità di differenziare applicazioni in java e in C è proprio dovuto a questo motivo. Le applicazioni java consumano più risorse in quando devono essere eseguite nella JVM, se fosse possibile tenere il terminale solo con applicazioni scritte in C -o comenque scegliere tra pplicazioni che svolgono lo stesso compito quelle programmate in C- risulterebbe sicuramente più veloce (e se a questo punto potremmo evitarci di tenere java sul nostro terminale recuperando risorse e godendo di applicazioni più presentanti). Di buono c'è che le applicazioni in C scritte da Google (il market, l'applicativo per gmail, ....) sono molto più scattanti, applicazioni simili presenti nel market e quindi quasi sicuramente scritte in java, non hanno sicuramente la stessa reattività.
 

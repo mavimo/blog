@@ -1,7 +1,11 @@
 ---
 title: Immagini (grandi) da GMaps
-categories: [Varie]
-tags: [bash, gmap, imagemagik, immagini, linux, PHP]
+categories: [varie]
+tags: [bash, gmap, imagemagik, immagini, linux, php]
+redirect: [varie/immagini_grandi_gmaps, node/68]
+meta:
+    description: Se a qualcuno di voi sono servite delle immagini satellitari, sicuramente siete corsi su gmap, ma l'impossibilità di scaricare le immagini direttamente porta a notevoli problemi, ci sono diversi workaround per risolvere, come andare a stampare il monitor, salvare l'immagine, ritagliarla; se però ci servono mappe che non stanno s di un unica pagina? Qui iniziano i problemi e le perdite di tempo, si passa a sctampare diverse immagini, attaccarle assieme, cosa non certo comoda, soprattutto per avere immagini su grandi formati.
+    tags: [varie, bash, gmap, imagemagik, immagini, linux, php]
 ---
 Se a qualcuno di voi sono servite delle immagini satellitari, sicuramente siete corsi su gmap, ma l'impossibilità di scaricare le immagini direttamente porta a notevoli problemi, ci sono diversi workaround per risolvere, come andare a stampare il monitor, salvare l'immagine, ritagliarla; se però ci servono mappe che non stanno s di un unica pagina? Qui iniziano i problemi e le perdite di tempo, si passa a sctampare diverse immagini, attaccarle assieme, cosa non certo comoda, soprattutto per avere immagini su grandi formati.
 
@@ -16,7 +20,7 @@ Fatto questo andiamo a modificare il nostro script inserendo le informazioni cos
 <html>
   <body>
     <h2>File aviable</h2>
-      
+
 <?php
   $i = 1;
   // Mettere qui la chiave di google ottenuta
@@ -58,7 +62,7 @@ function download ($file_source, $file_target) {
   return true;
 }
 ?>
-    
+
     <h2>X: <?php print $i; ?><h2>
     <h2>Y: <?php print $j; ?><h2>
   </body>

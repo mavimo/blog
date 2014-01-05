@@ -1,7 +1,11 @@
 ---
 title: XAMPP - Step by Step
-categories: [Varie]
-tags: [apache, filezilla, mercury, webserver locale, Xampp]
+categories: [varie]
+tags: [apache, filezilla, mercury, webserver locale, xampp]
+redirect: [varie/installazione_configurazione_xampp, node/34]
+meta:
+    description: Nello sviluppo di siti web è preferibile operare in locale e trasferire il tutto sul server remoto solo una volta che si è ottimizzata la configurazione per lo scopo che ci si è prefissi. Ciò permette di avere una maggior velocità poiché non è necessario operare sul server trasferendo i file ogni volta che è necessario apportare una qualche modifica e perché non si hanno restrizioni imposte dai limiti di banda.
+    tags: [varie, apache, filezilla, mercury, webserver locale, xampp]
 ---
 Nello sviluppo di siti web è preferibile operare in locale e trasferire il tutto sul server remoto solo una volta che si è ottimizzata la configurazione per lo scopo che ci si è prefissi. Ciò permette di avere una maggior velocità poiché non è necessario operare sul server trasferendo i file ogni volta che è necessario apportare una qualche modifica e perché non si hanno restrizioni imposte dai limiti di banda.
 Per poter sviluppare in locale è necessario avere a disposizione un Web Server in cui è abilitato l'utilizzo di script PHP e di un database in cui archiviare i dati. I software scelti sono quelli presenti nella maggior parte dei server presenti in rete e quindi useremo Apache (Web Server) con PHP 5 attivato, e MySQL 5 come database. Per ovviare ai problemi di installazione e configurazione dei vari software utilizzeremo un pacchetto che contiene tutti questi programmi (a alcuni altri) già configurai per le esigenze più comuni. Per ora ci occuperemo dell'installazione su piattaforma Windows.
@@ -32,7 +36,7 @@ $cfg['Servers'][$i]['password'] = 'miapassword';
 ~~~
 
 
-Ripetiamo la stessa operazioni per il tipo di autorizzazione impostando la stringa a  
+Ripetiamo la stessa operazioni per il tipo di autorizzazione impostando la stringa a
 
 ~~~language-php
 

@@ -1,7 +1,11 @@
 ---
-title: Sviluppo & Testing 
-categories: [Varie]
-tags: [ab, PHP, simpletest, sviluppo, test, unitest]
+title: Sviluppo & Testing
+categories: [varie]
+tags: [ab, php, simpletest, sviluppo, test, unitest]
+redirect: [varie/sviluppo_testing, node/91]
+meta:
+    description: Come potremmo rappresentare il ciclo di sviluppo di un software? Andando con ordine avremmo, inizialmente l'analisi delle richieste, la fase di progettazione, la fase di implementazione, di test e infine il rilascio. Completato questi passaggi si passa alle fasi successive (aggiunta di funzionalità) che sono praticamente identiche (non per nulla si chiama ciclo).
+    tags: [varie, ab, php, simpletest, sviluppo, test, unitest]
 ---
 Come potremmo rappresentare il ciclo di sviluppo di un software? Andando con ordine avremmo, inizialmente l'analisi delle richieste, la fase di progettazione, la fase di implementazione, di test e infine il rilascio. Completato questi passaggi si passa alle fasi successive (aggiunta di funzionalità) che sono praticamente identiche (non per nulla si chiama ciclo).
 
@@ -32,7 +36,7 @@ La creazione di un test non è altro che la scrittura di un codice che automatiz
 class rettangolo() {
   private $altezza;
   private $larghezza;
-  
+
   function getAltezza() {
     return $altezza;
   }

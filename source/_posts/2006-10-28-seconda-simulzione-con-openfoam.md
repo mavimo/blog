@@ -1,7 +1,11 @@
 ---
 title: Seconda simulzione con OpenFOAM
-categories: [OpenFOAM]
+categories: [openfoam]
 tags: [fluido, gmsh, simulazione]
+redirect: [openfoam/simulazione_fluido_camino, node/20]
+meta:
+    description: Riprendiamo il modello realizzato nello <a href="/gmsh_genera_mesh">scorso articolo</a>, dove abbiamo un condotto cilindrico che confluisce all'interno di una camera rettangolare; a sua volta il fluido fuoriesce da essa tramite una condotta a sezione rettangolare e di dimensioni variabili. 
+    tags: [openfoam, fluido, gmsh, simulazione]
 ---
 Riprendiamo il modello realizzato nello <a href="/gmsh_genera_mesh">scorso articolo</a>, dove abbiamo un condotto cilindrico che confluisce all'interno di una camera rettangolare; a sua volta il fluido fuoriesce da essa tramite una condotta a sezione rettangolare e di dimensioni variabili. <!--break-->
 Per poter effettuare una simulazione per lo meno verosimile &egrave; necessario modificare la densit&agrave; della griglia all'interno del modello realizzato; per fare questo dobbiamo modificare il file <a href="/files/19/esempio5.geo">esempio5.geo</a> cambiando il parametro di _Lunghezza Caratteristica_ dei vari nodi del modello, possiamo quindi aprire tramite un comune editor di testo il file e cambiare (utilizzando lo strumento **Cerca** o **Sostituisci**) tutte le righe che definiscono un nuovo punto da:

@@ -1,7 +1,11 @@
 ---
 title: Chiamate cookieless in Drupal
-categories: [Drupal]
+categories: [drupal]
 tags: [cookies, performance]
+redirect: [drupal/chiamate_cookieless, node/108]
+meta:
+    description: Come visto negli articoli precedenti riguardanti le <a href="http://mavimo.org/varie/chiamate_cookieless_assets_usando_google_analytics_getclicky">chiamate cookieless</a> e le<a href="http://mavimo.org/drupal/imagecache_subdomain_frontend_performance"> ottimizzazioni del front end</a> di Drupal ci sono diversi modi per migliorare il modo in cui è possibile effettuare l'ottimizzazione del frontend. Ora vedremo come integrare alcune delle cose viste nei due articoli precedenti e come migliorare ulteriormente le performance con Drupal.
+    tags: [drupal, cookies, performance]
 ---
 Come visto negli articoli precedenti riguardanti le <a href="http://mavimo.org/varie/chiamate_cookieless_assets_usando_google_analytics_getclicky">chiamate cookieless</a> e le<a href="http://mavimo.org/drupal/imagecache_subdomain_frontend_performance"> ottimizzazioni del front end</a> di Drupal ci sono diversi modi per migliorare il modo in cui è possibile effettuare l'ottimizzazione del frontend. Ora vedremo come integrare alcune delle cose viste nei due articoli precedenti e come migliorare ulteriormente le performance con Drupal.
 <!--break-->

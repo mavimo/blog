@@ -1,7 +1,11 @@
 ---
 title: Views con filtri dinamici
-categories: [Drupal]
-tags: [module, PHP, taxonomy, views]
+categories: [drupal]
+tags: [module, php, taxonomy, views]
+redirect: [drupal/views_filtri_dinamici, node/86]
+meta:
+    description: Le viste sono uno strumento estremamente potente e permettono di andare ad elaborare le informazioni creando degli elementi (pagine, blocchi, ...) di presentazione. La possibilità di usare dei filtri esposti ne fa degli strumenti adatti alla creazione di strumenti di ricerca dei contenuti.
+    tags: [drupal, module, php, taxonomy, views]
 ---
 Le viste sono uno strumento estremamente potente e permettono di andare ad elaborare le informazioni creando degli elementi (pagine, blocchi, ...) di presentazione. La possibilità di usare dei filtri esposti ne fa degli strumenti adatti alla creazione di strumenti di ricerca dei contenuti.
 

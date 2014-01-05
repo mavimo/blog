@@ -1,7 +1,11 @@
 ---
 title: Alterare lo schema di un modulo
-categories: [Drupal]
-tags: [DB layer, hook_schema_alter, PHP]
+categories: [drupal]
+tags: [db layer, hook_schema_alter, php]
+redirect: [drupal/alterare_lo_schema_un_modulo, node/100]
+meta:
+    description: Può capitare, a volte, di dover alterare lo schema di una tabella creata da un altro modulo, vedremo come effettuare questa operazione nella mianera corretta mantenendo l'integrità della struttura rappresentata dallo schema e quella effettivamente presente nel database.
+    tags: [drupal, db layer, hook_schema_alter, php]
 ---
 Può capitare, a volte, di dover alterare lo schema di una tabella creata da un altro modulo, vedremo come effettuare questa operazione nella mianera corretta mantenendo l'integrità della struttura rappresentata dallo schema e quella effettivamente presente nel database.
 <!--break-->

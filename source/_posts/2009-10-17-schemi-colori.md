@@ -1,7 +1,11 @@
 ---
 title: Schemi colori
-categories: [Varie]
+categories: [varie]
 tags: [links, schema colore]
+redirect: [varie/schemi_colori, node/98]
+meta:
+    description: Su consiglio di alcune persone che mi hanno chiesto di condividere un pò di link, vedo di inaugurare questa sezione che contiene una serie di link "a tema" presi tra i segnalibri del mio borwser. questa serie la auguro con una serie di link relativi alle mappe di cloere da usare per al creazione di immagini (loghi, siti, brochure, ....)
+    tags: [varie, links, schema colore]
 ---
 Su consiglio di alcune persone che mi hanno chiesto di condividere un pò di link, vedo di inaugurare questa sezione che contiene una serie di link "a tema" presi tra i segnalibri del mio borwser. questa serie la auguro con una serie di link relativi alle mappe di cloere da usare per al creazione di immagini (loghi, siti, brochure, ....)
 <!--break-->

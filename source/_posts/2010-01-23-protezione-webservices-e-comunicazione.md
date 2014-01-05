@@ -1,7 +1,11 @@
 ---
 title: Protezione WebServices e comunicazione
-categories: [Varie]
-tags: [.htaccess, .htpasswd, apache, PHP, security, webservices]
+categories: [varie]
+tags: [.htaccess, .htpasswd, apache, php, security, webservices]
+redirect: [varie/protezione_webservices_htpasswd, node/103]
+meta:
+    description: Avevamo visto in un articolo precedente come <a href="/drupal/protezione_siti_sviluppo">proteggere i siti in fase di sviluppo</a> tramite <em>.htaccess</em> e <em>.htpassword</em>, ed effettivamente è un sistema molto comodo; tuttavia cosa succede quando è necessario sviluppare all'interno del sito dei <strong>WebServices</strong> che devono essere accessibili da remoto?
+    tags: [varie, .htaccess, .htpasswd, apache, php, security, webservices]
 ---
 Avevamo visto in un articolo precedente come <a href="/drupal/protezione_siti_sviluppo">proteggere i siti in fase di sviluppo</a> tramite _.htaccess_ e _.htpassword_, ed effettivamente è un sistema molto comodo; tuttavia cosa succede quando è necessario sviluppare all'interno del sito dei **WebServices** che devono essere accessibili da remoto?
 
@@ -52,7 +56,7 @@ AuthUserFile /var/www/MIOSITO/.htpasswd
 AuthGroupFile /dev/null
 AuthName "SITO PROTETTO"
 AuthType Basic
-<Limit GET> 
+<Limit GET>
   Allow from 11.22.33.44
   require valid-user
   Satisfy Any

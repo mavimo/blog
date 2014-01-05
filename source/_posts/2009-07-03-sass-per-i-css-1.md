@@ -1,11 +1,15 @@
 ---
 title: SASS per i CSS (1)
-categories: [Varie]
+categories: [varie]
 tags: [css, ruby, sass]
+redirect: [varie/sass_css_1, node/83]
+meta:
+    description: I CSS sono uno degli elementi che nel corso degli anni, nel settore del web, si sono meno evoluti dal pundo ti vista della struttura utilizzata. Nelle corso delle diverse versioni sono state aggiunge solo proprietà e selettori nuovi.
+    tags: [varie, css, ruby, sass]
 ---
 I CSS sono uno degli elementi che nel corso degli anni, nel settore del web, si sono meno evoluti dal pundo ti vista della struttura utilizzata. Nelle corso delle diverse versioni sono state aggiunge solo proprietà e selettori nuovi.
 
-Probabilmente penserete: 
+Probabilmente penserete:
 ~~~language-php
 
 Se non sono cambiati tantomeglio, evito di dover imparare qualche cosa di nuovo!

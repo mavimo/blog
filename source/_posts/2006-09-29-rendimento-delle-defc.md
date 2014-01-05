@@ -1,7 +1,11 @@
 ---
 title: Rendimento delle DEFC
-categories: [Chimica]
-tags: [DEFC, rendimento]
+categories: [chimica]
+tags: [defc, rendimento]
+redirect: [chimica/paragone_defc_motore_ci, node/14]
+meta:
+    description: Analizziamo le differenze di rendimento tra un generico motore a <em>C.I.</em> alimentato ad etanolo ed un  impianto, sempre alimentato da etanolo, ma basato sulle <a href="/direct_ethanol_fuel_cell">DEFC</a>.
+    tags: [chimica, defc, rendimento]
 ---
 Analizziamo le differenze di rendimento tra un generico motore a _C.I._ alimentato ad etanolo ed un  impianto, sempre alimentato da etanolo, ma basato sulle <a href="/direct_ethanol_fuel_cell">DEFC</a>.<!--break-->
 Ipotizzando applicare al motore a _C.I._ un generatore (la cui efficienza &egrave; di circa il 90-95%) per produrre energia elettrica; &egrave; evidente che avremmo:

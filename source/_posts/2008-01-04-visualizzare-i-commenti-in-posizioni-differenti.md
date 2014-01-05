@@ -1,7 +1,11 @@
 ---
 title: Visualizzare i commenti in posizioni differenti.
-categories: [Drupal]
-tags: [commenti, PHP, tema]
+categories: [drupal]
+tags: [commenti, php, tema]
+redirect: [drupal/visualizzare_i_commenti_in_posizioni_differenti, node/47]
+meta:
+    description: Quante volte, in fase di creazione o personalizzazione di  un tema vi è capitato di non sapere come fare per posizionare i commenti dove volete voi, magari solo su determinate pagine, o magari solo se si verificano determinate condizioni? Bhè, a me è capitato alcune volte, e non sempre si poteva operare con una soluzione pulita, vediamo ora quel è il metodo migliore che sono riuscito a trovare.
+    tags: [drupal, commenti, php, tema]
 ---
 Quante volte, in fase di creazione o personalizzazione di  un tema vi è capitato di non sapere come fare per posizionare i commenti dove volete voi, magari solo su determinate pagine, o magari solo se si verificano determinate condizioni? Bhè, a me è capitato alcune volte, e non sempre si poteva operare con una soluzione pulita, vediamo ora quel è il metodo migliore che sono riuscito a trovare.<!--break-->
 Come prima cosa dobbiamo sapere che i commenti, i Drupal, vengono visualizzati in una variabile del nodo, e più precisamente in ~~~language-php

@@ -1,7 +1,11 @@
 ---
 title: Drupal.behaviors, lo sconosciuto
-categories: [Drupal]
-tags: [ahah, ajax, behaviors, Javascript, jquery]
+categories: [drupal]
+tags: [ahah, ajax, behaviors, javascript, jquery]
+redirect: [drupal/drupalbehaviors_lo_sconosciuto, node/81]
+meta:
+    description: Può capitare di avere elementi della pagina che devono essere caricati in maniera asincorna, di consegunenza non sono disponibili al termine del primo caricamento della pagina, ultimamente sempre più spesso capita che questi elementi debbano a loro volta essere ancorati ad altri eventi javascript (binding).
+    tags: [drupal, ahah, ajax, behaviors, javascript, jquery]
 ---
 Può capitare di avere elementi della pagina che devono essere caricati in maniera asincorna, di consegunenza non sono disponibili al termine del primo caricamento della pagina, ultimamente sempre più spesso capita che questi elementi debbano a loro volta essere ancorati ad altri eventi javascript (binding).
 
@@ -24,7 +28,7 @@ if (Drupal.jsEnabled) {
     // Chiamo la mia funzione che svoolge le operazioni che mi ero prefisso.
     myFunction($('.selector'));
   });
-  
+
   Drupal.behaviors.myBehaviorsFunction = myBehaviorsFunction;
 }
 

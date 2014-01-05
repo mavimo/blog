@@ -1,7 +1,11 @@
 ---
 title: Installare OpenFOAM
-categories: [OpenFOAM]
+categories: [openfoam]
 tags: [installazione]
+redirect: [openfoam/installare_versione_13, node/6]
+meta:
+    description: Questa &egrave; una piccola guida su come installare <a href="http://www.openfoam.org">OpenFOAM 1.3</a> su di un sistema linux. 
+    tags: [openfoam, installazione]
 ---
 Questa &egrave; una piccola guida su come installare <a href="http://www.openfoam.org">OpenFOAM 1.3</a> su di un sistema linux. 
 Innanzitutto bisogna scaricare dal <a href="http://www.openfoam.org/download.html">sito</a> il pacchetto <a href="http://surfnet.dl.sourceforge.net/sourceforge/foam/OpenFOAM-1.3.General.gtgz">_OpenFOAM-1.3.General.gtgz_</a>, il pacchetto per l'esecuzione in <a href="http://puzzle.dl.sourceforge.net/sourceforge/foam/OpenFOAM-1.3.linuxGcc4SPOpt.gtgz">singola precisione</a> e in <a href="http://puzzle.dl.sourceforge.net/sourceforge/foam/OpenFOAM-1.3.linuxGcc4DPOpt.gtgz">doppia precisione</a>, i pacchetti qui riportati sono compilati per architettura Intel a 32bit, ma sul sito sono disponibili altre versioni (ottimizzati per AMD64, processori Alpha, etc..).

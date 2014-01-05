@@ -5,6 +5,9 @@ tags: [sculpin, blog]
 image:
     folder: new-year-2014
     alt: Happy new 2014!
+meta:
+    description:
+    tags: []
 ---
 Hi guys, new year and new blog!
 After some time I moved my Drupal website to a more "static" site hosted on S3.

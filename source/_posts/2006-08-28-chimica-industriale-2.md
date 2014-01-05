@@ -1,7 +1,11 @@
 ---
 title: Chimica industriale 2
-categories: [Chimica]
-tags: [Appunti, chimica industriale 2, petrolio, Politecnico di Milano]
+categories: [chimica]
+tags: [appunti, chimica industriale 2, petrolio, politecnico di milano]
+redirect: [chimica_industriale_2, node/7]
+meta:
+    description: Mentre studiando per l&#39;esame di chimica industriale 2 mi st&ograve; riscrivendo gli appunti e visto che potrebbero tornare utili agli altri li pubblico in formato pdf (li trovate allegati a questa pagina)
+    tags: [chimica, appunti, chimica industriale 2, petrolio, politecnico di milano]
 ---
 Mentre studiando per l&#39;esame di chimica industriale 2 mi st&ograve; riscrivendo gli appunti e visto che potrebbero tornare utili agli altri li pubblico in formato pdf (li trovate allegati a questa pagina)
 <!--break-->
@@ -90,7 +94,7 @@ Per ora contiene i metodi di produzione di:
  *  Reattori a letto fisso
  *  Reattori a letto fluido
 </ol>
- *  Processo ALMA 
+ *  Processo ALMA
 </ol>
  *  Il petrolio
 <ol>
@@ -160,7 +164,7 @@ Per ora contiene i metodi di produzione di:
  *  Separazione propano - propilene
  *  Separazione della frazione C4
 <ol>
- *  Distillazione estrattiva 
+ *  Distillazione estrattiva
  *  Alternative alla rettifica
  *  Separazione del butadiene
  *  Separazione del isobutene

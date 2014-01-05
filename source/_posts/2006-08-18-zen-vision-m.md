@@ -1,7 +1,11 @@
 ---
 title: Zen Vision:M
-categories: [Varie]
-tags: [MTP, Zen Vision:M]
+categories: [varie]
+tags: [mtp, zen vision:m]
+redirect: [varie/zen_vision_m, node/3]
+meta:
+    description: Ormai è da un pò che ho preso il Creative Zen Vision:M, quindi mi ritengo pronto per una sua breve recensione. Attualmente lo ritengo un ottimo prodotto, in virtù di alcune sue caratteristiche.
+    tags: [varie, mtp, zen vision:m]
 ---
 Ormai &egrave; da un p&ograve; che ho preso il **<a href="http://www.creative.com/products/product.asp?category=213&amp;subcategory=214&amp;product=14331">Creative Zen Vision:M</a>**, quindi mi ritengo pronto per una sua breve recensione. Attualmente lo ritengo un ottimo prodotto, in virt&ugrave; di alcune sue caratteristiche:<!--break-->
 

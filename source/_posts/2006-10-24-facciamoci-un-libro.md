@@ -1,7 +1,11 @@
 ---
 title: Facciamoci un libro
-categories: [Varie]
-tags: [LaTeX, lulu, Politecnico di Milano]
+categories: [varie]
+tags: [latex, lulu, politecnico di milano]
+redirect: [varie/fare_libro_latex, node/18]
+meta:
+    description: Recentemente &egrave; stato attivato anche per l'Italia il servizio di print-on-demand di <a href="http://www.lulu.com/it">lulu</a>, fondato qualche anno fa da Bob Young fondatore di RedHat. L'idea su cui si basa questo portale &egrave; quella di dare la possbilit&agrave; a chiunque di realizzare un proprio libro senza dovere sostenere spese esorbitanti per la stampa in proprio.
+    tags: [varie, latex, lulu, politecnico di milano]
 ---
 Recentemente &egrave; stato attivato anche per l'Italia il servizio di print-on-demand di <a href="http://www.lulu.com/it">lulu</a>, fondato qualche anno fa da Bob Young fondatore di RedHat. L'idea su cui si basa questo portale &egrave; quella di dare la possbilit&agrave; a chiunque di realizzare un proprio libro senza dovere sostenere spese esorbitanti per la stampa in proprio. Per chi non realizza libri potrebbe risultare comunque utile per la stampa di documenti corposi sia per la distribuzione che per uso privato (per esempio manuali di prodotti dell'azienda); ma &egrave; anche possbile utilizzare lo stesso servizio perla stampa di tesi, ottenendo cos&igrave; un buon risparmio sulla costo di stampa, anche se in questo caso il problema &egrave; che &egrave; necessario finire il documento da stampare con largo anticipo, cosa che difficilmente si riesce a ottenere.
 

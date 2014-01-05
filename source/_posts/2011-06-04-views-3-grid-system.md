@@ -2,6 +2,9 @@
 title: Views 3 e Grid system (patch)
 categories: [drupal]
 tags: [css, omega, patch, views]
+meta:
+    description:
+    tags: []
 ---
 Ultimamente, lavorando con Omega in diversi siti, mi è capitato di dover fare un pò di "magie" per riuscire ad ottenere il risultato desiderato. Il problema principale che ho riscontrato è che le views permettono di aggiungere classi ai singoli field, al wrapper della vista stessa, o una classe uguale per tutti le righe, ma non permette di inserire classi personalizzate per ogni riga. Questo, nelal versione per Drupal 6 e views 2, era risolvibile ricorrendo a [Semantic Views](http://drupal.org/project/semanticviews), ma per Views 3 non abbiamo ancora uno strumento che ci permette di fare quanto richiesto. Per risolvere questo problema ho scritto una piccola patch (attenzione, non mi assumo responsabilità in merito :) ) che permette di definire per ogni singola riga, o per righe particolari (prima/ultima, pari/dispari) delle classi specifiche. Vediamo come applicare questa patch e come funziona.
 <!--break-->

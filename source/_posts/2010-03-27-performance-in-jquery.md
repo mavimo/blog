@@ -1,7 +1,11 @@
 ---
 title: Performance in jQuery
-categories: [Varie]
-tags: [Javascript, jquery, performance]
+categories: [varie]
+tags: [javascript, jquery, performance]
+redirect: [varie/performance_jquery, node/105]
+meta:
+    description: L'altro giorno, mentre assieme a <a href="http://www.dellicarri.it">Tommaso</a> stavamo controllando un problema di performance su alcuni script JS, per puro sbaglio mi è capitato di vedere usare jQuery con dei selettori usati in maniera che <strong>credevo</strong> essere impropria, a prima vista mi sembrava un errore, per questo motivo ho fatto alcuni test per vedere se lo era e i risultati sono stati inaspettati.
+    tags: [varie, javascript, jquery, performance]
 ---
 L'altro giorno, mentre assieme a <a href="http://www.dellicarri.it">Tommaso</a> stavamo controllando un problema di performance su alcuni script JS, per puro sbaglio mi è capitato di vedere usare jQuery con dei selettori usati in maniera che **credevo** essere impropria, a prima vista mi sembrava un errore, per questo motivo ho fatto alcuni test per vedere se lo era e i risultati sono stati inaspettati.
 <!--break-->

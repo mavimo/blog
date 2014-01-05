@@ -1,7 +1,11 @@
 ---
 title: Git in gedit
-categories: [Varie]
+categories: [varie]
 tags: [gedit, git, linux, versioni]
+redirect: [varie/git_gedit, node/65]
+meta:
+    description: Precedentemente abbiamo visto come usare gedit come IDE per velocizzare lo sviluppo di codice,<a href="/drupal/coding_drupal_gedit_ancora_snippet">gedit come IDE per Drupal</a>, e come alcuni suoi plugin possano risultare particolamrnete comodi, come per esempio la <a href="/drupal/controllo_codice_drupal_gedit">validazione del codice per Drupal</a>.
+    tags: [varie, gedit, git, linux, versioni]
 ---
 Precedentemente abbiamo visto come usare gedit come IDE per velocizzare lo sviluppo di codice,<a href="/drupal/coding_drupal_gedit_ancora_snippet">gedit come IDE per Drupal</a>, e come alcuni suoi plugin possano risultare particolamrnete comodi, come per esempio la <a href="/drupal/controllo_codice_drupal_gedit">validazione del codice per Drupal</a>.
 

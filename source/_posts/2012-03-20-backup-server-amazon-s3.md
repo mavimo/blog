@@ -2,6 +2,9 @@
 title: Backup di server su Amazon S3
 categories: [linux]
 tags: [Amazon AWS, backup, duplicity, S3, server]
+meta:
+    description:
+    tags: []
 ---
 Il sistema che andremo ad utilizare per effettuare il backup della nostra infrastruttura (che sia il nostro PC locale, un server o più di una macchina) si basa sull'utilizzo del tool [duplicity](http://duplicity.nongnu.org/). Questo strumento si integra con sistemi di storage quali FTP, SSH, ma -motivo per cui l'ho scelto, [Amazon S3](http://aws.amazon.com/s3), in modo da poter avere un elevato quantitativo di spazio a basso costo su cui fare il backup. Duplicity effettua operazioni di backup incrementale, compressi e con criptazione dei dati, in questo modo siamo sicuro che le informazioni contenute all'interno dello storage remoto siano protette da accessi "indiscreti".
 <!--break-->

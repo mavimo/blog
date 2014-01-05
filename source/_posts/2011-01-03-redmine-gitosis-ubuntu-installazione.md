@@ -2,6 +2,9 @@
 title: Redmine e Gitosis in Ubuntu 10.10 (guida all'installazione)
 categories: [linux]
 tags: [giosis, git, redmine, ubuntu]
+meta:
+    description:
+    tags: []
 ---
 Quando si lavora (come sviluppatori, ma anche in altre occasioni) in un team è quasi fondamentale avere un sistema per la gestione del codice oltre ad un sistema per la gestione del progetto. Inizialmente avevo utilizzato [trac](http://mavimo.org/linux/trac_svn_ubuntu_904), strumento ottimo, ma con alcuni vincoli, il più evidente: essere monoprogetto. Successivamente ho preferito utilizzare [redmine](http://redmine.org), strumento flessibile e potente.
 Vediamo di seguito come installarlo e configurarlo in ubuntu 10.10, andando a configurarlo per utilizzare git come SCM e atomatizzare la creazione dei repository per i vari progetti, nonché i permessi di accesso a questi.

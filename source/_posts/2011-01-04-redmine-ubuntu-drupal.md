@@ -2,6 +2,9 @@
 title: Redmine in Ubuntu (parte 2)
 categories: [linux]
 tags: [git, gitosis, redmine, ubuntu]
+meta:
+    description:
+    tags: []
 ---
 Nell'[articolo precedente](http://mavimo.org/linux/redmine_gitosis_ubuntu_1010_guida_allinstallazione) abbiamo visto come procedere all'installazione di [redmine](http://www.redmine.org) su apache, abbiamo visto come integrare [git](http://git-scm.com/) e [gitosis](http://eagain.net/gitweb/?p=gitosis.git) per la gestione delle credenziali degli utenti.. ma alla fine avevamo specificato che c'era ancora qualche problema da risolver. Di seguito vediamo come correggere alcune delle problematiche indicate.
 <!--break-->

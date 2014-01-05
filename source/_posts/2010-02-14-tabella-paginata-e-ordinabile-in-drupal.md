@@ -1,7 +1,11 @@
 ---
 title: Tabella paginata e ordinabile in Drupal
-categories: [Drupal]
+categories: [drupal]
 tags: [codice, paginazione, sorting, tabella]
+redirect: [drupal/tabella_paginata_ordinabile_drupal, node/104]
+meta:
+    description: Nella realizzazione di interfaccie di report può capitare di dover creare delle tabelle che visualizziino una serie di informazioni. Spesso, se i dati sono molti, è necessario ricorrere alla creazione di tabelle paginate. In altri casi, o in aggiunta a questo, può essere necessario andare a realizzare dei sistemi che permettano di fvariare i criteri di ordinamento dei dati estratti, così da migliorare l'usabilità del sistema.
+    tags: [drupal, codice, paginazione, sorting, tabella]
 ---
 Nella realizzazione di interfaccie di report può capitare di dover creare delle tabelle che visualizziino una serie di informazioni. Spesso, se i dati sono molti, è necessario ricorrere alla creazione di tabelle paginate. In altri casi, o in aggiunta a questo, può essere necessario andare a realizzare dei sistemi che permettano di fvariare i criteri di ordinamento dei dati estratti, così da migliorare l'usabilità del sistema.
 
@@ -39,7 +43,7 @@ Proseguiamo all'estrazione dei dati e alla loro rappresentazione in tabella tram
     t("Prezzo"),
     t("Quantità"),
   );
-  
+
   // Estraggo i valori da inserire in tabella
   while($res = db_fetch_array($q)) {
     // Estrai i dati e generi le $rows
@@ -50,7 +54,7 @@ Proseguiamo all'estrazione dei dati e alla loro rappresentazione in tabella tram
       $res['quantity'],
     );
   }
-  
+
   // Temizzo la tabella
   $output  = theme('table', $header, $rows);
 ?>

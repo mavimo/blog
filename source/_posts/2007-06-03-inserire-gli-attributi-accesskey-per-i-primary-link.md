@@ -1,13 +1,17 @@
 ---
 title: Inserire gli attributi accesskey per i primary link
-categories: [Drupal]
-tags: [accessibilità, accesskey, PHP, primary link, XHTML]
+categories: [drupal]
+tags: [accessibilità, accesskey, php, primary link, xhtml]
+redirect: [drupal/inserire_gli_attributi_accesskey_per_i_primary_link, node/37]
+meta:
+    description: Sempre pi&ugrave; spesso si sente parlare di accessibilità, degli enormi vantaggi che derivano dal suo utilizzo e sopratutto dalla necessità dei siti della PA di rispettare le regole che sono inserite nella famosa <a href="http://www.pubbliaccesso.gov.it/normative/legge_20040109_n4.htm">legge Stanca</a> che obbligano a rispettare le direttive WAI (o per lo meno dovrebbe essere così, anche se vedendo alcuni siti.. ma lasciamo perdere, non voglio entrare in polemica).
+    tags: [drupal, accessibilità, accesskey, php, primary link, xhtml]
 ---
 Sempre pi&ugrave; spesso si sente parlare di accessibilità, degli enormi vantaggi che derivano dal suo utilizzo e sopratutto dalla necessità dei siti della PA di rispettare le regole che sono inserite nella famosa <a href="http://www.pubbliaccesso.gov.it/normative/legge_20040109_n4.htm">legge Stanca</a> che obbligano a rispettare le direttive WAI (o per lo meno dovrebbe essere così, anche se vedendo alcuni siti.. ma lasciamo perdere, non voglio entrare in polemica).
 Una tra le varie caratteristiche che devono essere presente nel sito &egrave; la necessità che i link (per lo meno i pi&ugrave; importanti) abbiano l'attributo _accesskey_ che permette ai diversamente abili di poter visitare il link senza doverlo selezionare con un mouse, ma semplicemente il tasto della tastiera corrispondente alla lettera che &egrave; stata assegnata.<!--break-->
-Ovviamente non &egrave; possibile che all'interno della stessa pagina ci siano due attributi  _accesskey_ con lo stesso valore, cos&igrave; come l'attributo _accesskey_ deve essere facilmente comprensibile e collegabile al link. Per poter facilmente capire qule &egrave; l'accesskey spesso 
+Ovviamente non &egrave; possibile che all'interno della stessa pagina ci siano due attributi  _accesskey_ con lo stesso valore, cos&igrave; come l'attributo _accesskey_ deve essere facilmente comprensibile e collegabile al link. Per poter facilmente capire qule &egrave; l'accesskey spesso
 si ricorre ad un piccolo stratagemma, ovvero di inserire la lettera corrispondente tra parentesi quadre. Noi sfrutteremo proprio questa peculiarità per la gestione degli _accesskey_.
-Per oggi ci limitiamo a inserire l'attributo per i primary e secondary link, pi&ugrave; avanti vedremo come applicare questo anche ai menu. 
+Per oggi ci limitiamo a inserire l'attributo per i primary e secondary link, pi&ugrave; avanti vedremo come applicare questo anche ai menu.
 Come prima cosa apriamo il file _template.php_ presente nella directory del nostro tema e, se non &egrave; gi&agrave; presente una funzione che si chiama _nometema_links_ dove, ovviamente, _nometema_ &egrave; il nome del tema che state utilizzando. Se cos&igrave; non fosse copiate al suo interno il seguente codice e modificate _nometema_ con il nome del vostro tema.~~~language-php
 function nometema_links($links, $attributes = array('class' =&gt; 'links')) {
   $output = '';

@@ -1,7 +1,11 @@
 ---
 title: URLify... secondo i miei gusti.
-categories: [Drupal]
+categories: [drupal]
 tags: [traduzione, urlify]
+redirect: [drupal/urlify_personalizzato, node/35]
+meta:
+    description: Chi usa Drupal e ci tiene un pò a avere un buon rapporto con gli spider di rete avrà sicuramente abilitato il modulo <em>path</em> e <em>clear url</em>, ma sicuramente si sarà accorto di quanto è noioso ogni volta andare a inserire il nome del path a mano per ogni contenuto (con la possibilità di commettere errori). Per ovviare a questo problema esiste un modulo che se abilitato converte automaticamente il titolo in un  path sostituendo gli spazi con il carattere &quot;-&quot; (ma vedremo dopo come inserire il carattere che più preferiamo) eliminando tutte quelle parole che si ritengono inutili (come <em>di</em>, <em>a</em>, ...).
+    tags: [drupal, traduzione, urlify]
 ---
 Chi usa Drupal e ci tiene un pò a avere un buon rapporto con gli spider di rete avrà sicuramente abilitato il modulo _path_ e _clear url_, ma sicuramente si sarà accorto di quanto è noioso ogni volta andare a inserire il nome del path a mano per ogni contenuto (con la possibilità di commettere errori). Per ovviare a questo problema esiste un modulo che se abilitato converte automaticamente il titolo in un  path sostituendo gli spazi con il carattere &quot;-&quot; (ma vedremo dopo come inserire il carattere che più preferiamo) eliminando tutte quelle parole che si ritengono inutili (come _di_, _a_, ...).<!--break-->
 come prima cosa dobbiamo scaricare il modulo (lo potete trovare <a href="http://drupal.org/project/urlify">qui</a>) e caricarlo, dopo averlo decompresso nella cartella _/modules_ della vostra installazione di Drupal. Fatto questo andiamo nel pannello di amministrazione e abilitiamo il modulo URLify, richiede anche che il modulo path sia già stato abilitato, altrimenti vi verrà chiesto di abilitarlo. Fatto queste semplici operazioni possiamo utilizzarlo direttamente, oppure possiamo personalizzarlo secondo le nostre esigenze. Personalmente trovo alquanto sgradevole avere le parole dell'URL separate da &quot;-&quot; e prediligo l'_underscore_. Per fare questo apriamo il file _/modules/urlify/urlify.module _ e troviamo la funzione ~~~language-php

@@ -1,7 +1,11 @@
 ---
 title: Vantaggi nell'utilizzo  delle DEFC
-categories: [Chimica]
-tags: [DEFC, etanolo, rendimento]
+categories: [chimica]
+tags: [defc, etanolo, rendimento]
+redirect: [chimica/pro_utilizzo_defc, node/13]
+meta:
+    description: Le <em>Fuel Cell</em> principalmente studiate fino ad ora sono state quelle che producono energia utilizzano come combustibile l'idrogeno. Bisogna per&ograve; considerare che questo gas non si trova facilmente in natura e viene prodotto a partire da una operazione di steam cracking di idrocarburi o da carbone. 
+    tags: [chimica, defc, etanolo, rendimento]
 ---
 Le _Fuel Cell_ principalmente studiate fino ad ora sono state quelle che producono energia utilizzano come combustibile l'idrogeno. Bisogna per&ograve; considerare che questo gas non si trova facilmente in natura e viene prodotto a partire da una operazione di steam cracking di idrocarburi o da carbone. <!--break-->
 Questo procedimento si basa su un'operazione di combustione parziale della fonte carboniosa (idrocarburo o carbone) in presenza di vapore di acqua. In questo modo si ottiene sia idrogeno che CO che viene successivamente convertito in CO2 con formazione di ulteriore idrogeno.

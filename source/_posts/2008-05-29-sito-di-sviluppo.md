@@ -1,7 +1,11 @@
 ---
 title: Sito di sviluppo
-categories: [Drupal]
+categories: [drupal]
 tags: [drupal, installazione, moduli, rofiles, sito, sviluppo, test]
+redirect: [drupal/sito_test, node/54]
+meta:
+    description: Spesso capita di dover sviluppare moduli o andare a personalizzare alcuni di questi e di necessitare di un sito di sviluppo per fare in modo che questo possa essere testato a dovere, o ancora che serva un sito con una serie di contenuti per vedere come si comporta Drupal in determinate occasioni.
+    tags: [drupal, drupal, installazione, moduli, rofiles, sito, sviluppo, test]
 ---
 Spesso capita di dover sviluppare moduli o andare a personalizzare alcuni di questi e di necessitare di un sito di sviluppo per fare in modo che questo possa essere testato a dovere, o ancora che serva un sito con una serie di contenuti per vedere come si comporta Drupal in determinate occasioni.
 

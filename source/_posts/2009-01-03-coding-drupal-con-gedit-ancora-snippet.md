@@ -1,7 +1,11 @@
 ---
 title: Coding Drupal con Gedit, ancora Snippet
-categories: [Drupal]
+categories: [drupal]
 tags: [autocomplete, funzioni, gedit, linux, mimetypes, snippet, sviluppo]
+redirect: [drupal/coding_drupal_gedit_ancora_snippet, node/63]
+meta:
+    description: Dopo la pubblicazione del precedente articolo sull'<a href="/drupal/autocompletamento_drupal_gedit">autocompletamento in gedit</a>, grazie ai consigli ricevuti da numerose parti, ho portato avanti alcune correzioni e ampliamenti delle funzionalità di autocompletamento, e sopratutto ho creato un nuovo tipo di liguaggio di scripting definito in gedit, in modo da non mischiare queste impostazioni con quelle predefinite di PHP come era precedentemente.
+    tags: [drupal, autocomplete, funzioni, gedit, linux, mimetypes, snippet, sviluppo]
 ---
 Dopo la pubblicazione del precedente articolo sull'<a href="/drupal/autocompletamento_drupal_gedit">autocompletamento in gedit</a>, grazie ai consigli ricevuti da numerose parti, ho portato avanti alcune correzioni e ampliamenti delle funzionalità di autocompletamento, e sopratutto ho creato un nuovo tipo di liguaggio di scripting definito in gedit, in modo da non mischiare queste impostazioni con quelle predefinite di PHP come era precedentemente.
 <!--break-->

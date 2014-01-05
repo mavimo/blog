@@ -1,7 +1,11 @@
 ---
 title: SASS in gedit per i CSS (3)
-categories: [Varie]
+categories: [varie]
 tags: [css, gedit, ruby, sass]
+redirect: [varie/sass_gedit_css_3, node/85]
+meta:
+    description: Negli <a href="/drupal/autocompletamento_drupal_gedit">articoli</a> <a href="/drupal/drupal_api_gedit">precedenti</a> ho ampiamente fatto capire che come editor utilizzo il nostro amato (e leggero) <a href="http://www.gnome.org/projects/gedit/">gedit</a>.
+    tags: [varie, css, gedit, ruby, sass]
 ---
 Negli <a href="/drupal/autocompletamento_drupal_gedit">articoli</a> <a href="/drupal/drupal_api_gedit">precedenti</a> ho ampiamente fatto capire che come editor utilizzo il nostro amato (e leggero) <a href="http://www.gnome.org/projects/gedit/">gedit</a>.
 

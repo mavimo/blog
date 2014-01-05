@@ -1,7 +1,11 @@
 ---
 title: Realizzare un campo autocompletante
-categories: [Drupal]
+categories: [drupal]
 tags: [netsons]
+redirect: [drupal/campo_autocomplete, node/38]
+meta:
+    description: <p>Se vi è capitato di dover completare alcuni campi con una serie di termini che si ripetono spesso, ma che a volte possono contenere termini nuovi, avrete di certo sentito la necessità di utilizzare un campo che si autocompleti o che quantomeno mettesse a disposizione i termini già inseriti in modo da avere sottomano i termini già aggiunti e non creare così dei doppioni. Un esempio di questo lo potete vedere andando a cercare un certo utente all'interno di un elenco, per esempio su <a href="http://www.drupalitalia.org" title="Sito della comunità italiana di Drupal">DrupalItalia</a> o al termine di questa pagina.</p>
+    tags: [drupal, netsons]
 ---
 <p>Se vi è capitato di dover completare alcuni campi con una serie di termini che si ripetono spesso, ma che a volte possono contenere termini nuovi, avrete di certo sentito la necessità di utilizzare un campo che si autocompleti o che quantomeno mettesse a disposizione i termini già inseriti in modo da avere sottomano i termini già aggiunti e non creare così dei doppioni. Un esempio di questo lo potete vedere andando a cercare un certo utente all'interno di un elenco, per esempio su <a href="http://www.drupalitalia.org" title="Sito della comunità italiana di Drupal">DrupalItalia</a> o al termine di questa pagina.</p>
 <!--break-->
@@ -10,10 +14,10 @@ tags: [netsons]
 ~~~language-php
 function test_form(&$node) {
   $form['test']  = array(
-    '#type' => 'textfield', 
-    '#title' => t('Test Autocomplete'), 
+    '#type' => 'textfield',
+    '#title' => t('Test Autocomplete'),
     '#autocomplete_path' => 'test/autocomplete',
-    '#maxlength' => 60, 
+    '#maxlength' => 60,
     '#weight' => -10,
   );
   $form['submit'] = array(
@@ -61,11 +65,11 @@ La funzione è abbastanza semplice e si occupa di andare a recuperare dalla _tab
 function test_form() {
 
   $form['test']  = array(
-    '#type' => 'textfield', 
-    '#title' => t('Test Autocomplete'), 
+    '#type' => 'textfield',
+    '#title' => t('Test Autocomplete'),
     '#autocomplete_path' => 'test/autocomplete',
     '#description' => t('Inserisci una lettera compresa tra la **a** e la **d** per vedere la funzione di autocompletamento in funzione.'),
-    '#maxlength' => 60, 
+    '#maxlength' => 60,
     '#weight' => -10,
   );
 
@@ -74,7 +78,7 @@ function test_form() {
 /*
 function test_menu() {
   $items = array();
-  
+
   // Menu per l'autocompleteamento del nome dei moduli
   $items[] = array('path'     => 'test/autocomplete',
                    'title'    => t('Test Autocomplete'),
@@ -87,7 +91,7 @@ function test_menu() {
 }
 
 function test_autocomplete($string = '') {
-  
+
   if ($string) {
     $result = db_query_range("SELECT name FROM {users} WHERE LOWER(name) LIKE LOWER('%s%%')", $string, 0, 10);
     while ($user = db_fetch_object($result)) {

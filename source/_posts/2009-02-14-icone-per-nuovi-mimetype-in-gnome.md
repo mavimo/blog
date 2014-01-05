@@ -1,7 +1,11 @@
 ---
 title: Icone per nuovi mimetype in gnome
-categories: [Linux]
+categories: [linux]
 tags: [gnome, icone, mimetypes, ubuntu]
+redirect: [linux/icone_nuovi_mimetype_gnome, node/73]
+meta:
+    description: Le icone, una delle prime cose che si personalizza chi passa molto tempo al computer, oltre che per esigenze anchegrafiche per il fatto che permette di riconoscere un file a colpo d'occhio, e quindi capirne la funzione senza dover andare a leggere nome del file e magari capire di cosa si tratta.
+    tags: [linux, gnome, icone, mimetypes, ubuntu]
 ---
 Le icone, una delle prime cose che si personalizza chi passa molto tempo al computer, oltre che per esigenze anchegrafiche per il fatto che permette di riconoscere un file a colpo d'occhio, e quindi capirne la funzione senza dover andare a leggere nome del file e magari capire di cosa si tratta.
 

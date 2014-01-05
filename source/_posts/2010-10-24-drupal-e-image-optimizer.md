@@ -1,7 +1,11 @@
 ---
 title: Drupal e image optimizer
-categories: [Drupal]
+categories: [drupal]
 tags: [front end, imageapi_optimize, immagini, ottimizzazione]
+redirect: [drupal/drupal_image_optimizer, node/109]
+meta:
+    description: Se vi capita di utilizzare YSlow o PageSpeed per analizzare le performance del vostro front end, può capitare di vedere una voce che vi indica che le vostre immagini non sono ottimizzate. Cosa vuol dire, ma sopratutto, come possiamo ottimizzarle per ottenere dei risultati migliori? Questo è quello di cui parleremo ora, in particolare vedremo come integrare queste ottimizzazioni in Drupal.
+    tags: [drupal, front end, imageapi_optimize, immagini, ottimizzazione]
 ---
 Se vi capita di utilizzare YSlow o PageSpeed per analizzare le performance del vostro front end, può capitare di vedere una voce che vi indica che le vostre immagini non sono ottimizzate. Cosa vuol dire, ma sopratutto, come possiamo ottimizzarle per ottenere dei risultati migliori? Questo è quello di cui parleremo ora, in particolare vedremo come integrare queste ottimizzazioni in Drupal.
 <!--break-->

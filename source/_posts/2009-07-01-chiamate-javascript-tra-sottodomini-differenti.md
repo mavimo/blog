@@ -1,7 +1,11 @@
 ---
 title: Chiamate javascript tra sottodomini differenti
-categories: [Varie]
-tags: [domini, Javascript, web]
+categories: [varie]
+tags: [domini, javascript, web]
+redirect: [varie/chiamate_javascript_sottodomini_differenti, node/82]
+meta:
+    description: in alcune situazioni può capitare di dover aprire finestre figlie di quella padre, operazione che si può effettuare tramite javascript ricorrendo al semplice window.opne.
+    tags: [varie, domini, javascript, web]
 ---
 in alcune situazioni può capitare di dover aprire finestre figlie di quella padre, operazione che si può effettuare tramite javascript ricorrendo al semplice
 ~~~language-php

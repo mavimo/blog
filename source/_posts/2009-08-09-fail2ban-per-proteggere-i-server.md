@@ -1,7 +1,11 @@
 ---
 title: Fail2Ban per proteggere i server
-categories: [Linux]
+categories: [linux]
 tags: [fail2ban, protezione, server]
+redirect: [linux/fail2ban_proteggere_server, node/92]
+meta:
+    description: Ebbene sì, capita... non sono un sistemista, ma capita di dover mettere on-line dei server, un server on-line dopo pochi giorni di presenza on-line, e senza ancora essere stato pubblicato (in pratica era una macchina fantasma) inizia a subire attacchi.
+    tags: [linux, fail2ban, protezione, server]
 ---
 Ebbene sì, capita... non sono un sistemista, ma capita di dover mettere on-line dei server, un server on-line dopo pochi giorni di presenza on-line, e senza ancora essere stato pubblicato (in pratica era una macchina fantasma) inizia a subire attacchi.
 

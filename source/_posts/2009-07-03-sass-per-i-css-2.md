@@ -1,7 +1,11 @@
 ---
 title: SASS per i CSS (2)
-categories: [Varie]
+categories: [varie]
 tags: [css, ruby, sass, ubuntu]
+redirect: [varie/sass_css_2, node/84]
+meta:
+    description: Come indicato nell'articolo precedente abbiamo visto la comodità di usare un metalinguaggio per i <a href="/varie/sass_css_1">CSS come SASS</a>. Ovviamente i browser non sono in grado di utilizzare direttamente questi file, ma necessitano di ricevere del codice CSS standard.
+    tags: [varie, css, ruby, sass, ubuntu]
 ---
 Come indicato nell'articolo precedente abbiamo visto la comodità di usare un metalinguaggio per i <a href="/varie/sass_css_1">CSS come SASS</a>. Ovviamente i browser non sono in grado di utilizzare direttamente questi file, ma necessitano di ricevere del codice CSS standard.
 

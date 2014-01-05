@@ -1,7 +1,11 @@
 ---
 title: da Array a XML e viceversa con PHP
-categories: [Varie]
-tags: [array, classi, code, codice, oop, PHP, static, xml]
+categories: [varie]
+tags: [array, classi, code, codice, oop, php, static, xml]
+redirect: [varie/array_xml_php, node/96]
+meta:
+    description: Può essere utile, a volte, avere a disposizione delle funzioni che permettono di trasformare degli array in elementi XML, per esempio perché c'è necessità di fornire dei feed, o è necessario realizzare degli elementi particolari per comunicazioni verso altri dispositivi con chiamate REST (per esempio vogliamo creare delle API interrogabili e che possono fornire risposte in diversi linguaggi, come JSON, XMl, PHP serialized, ....), o con applicativi flash/flex/...
+    tags: [varie, array, classi, code, codice, oop, php, static, xml]
 ---
 Può essere utile, a volte, avere a disposizione delle funzioni che permettono di trasformare degli array in elementi XML, per esempio perché c'è necessità di fornire dei feed, o è necessario realizzare degli elementi particolari per comunicazioni verso altri dispositivi con chiamate REST (per esempio vogliamo creare delle API interrogabili e che possono fornire risposte in diversi linguaggi, come JSON, XMl, PHP serialized, ....), o con applicativi flash/flex/...
 

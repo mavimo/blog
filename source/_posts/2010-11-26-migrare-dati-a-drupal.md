@@ -2,6 +2,10 @@
 title: Migrare dati a Drupal
 categories: [Drupal]
 tags: [migrate, table wizard]
+redirect: [drupal/migrare_dati_drupal, node/109]
+meta:
+    description:
+    tags: []
 ---
 Nella realizzazione di portali o nella fase di migrazione da una piattaforma ad un altra spesso di riscontra la necessità di effettuare l'inserimento / trasferimento di dati. Fino a che le informazioni sono limitate è conveniente effettuare ua migrazione manuale, permettendo di trasferire le inforazioni in maniera pulita ed eventualmente procedendo ad effettuare tutte le modfiche di markup e struttura necessarie; ma cosa succede se le quantità di informazioni da trasferire sono in numero tale da non consentirci di procedere in maniera manuale?
 Analizzeremo ora alcuni tool e tecniche che possono essere utilizzati per migrare grandi quantitativi di dati da una piattaforma X a Drupal, vedendo successivamente come estendere queste funzionalità per poter effettuare operazioni personalizzate sulla propria base dati.

@@ -1,7 +1,11 @@
 ---
 title: Commenti per tutti
-categories: [Drupal]
+categories: [drupal]
 tags: [commenti, permessi, utenti]
+redirect: [drupal/commenti_per_tutti, node/56]
+meta:
+    description: In Drupal ogni contenuto può avere i commenti abilitati o non abilitati di default in base al tipo di contenuto di cui si tratta, questa operazione viene settata normalmente dall'admin che si occupa di gestire i contenuti, eventualemnte in fase di creazione del contenuti chi ha i giusti permessi (<em>admin comment</em>) può decidere se abilitare, disabilitare o rendere in sola lettura i commenti per il singolo contenuto. per fare questo, però, l'utente acquisisce anche dei permessi extra che gli eprmettono di amministrare i commenti.
+    tags: [drupal, commenti, permessi, utenti]
 ---
 In Drupal ogni contenuto può avere i commenti abilitati o non abilitati di default in base al tipo di contenuto di cui si tratta, questa operazione viene settata normalmente dall'admin che si occupa di gestire i contenuti, eventualemnte in fase di creazione del contenuti chi ha i giusti permessi (_admin comment_) può decidere se abilitare, disabilitare o rendere in sola lettura i commenti per il singolo contenuto. per fare questo, però, l'utente acquisisce anche dei permessi extra che gli eprmettono di amministrare i commenti.
 
@@ -15,22 +19,22 @@ Innanzituto apriamo il file _/modules/comment/comment.module_, e andiamo a trova
  * Implementation of hook_perm().
  */
 function comment_perm() {
-  return array('access comments', 
-    'post comments', 
-    'administer comments', 
+  return array('access comments',
+    'post comments',
+    'administer comments',
     'post comments without approval'
   );
 }
-?>a 
+?>a
 <?php
 **
  * Implementation of hook_perm().
  */
 function comment_perm() {
-  return array('access comments', 
-    'post comments', 
-    'administer comments', 
-    'post comments without approval', 
+  return array('access comments',
+    'post comments',
+    'administer comments',
+    'post comments without approval',
     'admin comment for own node'
   );
 }

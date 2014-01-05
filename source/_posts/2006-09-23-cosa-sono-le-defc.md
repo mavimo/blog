@@ -1,7 +1,11 @@
 ---
 title: Cosa sono le DEFC
-categories: [Chimica]
-tags: [DEFC, etanolo, Fuel Cell]
+categories: [chimica]
+tags: [defc, etanolo, fuel cell]
+redirect: [chimica/direct_ethanol_fuel_cell, node/12]
+meta:
+    description: La sigla DEFC deriva dal nome inglese <em>Direct Ethanol Fuel Cell</em> che indica celle elettochimiche che permettono la conversione diretta di etanolo in energia elettrica senza ricorre a passaggi intermedi.
+    tags: [chimica, defc, etanolo, fuel cell]
 ---
 La sigla DEFC deriva dal nome inglese _Direct Ethanol Fuel Cell_ che indica celle elettochimiche che permettono la conversione diretta di etanolo in energia elettrica senza ricorre a passaggi intermedi.
 <!--break-->

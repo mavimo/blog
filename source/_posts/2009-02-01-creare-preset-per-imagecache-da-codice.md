@@ -1,7 +1,11 @@
 ---
 title: Creare preset per imagecache da codice
-categories: [Drupal]
-tags: [imagecache, moduli, PHP, sviluppo]
+categories: [drupal]
+tags: [imagecache, moduli, php, sviluppo]
+redirect: [drupal/creare_preset_imagecache_codice, node/70]
+meta:
+    description: A chi capita di realizzare moduli o profili di installazione per Drupal può capitar di dover andare ad appoggiarsi ad altri moduli, uno di quelli che mi capita spesso di utilizzare è il moduli imagecache, utilissimo nella gestione delle immaginidata l'ampia possibilità che fornisce.
+    tags: [drupal, imagecache, moduli, php, sviluppo]
 ---
 A chi capita di realizzare moduli o profili di installazione per Drupal può capitar di dover andare ad appoggiarsi ad altri moduli, uno di quelli che mi capita spesso di utilizzare è il moduli imagecache, utilissimo nella gestione delle immaginidata l'ampia possibilità che fornisce.
 

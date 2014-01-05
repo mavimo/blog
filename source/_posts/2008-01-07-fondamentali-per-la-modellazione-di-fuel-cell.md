@@ -1,7 +1,11 @@
 ---
 title: Fondamentali per la modellazione di Fuel Cell
-categories: [CFD]
-tags: [DEFC, Fuel Cell, mesh, simulazione]
+categories: [cfd]
+tags: [defc, fuel cell, mesh, simulazione]
+redirect: [cfd/fondamentali_per_la_modellazione_di_fuel_cell, node/49]
+meta:
+    description: <p>Questa è una prima introduzione necessarie a chi si avvicina per la prima volta alla modellazione di <em>Fuel Cell</em>, si tratta di alcune notizie estratte da diversi articoli pubblicati nell'ultimo decennio, la fonte principale delle notizie riportate è stato <em>Fundamental Models for Fuel Cell Engineering</em> di <em>Chao-Yang Wang</em> che potete leggere in versione integrale sul <em>Chem. Rev. 2004</em>, <strong>104</strong> pagine 4727-4766.</p>
+    tags: [cfd, defc, fuel cell, mesh, simulazione]
 ---
 <p>Questa è una prima introduzione necessarie a chi si avvicina per la prima volta alla modellazione di _Fuel Cell_, si tratta di alcune notizie estratte da diversi articoli pubblicati nell'ultimo decennio, la fonte principale delle notizie riportate è stato _Fundamental Models for Fuel Cell Engineering_ di _Chao-Yang Wang_ che potete leggere in versione integrale sul _Chem. Rev. 2004_, **104** pagine 4727-4766.</p><!--break-->
 <h2>Introduzione</h2>

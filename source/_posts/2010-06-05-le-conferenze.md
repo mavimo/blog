@@ -1,7 +1,11 @@
 ---
 title: Le Conferenze
-categories: [Varie]
+categories: [varie]
 tags: [bettersoftware, conferenze, phpday, whymca]
+redirect: [varie/le_conferenze, node/106]
+meta:
+    description: Ciao a tutti, l'argomento di oggi è un pò atipico per chi è abbituato a leggere qualche cosa su questo blog.Fino ad ora mi ero promesso di essere quanto più neutrale possibile e di inserire unicamente contenuti di tipo tecnico senza andare ad dare giudizi personali a cosa/eventi/persone. Ecco, in questo post farò "quasi" l'esatto contrario, darò moltissimi giudizi personalissimi, pertanto se non vi interessano saltate pure la lettura.
+    tags: [varie, bettersoftware, conferenze, phpday, whymca]
 ---
 Ciao a tutti, l'argomento di oggi è un pò atipico per chi è abbituato a leggere qualche cosa su questo blog.Fino ad ora mi ero promesso di essere quanto più neutrale possibile e di inserire unicamente contenuti di tipo tecnico senza andare ad dare giudizi personali a cosa/eventi/persone. Ecco, in questo post farò "quasi" l'esatto contrario, darò moltissimi giudizi personalissimi, pertanto se non vi interessano saltate pure la lettura.
 

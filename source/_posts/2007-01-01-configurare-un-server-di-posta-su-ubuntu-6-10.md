@@ -1,7 +1,11 @@
 ---
 title: Configurare un server di posta su Ubuntu 6.10
-categories: [Linux]
+categories: [linux]
 tags: [mail, mysql, postfix, roundcube]
+redirect: [linux/postfix_virtual_user, node/23]
+meta:
+    description: Questa breve guida si prefigge lo scopo di installare un mailserver per l'invio di posta all'interno di un organizzazione con una serie di utenti che possono accedere sia tramite un qualsiasi client di posta (Outlook, Outlook Express, Thunderbird, Evince, ...) che tramite una webmail ospitata sul webserver locale.
+    tags: [linux, mail, mysql, postfix, roundcube]
 ---
 Questa breve guida si prefigge lo scopo di installare un mailserver per l'invio di posta all'interno di un organizzazione con una serie di utenti che possono accedere sia tramite un qualsiasi client di posta (Outlook, Outlook Express, Thunderbird, Evince, ...) che tramite una webmail ospitata sul webserver locale.
 Il server gestisce i divverenti utenti tramite l'utilizzo di _virtual_, ovvero sul sistema non saranno presenti gli account per i vari utenti di posta, ma questi saranno presenti all'interno di un database (nel nostro caso MySQL), che pu&ograve; essere facilemnte gestito anche da remoto (tramite una delle tante interfacce disponibili).
@@ -166,7 +170,7 @@ e a questo punto passiamo alla configurazione di postfix.
 Iniziamo a modificare i file _/etc/postfix/main.cf_ ed inseriamo quanto segue:
 ~~~language-php
 myorigin = $myhostname
-mydestination = 
+mydestination =
 mynetworks = 127.0.0.0/8 192.168.0.0/16
 recipient_delimiter = +
 inet_interfaces = all
@@ -287,7 +291,7 @@ messaggio di prova
 Se tutto va bene il nostro server prender&agrave; in consegna il messaggio e lo invier&agrave; alla cartella di posta locale corretta.
 
 Passiamo ora alla configurazione di curier per la gestione degli utenti virtuali e la connessione di un quasiasi client.
-Come prima operazione andiamo a modificare i seguenti file 
+Come prima operazione andiamo a modificare i seguenti file
 **/etc/courier/authmodulelist**
 ~~~language-php
 authmysql

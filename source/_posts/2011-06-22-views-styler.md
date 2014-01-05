@@ -2,6 +2,9 @@
 title: Views styler
 categories: [drupal]
 tags: [css, grid, module, views]
+meta:
+    description:
+    tags: []
 ---
 Precedentemente avevo scritto una patch per views che pemetteva di andare ad indicare delle classi specifiche alle singole righe delle views. Considerato che modificare il codice di un modulo lo considero una delle cose più pericolose nonché sbagliate, e in considerazione del fatto dell'enorme modularità raggiunta da Drupal 7 con le funzioni di autoloading, ho deciso di separare la patch creando un modulo apposito. Attualmente questo modulo si trova in una sandbox, vediamo come ottenerlo e come usarlo (e perché!).
 <!--break-->

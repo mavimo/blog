@@ -1,11 +1,15 @@
 ---
 title: Usare la rete wirelesse del Politecnico di Milano
-categories: [Linux]
-tags: [Politecnico di Milano, wireless, wpa_supplicant]
+categories: [linux]
+tags: [politecnico di milano, wireless, wpa_supplicant]
+redirect: [linux/wireless_polimi, node/4]
+meta:
+    description: Per tutti coloro che utilzzano un PC con Windows XP sono presenti sul sito dell'<a href="http://www.asi.polimi.it/rete/wifi/istruzioni.html">ASI</a> le informazioni necessarie al collegamento alle rete wi-fi, io mi soffermer&ograve; su coloro che hanno un sistema operativo linux e mi baser&ograve; sulla distribuzione Ubuntu 6.06, in ogni caso con piccole modifiche lo stesso procedimento potr&agrave; essere utilzzato anche su altre distribuzioni (Debian, Fedora, Mandriva, Slakware, Gento...).
+    tags: [linux, politecnico di milano, wireless, wpa_supplicant]
 ---
-Per tutti coloro che utilzzano un PC con Windows XP sono presenti sul sito dell'<a href="http://www.asi.polimi.it/rete/wifi/istruzioni.html">ASI</a> le informazioni necessarie al collegamento alle rete wi-fi, io mi soffermer&ograve; su coloro che hanno un sistema operativo linux e mi baser&ograve; sulla distribuzione Ubuntu 6.06, in ogni caso con piccole modifiche lo stesso procedimento potr&agrave; essere utilzzato anche su altre distribuzioni (Debian, Fedora, Mandriva, Slakware, Gento...). 
+Per tutti coloro che utilzzano un PC con Windows XP sono presenti sul sito dell'<a href="http://www.asi.polimi.it/rete/wifi/istruzioni.html">ASI</a> le informazioni necessarie al collegamento alle rete wi-fi, io mi soffermer&ograve; su coloro che hanno un sistema operativo linux e mi baser&ograve; sulla distribuzione Ubuntu 6.06, in ogni caso con piccole modifiche lo stesso procedimento potr&agrave; essere utilzzato anche su altre distribuzioni (Debian, Fedora, Mandriva, Slakware, Gento...).
 <!--break-->
-La prima cosa da fare sar&agrave; installare i pacchetti per la propria scheda wireless (la mia &egrave; la IPW2200, ovvero la scheda standard per i PC Intel Centrino): 
+La prima cosa da fare sar&agrave; installare i pacchetti per la propria scheda wireless (la mia &egrave; la IPW2200, ovvero la scheda standard per i PC Intel Centrino):
 
 ~~~language-php
 $ sudo apt-get install ipw2200
@@ -17,16 +21,16 @@ La stessa cosa dovr&agrave; essere fatta per il pacchetto di wpa_supplicat che &
 ~~~language-php
 $ sudo apt-get install wpa_supplicant
 ~~~
-  
+
 
 Ovviamente potremmo anche voler compilare a manina tutti i pacchcetti, ma il mio consiglio &eacute; di non farlo, fidatevi di chi lo fa per voi :)
 
-A questo punto dovremmo collegarci alla rete wireless del politecnico non protetta _polimi_ da cui potremmo scaricarci il nostro nuovissimo e fiammante <a href="https://www.asi.polimi.it/rete/wifi/richiesta_certificato.html">certificato</a>, ottenuto il quale potremmo iniziare a effettuare la configurazione per l'autenticazione.  
+A questo punto dovremmo collegarci alla rete wireless del politecnico non protetta _polimi_ da cui potremmo scaricarci il nostro nuovissimo e fiammante <a href="https://www.asi.polimi.it/rete/wifi/richiesta_certificato.html">certificato</a>, ottenuto il quale potremmo iniziare a effettuare la configurazione per l'autenticazione.
 Innanzitutto dovremmo modificare il file _/etc/wpa_supplicant/wpa_supplicant.conf_ che in base alle distribuzioni usate potr&agrave; trovarsi in posizioni differenti. Come editor io uso _gedit_, ma potete sare il vostro preferito, che sia _emacs_, _vim_, _nano_ o altro!
 Il file dovr&agrave; contenere:
 
 ~~~language-php
-ctrl_interface=/var/run/wpa_supplicant 
+ctrl_interface=/var/run/wpa_supplicant
 ctrl_interface_group=0 network={
   ssid=&quot;internet&quot;
   scan_ssid=1
@@ -35,12 +39,12 @@ ctrl_interface_group=0 network={
   pairwise=TKIP
   group=TKIP
   eap=TLS
-  identity=&quot;S**MATRICOLA**&quot;   
-  password=&quot;**PASSWORD POLISELF**&quot;    
-  ca_cert=&quot;/etc/wpa_supplicant/certificati/asi.pem&quot; 
-  private_key=&quot;/etc/wpa_supplicant/certificati/CertificatoASI.pk12&quot;    
-  private_key_passwd=&quot;**PASSWORD  
-  CERTIFICATO**&quot;       
+  identity=&quot;S**MATRICOLA**&quot;
+  password=&quot;**PASSWORD POLISELF**&quot;
+  ca_cert=&quot;/etc/wpa_supplicant/certificati/asi.pem&quot;
+  private_key=&quot;/etc/wpa_supplicant/certificati/CertificatoASI.pk12&quot;
+  private_key_passwd=&quot;**PASSWORD
+  CERTIFICATO**&quot;
 }
 ~~~
 
@@ -58,7 +62,7 @@ sudo openssl pkcs12 -in Cerificato.p12 -out /etc/wpa_supplicant/certificati/asi.
 ~~~
 
 
-Inserendo la password rilasciata al momento della richiesta del certificato. Dovremmo anche copiare il certificato originale nella cartella appena creata, quindi: 
+Inserendo la password rilasciata al momento della richiesta del certificato. Dovremmo anche copiare il certificato originale nella cartella appena creata, quindi:
 
 ~~~language-php
 sudo cp CertificatoASI.p12 /etc/wpa_supplicant/certificati
@@ -88,7 +92,7 @@ L'utilizzo &egrave; decisamente banale, basta dare il comando:
 ./collegarsi_poli.sh start
 ~~~
 
-per avviare la connessione e 
+per avviare la connessione e
 ~~~language-php
 ./collegarsi_poli.sh stop
 ~~~

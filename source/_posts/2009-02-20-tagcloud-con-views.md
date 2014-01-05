@@ -1,7 +1,11 @@
 ---
 title: Tagcloud con views
-categories: [Drupal]
+categories: [drupal]
 tags: [css, tagcloud, views]
+redirect: [drupal/tagcloud_views, node/75]
+meta:
+    description: La tagcloud, elemento molto in voga fino a poco tempo fa e che un pò alla volta sta scemando, ma che comunque non va mai dimenticata per diversi motivi (aiuta gli utenti, fa bene al SEO, ...) Vediamo ora come realizzarla tramite views.
+    tags: [drupal, css, tagcloud, views]
 ---
 La tagcloud, elemento molto in voga fino a poco tempo fa e che un pò alla volta sta scemando, ma che comunque non va mai dimenticata per diversi motivi (aiuta gli utenti, fa bene al SEO, ...) Vediamo ora come realizzarla tramite views.
 <!--break-->
@@ -501,14 +505,14 @@ Dopo averla importata andate a modificare il file _views-cloud-summary-style.tpl
  */
 ?>
 <div class="views-cloud">
-  
+
   <?php foreach ($rows as $row): ?>
     <li class="views-cloud-size-<?php print $row->cloud_size; ?>">
       <?php $terms = taxonomy_get_term_by_name($row->term_data_name); ?>
       <a href="<?php print url('taxonomy/term/' . $terms[0]->tid); ?>"><?php print $row->link; ?></a>&nbsp;<?php if (!empty($options['count'])): ?><span class="views-cloud-count">(<?php print $row->count?>)</span><?php endif; ?>
-    
+
   <?php endforeach; ?>
-  
+
 </div>
 
 ~~~
@@ -522,7 +526,7 @@ Purtroppo la relase attuale del modulo soffre di un piccolo (PICCOLO???!!??!!!) 
 div.views-cloud ul {
   list-style: none;
   text-align: center;
-  line-height: 1.2; 
+  line-height: 1.2;
 }
 div.views-cloud ul li, div.views-cloud div {
   display: inline;

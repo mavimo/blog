@@ -1,7 +1,11 @@
 ---
 title: ImageCache anche nei commenti!
-categories: [Drupal]
+categories: [drupal]
 tags: [commenti, imagecache, template]
+redirect: [drupal/imagecache_anche_nei_commenti, node/58]
+meta:
+    description: Uno dei moduli più potenti per la gestione delle immagini che possiamo utilizzare con Drupal è sicuramente <a href="http://drupal.org/project/imagecache">ImageCache</a> (ormai giunto alla release 2.1), a cui si aggiunge l'ottimo <a href="http://drupal.org/project/imagecache_actions">ImageCache Actions</a> che ci permette di aggiungere funzionalità a questo. Vediamo come usare questi strumenti per modificare gli avatar dell'utente all'interno dei commenti.
+    tags: [drupal, commenti, imagecache, template]
 ---
 Uno dei moduli più potenti per la gestione delle immagini che possiamo utilizzare con Drupal è sicuramente <a href="http://drupal.org/project/imagecache">ImageCache</a> (ormai giunto alla release 2.1), a cui si aggiunge l'ottimo <a href="http://drupal.org/project/imagecache_actions">ImageCache Actions</a> che ci permette di aggiungere funzionalità a questo. Vediamo come usare questi strumenti per modificare gli avatar dell'utente all'interno dei commenti.
 <!--break-->
@@ -43,7 +47,7 @@ function theme_user_comment_picture($account) {
     if (isset($picture)) {
       $preset = 'user_avatar_comment';
       $alt = t("@user's picture", array('@user' => $account->name ? $account->name : variable_get('anonymous', t('Anonymous'))));
-      $picture = theme('imagecache', $preset, $picture, $alt, $alt, array()); 
+      $picture = theme('imagecache', $preset, $picture, $alt, $alt, array());
       if (!empty($account->uid)) {
         $picture = l($picture, "user/$account->uid", array('title' => t('View user page.')), NULL, NULL, FALSE, TRUE);
       }

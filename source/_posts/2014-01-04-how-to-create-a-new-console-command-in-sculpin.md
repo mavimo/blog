@@ -5,6 +5,9 @@ tags: [sculpin, bundle, php]
 image:
     folder: sculpin-cli-command
     alt: Add a new command in sclipin CLI, make it easy!
+meta:
+    description:
+    tags: []
 ---
 Some days ago I start to rewrite my blog using a static site generator. I start to investigate this opportunity some months ago and after looking other tools like Jekyll, Octopress and Sphinx. After some test and investigation I moved to [Sculpin](http://sculpin.io), a REALLY nice  PHP static site generator based on [Symfony](http://symfony.com/) components.
 

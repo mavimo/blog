@@ -1,14 +1,12 @@
----
+s---
 title: jQuery e validazione lato client
-categories: [Drupal]
-tags: [Javascript, jquery, validazione client]
+categories: [drupal]
+tags: [javascript, jquery, validazione client]
+redirect: [drupal/jquery_e_validazione_lato_client, node/57]
+meta:
+    description: Vediamo ora come sfruttare una nota libreria di validazione che utilizza jQuery come framework (lo stesso di Drupal, evitandoci, quindi, complicazioni inutili), questa libreria è la <a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">jquery.validation</a>
+    tags: [drupal, javascript, jquery, validazione client]
 ---
-<?php
-drupal_add_js('files/57/jquery.validate.js');
-drupal_add_js('files/57/additional-methods.js');
-drupal_add_js('files/57/additional-methods-it.js');
-drupal_add_js('files/57/demo.js');
-?>
 <p>Drupal si occupa esclusivamente della validazione lato server delle informazioni, ma spesso è consigliabile prevedere ad una prima validazione dei dati inseriti dall'utente lato client, in modo da evitare l'invio della richiesta limitando quindi le possibilità di errore. Ovviamente la validazione lato client non deve essere l'unica attiva, essendo facilmente bypassabile disabilitando i JS sul client, e si rischierebbero danni notevoli.</p>
 
 <p>Vediamo ora come sfruttare una nota libreria di validazione che utilizza jQuery come framework (lo stesso di Drupal, evitandoci, quindi, complicazioni inutili), questa libreria è la <a href="http://bassistance.de/jquery-plugins/jquery-plugin-validation/">jquery.validation</a>.</p>

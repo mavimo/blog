@@ -1,7 +1,11 @@
 ---
 title: Installare Drupal 4.7 su netsons
-categories: [Drupal]
+categories: [drupal]
 tags: [installazione, lock tables, netsons]
+redirect: [drupal/installare_versione_47_netsons, node/1]
+meta:
+    description: Abbiamo scelto di installare drupal come CMS,  bene, adesso vediamo cosa bisogna fare per farlo funzionare su netsons.org, poiché necessita di alcune modifiche per funzionare correttamente a causa delle limitazioni sul LOCK del database imposte al nostro utente.
+    tags: [drupal, installazione, lock tables, netsons]
 ---
 Abbiamo scelto di installare drupal come CMS,  bene, adesso vediamo cosa bisogna fare per farlo funzionare su _netsons.org_, poich&eacute; necessita di alcune modifiche per funzionare correttamente a causa delle limitazioni sul _LOCK_ del database imposte al nostro utente.<!--break-->
 Innanzitutto bisogna avere a disposizione un client FTP per effettuare l'upload dei file nella cartella che ci viene assegnta. Di client ne esistono a dozzine, quindi scegliete quello che preferite/sapete gi&aacute; usare, io utilizzo <a href="http://www.sourceforge.net/projects/filezilla">FileZilla</a> (su windows) e <a href="http://ww.gnome.org">Nautilus</a> (su linux), ma quasiasi altro va bene.

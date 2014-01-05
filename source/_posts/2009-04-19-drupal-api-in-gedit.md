@@ -1,7 +1,11 @@
 ---
 title: Drupal API in gedit
-categories: [Drupal]
+categories: [drupal]
 tags: [drupal api, gedit, plugin, python]
+redirect: [drupal/drupal_api_gedit, node/80]
+meta:
+    description: Non sono ancora riuscito a convincervi ad usare <a href="http://live.gnome.org/Gedit">gedit</a>, nonostante i fantastici <a href="/drupal/gedit_drupal_snippet">snippet</a>? vediamo se ques'altra estensione per Drupal vi invonglierà a tentare il passaggio.
+    tags: [drupal, drupal api, gedit, plugin, python]
 ---
 Non sono ancora riuscito a convincervi ad usare <a href="http://live.gnome.org/Gedit">gedit</a>, nonostante i fantastici <a href="/drupal/gedit_drupal_snippet">snippet</a>? vediamo se ques'altra estensione per Drupal vi invonglierà a tentare il passaggio.
 <!--break-->
@@ -12,7 +16,7 @@ Ecco, questo è la funzionalità del plugin che trovate in allegato a questo art
 Di seguito trovate l'esempio per una funzione comune (la calssica _node_load_), mentre in cima a questo articolo vedete la chiamata all'_hook_theme_.
 <img src="/files/articolo/80/function_jpeg_15240.jpeg" alt="Esempio di interfaccia per il caricamento della funzione." />
 
-Vediamo rapidamente come possiamo andare ad installare questo plugin per gedit ed eventualmente come apportare alcune modifiche che potrebbero tornare utili. 
+Vediamo rapidamente come possiamo andare ad installare questo plugin per gedit ed eventualmente come apportare alcune modifiche che potrebbero tornare utili.
 
 Per l'installazione è sufficiente iniziate ad installare il alcune classy di python necessarie, quindi su sistemi deb based andiamo con:
 ~~~language-php

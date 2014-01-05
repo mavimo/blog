@@ -1,7 +1,11 @@
 ---
 title: Campo autocompletante multiplo
-categories: [Drupal]
-tags: [netsons, PHP]
+categories: [drupal]
+tags: [netsons, php]
+redirect: [drupal/campo_autocompletante_multiplo, node/39]
+meta:
+    description: In un articolo precedente abbiamo visto come andare a creare dei campi con la funzione di autocompletamento, ma cosa succede nel caso in cui all'interno dello stesso campo dobbiamo andare a posizionare diversi valori ogniuno dei quali deve essere inserito con la funzione di autocompletamento? Normalmente questo non sarebbe possibile, ma tramite una semplice modifica possiamo andare a utilizzare un elenco separato da virgole mantenendo le funzionalità di autocompletamento.
+    tags: [drupal, netsons, php]
 ---
 In un articolo precedente abbiamo visto come andare a creare dei campi con la funzione di autocompletamento, ma cosa succede nel caso in cui all'interno dello stesso campo dobbiamo andare a posizionare diversi valori ogniuno dei quali deve essere inserito con la funzione di autocompletamento? Normalmente questo non sarebbe possibile, ma tramite una semplice modifica possiamo andare a utilizzare un elenco separato da virgole mantenendo le funzionalità di autocompletamento.
 <!--break-->
@@ -37,11 +41,11 @@ Un esempio lo potete trovare qui di seguito:
 function test_form() {
 
   $form['test']  = array(
-    '#type' => 'textfield', 
-    '#title' => t('Test Multiple autocomplete'), 
+    '#type' => 'textfield',
+    '#title' => t('Test Multiple autocomplete'),
     '#autocomplete_path' => 'test/multiple/autocomplete',
     '#description' => t('Inserisci una lettera compresa tra la **a** e la **d** per vedere la funzione di autocompletamento in funzione.'),
-    '#maxlength' => 60, 
+    '#maxlength' => 60,
     '#weight' => -10,
   );
 

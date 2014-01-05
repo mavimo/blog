@@ -1,7 +1,11 @@
 ---
 title: Ralizzazione di modelli
-categories: [CFD]
-tags: [gmsh, mesh, Salome]
+categories: [cfd]
+tags: [gmsh, mesh, salome]
+redirect: [cfd/gmsh_genera_mesh, node/19]
+meta:
+    description: Per realizzare un modello di cui poter effettuare una simulazione CFD si possono utilizzare molti programmi sia open source che closed source. Fra tutti quelli disponibili soffermeremo un p&ograve; la nostra attenzione sul programma <a href="http://geuz.org/gmsh/">gmsh</a>.
+    tags: [cfd, gmsh, mesh, salome]
 ---
 Per realizzare un modello di cui poter effettuare una simulazione CFD si possono utilizzare molti programmi sia open source che closed source. Fra tutti quelli disponibili soffermeremo un p&ograve; la nostra attenzione sul programma <a href="http://geuz.org/gmsh/">gmsh</a>, che potete installare da sorgente o tramite un semplice
 ~~~language-php

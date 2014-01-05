@@ -1,7 +1,11 @@
 ---
 title: Creiamo il nostro tema per Drupal (1)
-categories: [Drupal]
+categories: [drupal]
 tags: [modulo color, sviluppo, tema]
+redirect: [drupal/creiamo_nostro_tema_drupal_1, node/45]
+meta:
+    description: Data la mancanza di documentazione in questo campo e le continue richieste da parte degli utenti di avere una guida per la realizzazione di un tema, più o meno complesso, per <a href="http://drupal.org">Drupal</a>, ho iniziato a scrivere questa guida, che non pretende di essere completa ne troppo approfondita, ma spero che serva come base di partenza per tutti coloro che hanno intenzione di creare un proprio tema o cercare di capire come questo avviene.
+    tags: [drupal, modulo color, sviluppo, tema]
 ---
 Data la mancanza di documentazione in questo campo e le continue richieste da parte degli utenti di avere una guida per la realizzazione di un tema, più o meno complesso, per <a href="http://drupal.org">Drupal</a>, ho iniziato a scrivere questa guida, che non pretende di essere completa ne troppo approfondita, ma spero che serva come base di partenza per tutti coloro che hanno intenzione di creare un proprio tema o cercare di capire come questo avviene.
 <!--break-->
@@ -13,7 +17,7 @@ Bhè, innanzitutto una buona dose di volontà e tempo libero, poi cercheremo di 
 Detto il software che ci serve vediamo le conoscenze che invece dobbiamo avere: iniziamo dicendo che serve un minimo di buon gusto per creare un tema piacevole alla vista e usabile, poi sicuramente sono necessarie buone conoscenze di HTML (meglio se di <a href="http://www.w3.org/TR/xhtml11">XHTML Strict</a>), CSS (anche qui possibilmente all'ultima versione, cioè <a href="http://www.w3.org/TR/REC-CSS2">CSS2</a>), un pò di conoscenza di PHP e di certo non fa male avere una minima introduzione sul funzionamento di Drupal (anche se questo cercherò di spiegarlo man mano). come conoscenze opzionali (ma sarebbe bene averle) abbiamo le regole basi dell'accessibilità e dell'usabilità di un sito.
 
 <h3>Iniziamo</h3>
-Una volta che abbiamo a disposizione tutto questo iniziamo a lavorare. Come prima cosa spegniamo il computer, apriamo il cassetto della stampante e prendiamo un foglio di carta bianco, una matita (io preferisco le morbide, ma va a gusti) e una gomma. Pensiamo un attimo a come deve essere la struttura del nostro sito e iniziamo a abbozzare qualche cosa che potrebbe essere il nostro layout. Dopo qualche tentativo, dovremmo riuscire ad ottenere una pseudo bozza (che vedrete cambierà anche molto nel corso dell'evoluzione del nostro tema). 
+Una volta che abbiamo a disposizione tutto questo iniziamo a lavorare. Come prima cosa spegniamo il computer, apriamo il cassetto della stampante e prendiamo un foglio di carta bianco, una matita (io preferisco le morbide, ma va a gusti) e una gomma. Pensiamo un attimo a come deve essere la struttura del nostro sito e iniziamo a abbozzare qualche cosa che potrebbe essere il nostro layout. Dopo qualche tentativo, dovremmo riuscire ad ottenere una pseudo bozza (che vedrete cambierà anche molto nel corso dell'evoluzione del nostro tema).
 
 <img src="/files/43/bozza_main_ridotta_ombra.png" alt="Bozza di rappresentazione fatta a mano del layout completo del sito." width="630" height="689" style="margin: auto;" />
 

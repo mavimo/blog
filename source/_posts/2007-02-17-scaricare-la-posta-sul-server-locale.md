@@ -1,7 +1,11 @@
 ---
 title: Scaricare la posta sul server locale
-categories: [Linux]
+categories: [linux]
 tags: [email, fetchmail, mail, postfix]
+redirect: [linux/configurare_fetchmail, node/30]
+meta:
+    description: Con la <a href="/postfix_ubuntu_vistual">prima guida</a> abbiamo visto come andare a configurare postfix per aver una serie di utenti di posta che possono inviare e ricevere la posta al loro interno, o nel caso si disponga di un IP statico anche a caselle di posta non appartenenti ai nostri domini. Purtroppo se non abbiamo un indirizzo IP statico, ma un indirizzo dinamico, come avviene per la quasi totalità di utenze domestiche o aziendali di tipo low-level non possiamo utilizzare il nostro server per inoltrare direttamente le e-mail all'esterno, poiché i server di posta dei destinatari verificando che il nostro non è un indirizzo statico considereranno il nostro server come fonte di SPAM e quindi quasi certamente la nostra mail verrà rifiutata, quando non direttamente cancellata.
+    tags: [linux, email, fetchmail, mail, postfix]
 ---
 Con la <a href="/postfix_ubuntu_vistual">prima guida</a> abbiamo visto come andare a configurare postfix per aver una serie di utenti di posta che possono inviare e ricevere la posta al loro interno, o nel caso si disponga di un IP statico anche a caselle di posta non appartenenti ai nostri domini. Purtroppo se non abbiamo un indirizzo IP statico, ma un indirizzo dinamico, come avviene per la quasi totalità di utenze domestiche o aziendali di tipo low-level non possiamo utilizzare il nostro server per inoltrare direttamente le e-mail all'esterno, poiché i server di posta dei destinatari verificando che il nostro non è un indirizzo statico considereranno il nostro server come fonte di SPAM e quindi quasi certamente la nostra mail verrà rifiutata, quando non direttamente cancellata.
 <!--break-->

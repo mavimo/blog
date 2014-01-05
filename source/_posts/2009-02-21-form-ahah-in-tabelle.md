@@ -1,7 +1,11 @@
 ---
 title: Form AHAH in tabelle
-categories: [Drupal]
+categories: [drupal]
 tags: [ahah, form, tabella]
+redirect: [drupal/form_ahah_tabelle, node/76]
+meta:
+    description: Negli articoli precedenti abbiamo visto come realizzare dei <a href="/drupal/ahah_form">form con funzionalità AHAH</a> e con <a href="/drupal/form_tabella">form posizionati in tabella</a>, in questo articolo, invece, vedremo come unire queste due funzionalità per creare dei form con funzionalità AHAH ma con gli elementi disposti in tabella.
+    tags: [drupal, ahah, form, tabella]
 ---
 Negli articoli precedenti abbiamo visto come realizzare dei <a href="/drupal/ahah_form">form con funzionalità AHAH</a> e con <a href="/drupal/form_tabella">form posizionati in tabella</a>, in questo articolo, invece, vedremo come unire queste due funzionalità per creare dei form con funzionalità AHAH ma con gli elementi disposti in tabella.
 
@@ -23,7 +27,7 @@ function tableformahah_menu() {
     'page arguments'   => array('tableformahah_form'),
     'access arguments' => array('access content'),
   );
-  
+
   $items['tutorial/js/tableformahah/%'] = array(
     'title'            => t('JSON'),
     'description'      => t('Get data for haha'),
@@ -32,7 +36,7 @@ function tableformahah_menu() {
     'access arguments' => array('access content'),
     'type'             => MENU_CALLBACK,
   );
-  
+
   return $items;
 }
 ?>
@@ -46,7 +50,7 @@ Il passo successivo è la realizzazione del form, anche in questo caso l'unica a
  */
 function tableformahah_form($form_state) {
   $form = array();
-  
+
   // Build Form with FAPI
   for($i = 0; $i < FORM_COUNT_MAXROWS; $i++) {
     $form['select_a_' . $i] = array(
@@ -70,9 +74,9 @@ function tableformahah_form($form_state) {
       '#suffix'       => '</div>',
     );
   }
-  
+
   $form['#theme'] = 'tableformahah_draw';
-  
+
   return $form;
   return $form;
 }
@@ -97,18 +101,18 @@ function tableformahah_theme($existing, $type, $theme, $path) {
  */
 function theme_tableformahah_draw($form) {
   $header = array(t('Prima select'), t('Seconda select'));
-  
+
   for($i = 0; $i < FORM_COUNT_MAXROWS; $i++) {
     $rows[] = array(
       drupal_render($form['select_a_' . $i ]),
       drupal_render($form['select_b_' . $i]),
     );
   }
-  
+
   $output = theme('table', $header, $rows);
-  
+
   $output .= drupal_render($form);
-  
+
   return $output;
 }
 ?>
@@ -120,7 +124,7 @@ Ora andiamo a realizzare la fuzione che indica l'elemento da inserire nel form d
  */
 function tableformahah_js($index = 0) {
   $did = $_POST['select_a_' . $index];
-  
+
   $form['select_b_' . $index] = array(
     '#type'          => 'select',
     '#required'      => true,
@@ -163,7 +167,7 @@ A questo è (come spiegato nell'articolo precedente) necessario andare ad aggiun
   *    print drupal_to_js(array('data' => $output, 'status' => true));
   *    exit();
   * @endcode
-  * 
+  *
   * @param $fields
   *   Indica l'lemento da inserire nel forum
   * @param $name
@@ -175,33 +179,33 @@ A questo è (come spiegato nell'articolo precedente) necessario andare ad aggiun
 function tableformahah_field_render($fields, $name) {
   // Cambia lo status del form
   $form_state = array('submitted' => FALSE);
-  
+
   // Recupera l'id del form
   $form_build_id = $_POST['form_build_id'];
-  
+
   // Recupera il form dalla cache
   $form = form_get_cache($form_build_id, $form_state);
-  
+
   // Sostituisce il field
   $form[$name] = $fields;
-  
+
   // Mette il form modificato in cache
   form_set_cache($form_build_id, $form, $form_state);
-  
-  
+
+
   $form += array(
     '#post' => $_POST,
     '#programmed' => FALSE,
   );
-  
+
   // Rigenera il form
   $form = form_builder($_POST['form_id'], $form, $form_state);
-  
+
   // Estrae il field modificato
   $new_form = $form[$name];
-  
+
   // Renderizza e restituisce il field modificato
-  return drupal_render($new_form); 
+  return drupal_render($new_form);
 }
 ?>
 

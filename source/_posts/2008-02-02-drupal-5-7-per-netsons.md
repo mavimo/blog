@@ -1,7 +1,11 @@
 ---
 title: Drupal 5.7 per netsons
-categories: [Drupal]
+categories: [drupal]
 tags: [netsons]
+redirect: [druapl/installare_57_netsons, node/52]
+meta:
+    description: Ormai come di consuetudine al rilascio della nuova versione di Drupal segue l'aggiornamento del pacchetto di installazione personalizzato per <a href="http://www.netsons.org">Netsons</a>.
+    tags: [drupal, netsons]
 ---
 Ormai come di consuetudine al rilascio della nuova versione di Drupal segue l'aggiornamento del pacchetto di installazione personalizzato per <a href="http://www.netsons.org">Netsons</a>.
 La procedura di installazione richiede una serie di passaggi necessari a consentire il corretto caricamento del CMS. Come prima cosa assicuriamoci sul nostro pannello di controllo di aver attivato sul nostro spazio il database MySQL e PHP; entrambi alla versione 5.<!--break-->

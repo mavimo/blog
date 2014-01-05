@@ -1,7 +1,11 @@
 ---
 title: Inserire codice XHTML in LaTeX
-categories: [Varie]
-tags: [Javascript, LaTeX, listing, XHTML]
+categories: [varie]
+tags: [javascript, latex, listing, xhtml]
+redirect: [varie/evidenziazione_sintassi_html_javascript_in_latex, node/44]
+meta:
+    description: Capita a volte di dover scriver documenti LaTeX che contengano stralci di codice dei più diversi linguaggi di programmazione, spesso risolta utile anche un evidenziazione della sintassi nel documento finale prodotto.
+    tags: [varie, javascript, latex, listing, xhtml]
 ---
 Capita a volte di dover scriver documenti LaTeX che contengano stralci di codice dei più diversi linguaggi di programmazione, spesso risolta utile anche un evidenziazione della sintassi nel documento finale prodotto. Per fare questo esistono diverse vie:
 <ol>

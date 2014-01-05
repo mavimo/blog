@@ -1,7 +1,11 @@
 ---
 title: Corso su Drupal
-categories: [Drupal]
+categories: [drupal]
 tags: [corso, ikaros, lezioni]
+redirect: [drupal/corso, node/59]
+meta:
+    description: A breve terrò un corso su Drupal per utenti esperti, chi fosse interessato a partecipare al corso è pregato di contattarmi. La disponibilità di posti è limitata e verranno prese in considerazione le richieste in ordine cronologico.
+    tags: [drupal, corso, ikaros, lezioni]
 ---
 A breve terrò un corso su Drupal per utenti esperti, chi fosse interessato a partecipare al corso è pregato di contattarmi. La disponibilità di posti è limitata e verranno prese in considerazione le richieste in ordine cronologico.
 <!--break-->

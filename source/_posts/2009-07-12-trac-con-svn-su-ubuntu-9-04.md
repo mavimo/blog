@@ -1,7 +1,11 @@
 ---
 title: Trac con SVN su Ubuntu 9.04
-categories: [Linux]
+categories: [linux]
 tags: [svn, trac, ubuntu]
+redirect: [linux/trac_svn_ubuntu_904, node/87]
+meta:
+    description: Per la gestione di progetti, sopratutto quando ci si lavora in più di una persona, ma anche nel caso della singola personaquando si ha la necessità di tracciare quello che viene fatto non può mancare un meccanismo di tracking. Tra questi strumenti quello che preferisco utilizzare è Trac.
+    tags: [linux, svn, trac, ubuntu]
 ---
 Per la gestione di progetti, sopratutto quando ci si lavora in più di una persona, ma anche nel caso della singola personaquando si ha la necessità di tracciare quello che viene fatto non può mancare un meccanismo di tracking. Tra questi strumenti quello che preferisco utilizzare è Trac, strumento completo che comprende:
 
@@ -34,7 +38,7 @@ a questo punto il sistema caricherà tutto quello che serve al sistema. Al termi
 </ol>
 Ci sono alcune cose che possono sembrare "particolari" in trac, quindi ve le accenno subito.
 
-Innanzitutto ogni progetto è una sua istanza autonoma, quindi se abbiamo più progetti sarà necessario creare più istanze di trac. Questo permette di tenere il tutto ben compartimentato, a fronte di uno spreco di risorse (spazio su disco) veramente minimo. 
+Innanzitutto ogni progetto è una sua istanza autonoma, quindi se abbiamo più progetti sarà necessario creare più istanze di trac. Questo permette di tenere il tutto ben compartimentato, a fronte di uno spreco di risorse (spazio su disco) veramente minimo.
 Un altra caratteristica è che l'amministrazione avviene tramite shell e non da pannello web, anche se è possibile attivare (e lo faremo) questa funzionalità.
 La caratteristica "forse" più particolare è data dalla mancanza di un meccanismo di autenticazione interno, infatti basa tutto il suo processo sulle autenticazioni fornite da sistemi esterni (siano esse le utenze SVN, LDAP, fornite da Apache, ...). Questo normalmente viene vsto come "sconvolgente" ma permette di avere una centralizzazione del meccanismo di autenticazione che alla fine risulta essere conveniente.
 
@@ -60,7 +64,7 @@ ora ci verranno proposte alcune domande di base per la configuazione, quindi:
 ~~~language-php
 Creating a new Trac environment at /var/www/trac/test
 
-Trac will first ask a few questions about your environment 
+Trac will first ask a few questions about your environment
 in order to initialize and prepare the project database.
 
  Please enter the name of your project.
@@ -105,31 +109,31 @@ e dentro scriviamoci (modificando il nome del sito):
 <VirtualHost *:80>
   ServerAdmin webmaster@localhost
   ServerName  trac.miosito.tpl
-  
+
   DocumentRoot /var/www/trac
   <Directory />
     Options FollowSymLinks
     AllowOverride All
   </Directory>
-  
+
   ErrorLog /var/log/apache2/error.trac.log
-  
+
   # Possible values include: debug, info, notice, warn, error, crit, alert, emerg.
   LogLevel warn
-  
+
   CustomLog /var/log/apache2/access.trac.log combined
-  
+
   <LocationMatch "/[^/]+/login">
     AuthType Basic
     AuthName "Trac"
     AuthUserFile /var/www/trac/.htpasswd
     Require valid-user
   </LocationMatch>
-  
+
   <Location />
     SetHandler mod_python
     PythonInterpreter main_interpreter
-    PythonHandler trac.web.modpython_frontend 
+    PythonHandler trac.web.modpython_frontend
     PythonOption TracEnvParentDir /var/www/trac
     PythonOption TracUriRoot /
   </Location>
@@ -177,7 +181,7 @@ sudo trac-admin /var/www/trac/test/ permission add autenticated TRAC_ADMIN
 
 e rimuoviamo i permessi che riteniamo troppo aperti (tolgo tutto per gli utenti anonimi):
 ~~~language-php
-permission remove anonymous BROWSER_VIEW CHANGESET_VIEW FILE_VIEW LOG_VIEW 
+permission remove anonymous BROWSER_VIEW CHANGESET_VIEW FILE_VIEW LOG_VIEW
 permission remove anonymous MILESTONE_VIEW REPORT_SQL_VIEW REPORT_VIEW
 permission remove anonymous ROADMAP_VIEW SEARCH_VIEW TICKET_VIEW
 permission remove anonymous TIMELINE_VIEW WIKI_VIEW

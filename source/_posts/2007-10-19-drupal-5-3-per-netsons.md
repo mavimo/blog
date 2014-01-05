@@ -1,7 +1,11 @@
 ---
 title: Drupal 5.3 per Netsons
-categories: [Drupal]
+categories: [drupal]
 tags: [netsons]
+redirect: [drupal/installazione_versione_53_netsons, node/42]
+meta:
+    description: La nuova relase di Drupal (la versione 5.3) porta alla correzione di una serie di exploit che possono compromettere l'integrità del vostro database, quindi l'upgrade è altamente consigliato. Come per le versioni precedenti anche la versione 5.3 necessita di alcuni permessi sulle tabelle (<em>TEMPORARY TABLE</em> e <em>LOCK TABLE</em>) che non si hanno a disposizione su Netsons, quindi ho rilasciato questa versione customizzata per poter funzionare correttamente anche su questo hosting. Non mi soffermerò sulle modifiche effettuate, se siete interessati chiedete che vi risponderò :) 
+    tags: [drupal, netsons]
 ---
 La nuova relase di Drupal (la versione 5.3) porta alla correzione di una serie di exploit che possono compromettere l'integrità del vostro database, quindi l'upgrade è altamente consigliato. Come per le versioni precedenti anche la versione 5.3 necessita di alcuni permessi sulle tabelle (_TEMPORARY TABLE_ e _LOCK TABLE_) che non si hanno a disposizione su Netsons, quindi ho rilasciato questa versione customizzata per poter funzionare correttamente anche su questo hosting. Non mi soffermerò sulle modifiche effettuate, se siete interessati chiedete che vi risponderò :) <!--break-->
 La procedura di installazione richiede una serie di passaggi necessari a consentire il corretto caricamento del CMS. Come prima cosa assicuriamoci sul nostro pannello di controllo di aver attivato sul nostro spazio il database MySQL e PHP; entrambi alla versione 5. Una volta confermato il loro funzionamento procediamo a scaricare i due file che trovate allegati a questo articolo. Copiare i due file nella cartella di installazione in cui volete attivare il CMS, tipicamente nella _root_ del sito.

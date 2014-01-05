@@ -1,7 +1,11 @@
 ---
 title: Produzione di Etanolo
-categories: [Chimica]
-tags: [DEFC, etanolo]
+categories: [chimica]
+tags: [defc, etanolo]
+redirect: [chimica/produzione_etanolo, node/15]
+meta:
+    description: Perch&eacute; utilizzare l'etanolo come fonte di produzione di energia? Innanzitutto cerchiamo di capire come &egrave; si ottiene l'etanolo attualmete. Questa sostanza pu&ograve; essere ricavato per mezzo di due vie; la prima prevede l'idratazione di etilene ad etanolo, mentre la seconda &egrave; un processo di fermentazione alcoolica che ottiene etanolo patendo da sostanze organiche.
+    tags: [chimica, defc, etanolo]
 ---
 Perch&eacute; utilizzare l'etanolo come fonte di produzione di energia? Innanzitutto cerchiamo di capire come &egrave; si ottiene l'etanolo attualmete. Questa sostanza pu&ograve; essere ricavato per mezzo di due vie; la prima prevede l'idratazione di etilene ad etanolo, mentre la seconda &egrave; un processo di fermentazione alcoolica che ottiene etanolo patendo da sostanze organiche.<!--break-->
 Il primo processo richiede come sostanza di base l'etilene, che a sua volta deriva dal cracking di idrocarburi, di conseguenza il prodotto risulta essere di origine fossile, ovvero una fonte non rinnovabile.

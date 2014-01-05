@@ -1,7 +1,11 @@
 ---
 title: Installazione Drupal 5.2 su netsons
-categories: [Drupal]
+categories: [drupal]
 tags: [netsons]
+redirect: [drupal/installazione_versione_52_su_netsons, node/40]
+meta:
+    description: In questo breve post vediamo come installare l'ultima versione di <a href="http://drupal.org/">Drupal</a> all'interno di <a href="http://netsons.org/">Netsons</a>. Poichè i database forniti da netsons non possiedono tutti i privilegi necessari si devono operare alcune modifiche all'interno del codice. Poichè sono abbastanza simili a quelle per la versione 5.1 tralascio le modifiche effettuate e concentriamoci ora su come effettuare l'installazione.
+    tags: [drupal, netsons]
 ---
 In questo breve post vediamo come installare l'ultima versione di <a href="http://drupal.org/">Drupal</a> all'interno di <a href="http://netsons.org/">Netsons</a>. Poichè i database forniti da netsons non possiedono tutti i privilegi necessari si devono operare alcune modifiche all'interno del codice. Poichè sono abbastanza simili a quelle per la versione 5.1 tralascio le modifiche effettuate e concentriamoci ora su come effettuare l'installazione.<!--break-->
 Iniziamo scaricando i due file che trovate allegati a questo articolo, e carichiamoli sul nostro spazio fornitoci da netsons. Andiamo nel nostro <a href="http://www.netsons.org/control.php">centro di controllo</a> e abilitiamo sul nostro spazio il database MySQL 5 e PHP 5. dopo pochi minuti entrambi i servizi dovrebbero essere attivi. a questo punto rinominiamo il file con estensione _*.php.txt_ in _*.php_. 

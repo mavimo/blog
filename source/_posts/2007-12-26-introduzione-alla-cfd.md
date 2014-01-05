@@ -1,7 +1,11 @@
 ---
 title: Introduzione alla CFD
-categories: [CFD]
-tags: [Eulero, mesh, Navier Stoke]
+categories: [cfd]
+tags: [eulero, mesh, navier stoke]
+redirect: [cfd/introduzione_alla_cfd, node/43]
+meta:
+    description: La storia della <em>Computational Fluid Dynamics</em>, abbreviate in <em>CFD</em>, inizia negli anni 1970. In questo periodo era un acronimo utilizzato per indicare una combinazione della fisica, metodi numerici e per estensione di questi, dell’informatica utilizzati per simulate il flusso dei fluidi. L’avvento della CFD va ricercato nella disponibilità di mainframe sempre di potenza maggiore, l’evoluzione di questa segue da vicino l’aumento delle capacità di calcolo.
+    tags: [cfd, eulero, mesh, navier stoke]
 ---
 La storia della _Computational Fluid Dynamics_, abbreviate in _CFD_, inizia negli anni 1970. In questo periodo era un acronimo utilizzato per indicare una combinazione della fisica, metodi numerici e per estensione di questi, dell’informatica utilizzati per simulate il flusso dei fluidi. L’avvento della CFD va ricercato nella disponibilità di mainframe sempre di potenza maggiore, l’evoluzione di questa segue da vicino l’aumento delle capacità di calcolo. Inizialmente le prime simulazioni permettevano di determinare il flusso transonico basato sull’equazione di potenziale (non lineare)  Con l’inizio degli anni ’80 la risoluzione dell’equazione di Eulero, prima per le due dimensioni (2d) e successivamente tre dimensioni (3D) divenne possibile grazie all’aumento delle capacità di calcolo delle macchine.
 Con l’evoluzione della metodologie numeriche, in modo particolare negli schemi impliciti, la risoluzione di problemi che richiedevano modelli di gas reali divenne possibile a partire dalla fine del 1980. La prima applicazione su vasta scala, fluido supersonico su modello 3-D nella parte posteriore del veicolo, è stato applicato allo shuttle europeo _HERMES_, usando inizialmente l’equilibrio chimico e successivamente un regime di non equilibrio chimico. Alcune attività di ricerca erano e sono indirizzate alla simulazione numerica di combustioni per determinati tipi di fiamme. Questi studi sono importanti per lo sviluppo di motori e turbine a bassa emissione. Inoltre lo studio del vapore e in particolare della condensazione del vapore è la chiave per realizzare turbine efficienti.

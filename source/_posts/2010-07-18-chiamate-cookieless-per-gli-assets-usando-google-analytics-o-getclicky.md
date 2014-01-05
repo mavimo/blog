@@ -1,7 +1,11 @@
 ---
 title: Chiamate cookieless per gli assets usando Google Analytics o GetClicky
-categories: [Varie]
-tags: [cookies, getclicky, google analytics, Javascript, performance]
+categories: [varie]
+tags: [cookies, getclicky, google analytics, javascript, performance]
+redirect: [varie/chiamate_cookieless_assets_usando_google_analytics_getclicky, node/107]
+meta:
+    description: Come abbiamo visto nell'<a href="http://mavimo.org/drupal/imagecache_subdomain_frontend_performance">articolo precedente</a> è cosa buona e giusta che le richieste effettuate per la ricezione di file statici (immagini, css e js) avvengano attraverso chiamate a cui non sono impostati cookies, in modo da ridurre il traffico generato e le richieste effettuate. Questo è consigliato sia da <a href="https://developer.yahoo.com/performance/rules.html">Yahoo</a> che da <a href="http://code.google.com/intl/it-IT/speed/page-speed/docs/rules_intro.html">Google</a>. Un modo molto semplice è usare un dominio differente o un sottodominio andando ad impostare i cookies in modo che questi non rispondano al dominio indicato.
+    tags: [varie, cookies, getclicky, google analytics, javascript, performance]
 ---
 Come abbiamo visto nell'<a href="http://mavimo.org/drupal/imagecache_subdomain_frontend_performance">articolo precedente</a> è cosa buona e giusta che le richieste effettuate per la ricezione di file statici (immagini, css e js) avvengano attraverso chiamate a cui non sono impostati cookies, in modo da ridurre il traffico generato e le richieste effettuate. Questo è consigliato sia da <a href="https://developer.yahoo.com/performance/rules.html">Yahoo</a> che da <a href="http://code.google.com/intl/it-IT/speed/page-speed/docs/rules_intro.html">Google</a>. Un modo molto semplice è usare un dominio differente o un sottodominio andando ad impostare i cookies in modo che questi non rispondano al dominio indicato.
 

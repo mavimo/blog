@@ -1,7 +1,11 @@
 ---
 title: Form a tabella
-categories: [Drupal]
+categories: [drupal]
 tags: [form, hook, tabella, theme]
+redirect: [drupal/form_tabella, node/72]
+meta:
+    description: A chi non è mai capitato di dover creare un form e dargli un aspetto grafico particolare? Credo che chiunque abbia avuto questa necessità avrà avuto anche la necessità di disporre i campi sottoforma di tabella, sopratutto quando si ha una serie di elementi simili che devono essere inseriti.
+    tags: [drupal, form, hook, tabella, theme]
 ---
 A chi non è mai capitato di dover creare un form e dargli un aspetto grafico particolare? Credo che chiunque abbia avuto questa necessità avrà avuto anche la necessità di disporre i campi sottoforma di tabella, sopratutto quando si ha una serie di elementi simili che devono essere inseriti.
 
@@ -22,7 +26,7 @@ function tableform_menu() {
     'page arguments' => array('tableform_form'),
     'access arguments' => array('access content'),
   );
-  
+
   return $items;
 }
 ?>
@@ -35,7 +39,7 @@ Vediamo la funzione che si occupa di creare il form:
  * Create form
  */
 function tableform_form($form_state) {
-  
+
   for($i = 0; $i < FORM_COUNT_ROWS; $i++) {
     $form['check_' . $i ] = array(
       '#type' => 'checkbox',
@@ -54,9 +58,9 @@ function tableform_form($form_state) {
       '#maxlength'     => 128,
     );
   }
-  
+
   $form['#theme'] = 'tableform_draw';
-  
+
   return $form;
 }
 ?>
@@ -69,19 +73,19 @@ A questo punto andiamo a creare la funzione che permette di visualizzare il form
  */
 function theme_tableform_draw($form) {
   $header = array(t('Attivo'), t('Valore'), t('Descrizione'));
-  
+
   for($i = 0; $i < FORM_COUNT_ROWS; $i++) {
     $rows[] = array(
       drupal_render($form['check_' . $i ]),
-      drupal_render($form['select_' . $i]), 
+      drupal_render($form['select_' . $i]),
       drupal_render($form['text_' . $i])
     );
   }
-  
+
   $output = theme('table', $header, $rows);
-  
+
   $output .= drupal_render($form);
-  
+
   return $output;
 }
 ?>

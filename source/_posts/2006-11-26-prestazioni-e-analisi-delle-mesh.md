@@ -1,7 +1,11 @@
 ---
 title: Prestazioni e analisi delle mesh
-categories: [OpenFOAM]
+categories: [openfoam]
 tags: [gmsh, mesh non strutturate, mesh strutturate]
+redirect: [openfoam/prestazioni_analisi_delle_mesh, node/21]
+meta:
+    description: In questo articolo vedremo come &egrave; possibile ottimizzare le prestazioni per il calcolo di una semplice geometria utilizzando delle griglie appropriate ed in particolare come varia la velocit&agrave; di calcolo per griglie costituite da triangoli o quadrangoli, oltre che in base alla densit&agrave; della griglia di calcolo.
+    tags: [openfoam, gmsh, mesh non strutturate, mesh strutturate]
 ---
 In questo articolo vedremo come &egrave; possibile ottimizzare le prestazioni per il calcolo di una semplice geometria utilizzando delle griglie appropriate ed in particolare come varia la velocit&agrave; di calcolo per griglie costituite da triangoli o quadrangoli, oltre che in base alla densit&agrave; della griglia di calcolo.
 Come dominio si &egrave; utilizzato quello rappresentato nella seguente figura (le dimensioni sono indicate in metri):

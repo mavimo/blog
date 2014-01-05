@@ -1,7 +1,11 @@
 ---
 title: Drupal 5.6 su Netsons
-categories: [Drupal]
+categories: [drupal]
 tags: [installazione, netsons]
+redirect: [drupal/installazione_versione_56_netsons, node/50]
+meta:
+    description: Anche se drammaticamente in ritardo ecco a voi la versione patchata per l'installer di Drupal 5.6 per Netsons. Purtroppo per ora non funziona il modulo Search che richiede delle patch ulteriori (che per ora non ho applicato), ma in alternativa è possibile utilizzare l'ottimo modulo <a href="http://drupal.org/project/google_cse">Google Co-op CSE</a> che utilizza il servizio <a href="http://www.google.com/coop/">CSE di Google</a> (quello che vedete in funzione su questo sito).
+    tags: [drupal, installazione, netsons]
 ---
 Anche se drammaticamente in ritardo ecco a voi la versione patchata per l'installer di Drupal 5.6 per Netsons. Purtroppo per ora non funziona il modulo Search che richiede delle patch ulteriori (che per ora non ho applicato), ma in alternativa è possibile utilizzare l'ottimo modulo <a href="http://drupal.org/project/google_cse">Google Co-op CSE</a> che utilizza il servizio <a href="http://www.google.com/coop/">CSE di Google</a> (quello che vedete in funzione su questo sito).<!--break-->
 

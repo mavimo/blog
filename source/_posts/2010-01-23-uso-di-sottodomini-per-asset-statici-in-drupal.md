@@ -1,7 +1,11 @@
 ---
 title: Uso di sottodomini per asset statici in Drupal
-categories: [Drupal]
+categories: [drupal]
 tags: [cdn, frontend, performance, subdomain]
+redirect: [drupal/imagecache_subdomain_frontend_performance, node/101]
+meta:
+    description: La volta scorsa, nel parlare di <a href="/drupal/migliorare_performance_drupal">ottimizzazione del frontend</a> di siti generici (e <a href="http://mavimo.org/drupal">Drupal in particolare</a>) avevamo affrontato alcune delle problematiche principali, tra cui appunto la generazione di sottodomini per lo smistamento degli asset statici [1], così da parallelizzare il più possibile il caricamento della pagina.
+    tags: [drupal, cdn, frontend, performance, subdomain]
 ---
 La volta scorsa, nel parlare di <a href="/drupal/migliorare_performance_drupal">ottimizzazione del frontend</a> di siti generici (e <a href="http://mavimo.org/drupal">Drupal in particolare</a>) avevamo
 affrontato alcune delle problematiche principali, tra cui appunto la generazione di sottodomini per lo smistamento degli asset statici [1], così da parallelizzare il più possibile il caricamento della pagina.
@@ -35,7 +39,7 @@ function NOOMETEMA_preprocess_page(&$variables) {
 ?>
 mentre per le immagini la cosa è leggermente più complessa.
 
-Potremmo effettuare, come nel caso dei CSS e JS, una ricerca e sostituzione nella pagina, ma non è la soluzione migliore e sopratutto più performante, dato che parsare con espressionii regolari il content della pagina  non è una buona soluzione, inoltre potremmo usare anche singoli campi e quindi a loro volta tutti questi dovrebbero essere parsati. 
+Potremmo effettuare, come nel caso dei CSS e JS, una ricerca e sostituzione nella pagina, ma non è la soluzione migliore e sopratutto più performante, dato che parsare con espressionii regolari il content della pagina  non è una buona soluzione, inoltre potremmo usare anche singoli campi e quindi a loro volta tutti questi dovrebbero essere parsati.
 
 Parto dal presupposto che stiamo facendo un uso intelligente degli strumenti che Drupal ci propone, quindi quasi sicuramente staremo usanndo imagecache per la generazioni delle immagini dei diversi formati, proprio per questo baseremo le nostre funzionalità sull'estensione di questo modulo che permette di andare a indicare il sottodominio da utilizzare per le immagini generate.
 
@@ -56,7 +60,7 @@ A questo punto le richieste degli asset statici verranno reindirizzate sui sotto
 nel _setting.php_. La cosa che ci verrebbe naturale impostare è _.www.miodominio.it_ in modo da non includere i diversi sottodomini. Purtroppo all'interno del file di boostrap di <a href="http://mavimo.org/drupal">Drupal</a>, il www iniziale viene rimosso, un semplice trucco è quello di andare a raddoppiarlo, quindi nel _settings.php_ avremo:
 <?php
 $cookies_domain = '.www.www.miodominio.it';
-?> 
+?>
 in questo modo il primo verrà rimosso, mentre il secondo resterà settato. Questo permetterà di non effettuare la chiamata degli assets passando anche i cookies e quindi generando chiamate inutili (che rallentano il caricamento dei contenuti).
 
 Potete provare a lanciare il test (ovviamente dopo aver fatto puntare anche i DNS dei sottodomini e esservi assicurati che si siano propagati) usando alcuni tools come:

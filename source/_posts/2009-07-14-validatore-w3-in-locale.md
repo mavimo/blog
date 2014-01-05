@@ -1,7 +1,11 @@
 ---
 title: Validatore W3 in locale
-categories: [Linux]
-tags: [apache, ubuntu, validatore, w3c, XHTML]
+categories: [linux]
+tags: [apache, ubuntu, validatore, w3c, xhtml]
+redirect: [linux/validatore_w3_locale, node/88]
+meta:
+    description: Chi di voi utilizza il validatore del codice (X)HTML del <a href="http://www.w3.org/">W3C</a> per controllare che quello che generiamo sia codice pulito? Su le mani.
+    tags: [linux, apache, ubuntu, validatore, w3c, xhtml]
 ---
 Chi di voi utilizza il validatore del codice (X)HTML del <a href="http://www.w3.org/">W3C</a> per controllare che quello che generiamo sia codice pulito? Su le mani.
 

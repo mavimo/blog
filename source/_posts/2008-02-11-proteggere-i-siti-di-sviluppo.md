@@ -1,7 +1,11 @@
 ---
 title: Proteggere i siti di sviluppo
-categories: [Drupal]
+categories: [drupal]
 tags: [drupal, htpasswd, protezione, server]
+redirect: [drupal/protezione_siti_sviluppo, node/53]
+meta:
+    description: A quanti è capitato di avere un sito da dover configurare e si preferisce lavorare direttamente in remoto piuttosto che in locale e poi dover spostare il tutto? Quanti di questi si sono anche posti il problema di non rendere raggiungibili il sito prima che questo sia pronto? Bhé, io questo problema me lo sono posto, vediamo come risolvere.
+    tags: [drupal, drupal, htpasswd, protezione, server]
 ---
 A quanti è capitato di avere un sito da dover configurare e si preferisce lavorare direttamente in remoto piuttosto che in locale e poi dover spostare il tutto? Quanti di questi si sono anche posti il problema di non rendere raggiungibili il sito prima che questo sia pronto? Bhé, io questo problema me lo sono posto, vediamo come risolvere.<!--break-->
 

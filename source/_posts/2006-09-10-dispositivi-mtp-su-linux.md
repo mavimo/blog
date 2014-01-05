@@ -1,9 +1,13 @@
 ---
 title: Dispositivi MTP su linux
-categories: [Linux]
-tags: [libmtp, MTP, Zen Vision:M]
+categories: [linux]
+tags: [libmtp, mtp, zen vision:m]
+redirect: [linux/dispositivi_mtp, node/9]
+meta:
+    description: In questo articolo vedremo come collgare un dispositivo multimediale portatile ad un computer con installato una versione del sistema operativo GNU/Linux tramite protocollo MTP.
+    tags: [linux, libmtp, mtp, zen vision:m]
 ---
-In questo articolo vedremo come collgare un dispositivo multimediale portatile ad un computer con installato una versione del sistema operativo GNU/Linux tramite protocollo MTP. Il protocollo MTP (Media Transfer Protocol) &egrave; l'evoluzione del PTP (Picture Transfer Protocol), sviluppato da microsoft, e viene utilizzato per inviare, tramite USB (Universal Serial Bus), immagini, file audio e video ai dispositivi multimediali allegando le informazioni necessarie per la loro gestione sottoforma di metadati, tra cui le informazioni sul DRM dei file trasferiti. 
+In questo articolo vedremo come collgare un dispositivo multimediale portatile ad un computer con installato una versione del sistema operativo GNU/Linux tramite protocollo MTP. Il protocollo MTP (Media Transfer Protocol) &egrave; l'evoluzione del PTP (Picture Transfer Protocol), sviluppato da microsoft, e viene utilizzato per inviare, tramite USB (Universal Serial Bus), immagini, file audio e video ai dispositivi multimediali allegando le informazioni necessarie per la loro gestione sottoforma di metadati, tra cui le informazioni sul DRM dei file trasferiti.
 Proprio per i vantaggi sulla tecnica di protezione dei contenuti digitali ha fatto si che le principali aziende produttrici di PMP (Portable Media Player), tra cui Creative con la linea Zen, Samsung, Sandisk, Toshiba, Archos e iRiver, lo utilizzassero come protocollo standard per la comunicazione con i computer.
 <!--break-->
 Attualmente il protocollo MTP &egrave; supportato da <a href="http://www.microsoft.com">Windows XP</a>, tramite Windows Media Player 10, Windows Vista, XBox360 e da Mac OS X per mezzo di XNJB, mentre l'utilizzo con linux &egrave; permesso dalle librerie libmtp.
@@ -40,7 +44,7 @@ Modificando il codice _idVendor_ e _idProduct_ visibili, un volta collegato il v
 $ lsusb
 ~~~
 
-a questo punto il nostro dispositivo dovrebbe essere riconosciuto automaticamente una volta collegato (ricordatevi di riavviare udev o tutto il sistema). 
+a questo punto il nostro dispositivo dovrebbe essere riconosciuto automaticamente una volta collegato (ricordatevi di riavviare udev o tutto il sistema).
 Lanciando il seguente comando da shell il nostro dispositivo dovrebbe essere riconosciuto, e dovrebbe mostrare a schermo alcune informazioni sulla tipologia del dispositivo portatile e la sua configurazione:
 ~~~language-php
 $ sudo mtp-detect

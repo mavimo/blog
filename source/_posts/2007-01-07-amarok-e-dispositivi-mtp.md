@@ -1,9 +1,13 @@
 ---
 title: Amarok e dispositivi MTP
-categories: [Linux]
-tags: [Amarok, MTP, Zen Vision:M]
+categories: [linux]
+tags: [amarok, mtp, zen vision:m]
+redirect: [linux/amarok_mtp, node/24]
+meta:
+    description: L'installazione di AmaroK non pu&ograve; essere effettuata semplicemente dai repository, poich&eacute; quelli di Ubuntu non sono compilati per avere il supporto ai dispositivi MTP, mentre quelli di Kubuntu non rilevano il dispositvo a causa della non integrazione con UDEV/HAL.
+    tags: [linux, amarok, mtp, zen vision:m]
 ---
-L'installazione di AmaroK non pu&ograve; essere effettuata semplicemente dai repository, poich&eacute; quelli di Ubuntu non sono compilati per avere il supporto ai dispositivi MTP, mentre quelli di Kubuntu non rilevano il dispositvo a causa della non integrazione con UDEV/HAL. 
+L'installazione di AmaroK non pu&ograve; essere effettuata semplicemente dai repository, poich&eacute; quelli di Ubuntu non sono compilati per avere il supporto ai dispositivi MTP, mentre quelli di Kubuntu non rilevano il dispositvo a causa della non integrazione con UDEV/HAL.
 Ci&ograve; ci porta a dover procedere con la compilazione di AmaroK, operazione comunque sufficientemente automatizzata.<!--break-->
 Iniziamo inserendo tra i repository di APT quelli per il sorgente di AmaroK dai repository di Kubuntu (ha la versione 1.4.4 anzich&egrave; la 1.4.3 di Ubuntu), aggiungendo a  _/etc/apt/source.list_ la seguente riga:
 ~~~language-php
@@ -93,7 +97,7 @@ deb http://kubuntu.org/packages/amarok-144 edgy main
 
 e a questo punto diamo i canonici:
 ~~~language-php
-sudo apt-get upgrade 
+sudo apt-get upgrade
 sudo apt-get dist-upgrade
 ~~~
 

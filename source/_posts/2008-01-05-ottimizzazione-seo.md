@@ -1,7 +1,11 @@
 ---
 title: Ottimizzazione SEO
-categories: [Drupal]
+categories: [drupal]
 tags: [clean urls, google, meta tags, ottimizzazione, seo]
+redirect: [drupal/ottimizzazione_seo, node/48]
+meta:
+    description: Come tutti sapete attualmente l'importanza di un sito è data dalla posizione che questo assumo all'interno di un motore di ricerca, quindi quanto più in alto si compare cercando una determinata parola tanto più il sito è importante. Per questo motivo sono nati i cosiddetti esperti SEO (ovvero <em>Search engine optimization</em>, esperti di ottimizzazione dei motori di ricerca), che dovrebbero migliorare la posizione del sito all'interno della classifica dei principali motori di ricerca. Senza affidarci a uno di questi esperti vediamo cosa possiamo fare nel nostro piccolo, questa pagina sarà in continua evoluzione, quindi ogni tanto passate a visitarla, magari c'è qualche novità rilevante.
+    tags: [drupal, clean urls, google, meta tags, ottimizzazione, seo]
 ---
 Come tutti sapete attualmente l'importanza di un sito è data dalla posizione che questo assumo all'interno di un motore di ricerca, quindi quanto più in alto si compare cercando una determinata parola tanto più il sito è importante. Per questo motivo sono nati i cosiddetti esperti SEO (ovvero _Search engine optimization_, esperti di ottimizzazione dei motori di ricerca), che dovrebbero migliorare la posizione del sito all'interno della classifica dei principali motori di ricerca. Senza affidarci a uno di questi esperti vediamo cosa possiamo fare nel nostro piccolo, questa pagina sarà in continua evoluzione, quindi ogni tanto passate a visitarla, magari c'è qualche novità rilevante.<!--break-->
 <h3>Clean urls</h3>

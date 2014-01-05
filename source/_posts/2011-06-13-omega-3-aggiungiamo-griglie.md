@@ -2,6 +2,9 @@
 title: Omega 3, aggiungiamo le nostre griglie
 categories: [drupal]
 tags: [css, drupal 7, omega]
+meta:
+    description:
+    tags: []
 ---
 Chi avesse iniziato ad utilizzare [Drupal 7](http://drupal.org) si sarà senz'altro d'accordo che stanno nascendo dei temi di partenza molto sofisticati da cui partire per la realizzazione di temi, in particolare sta emergendo sempre più [Omega 3](http://drupal.org/project/omega).
 

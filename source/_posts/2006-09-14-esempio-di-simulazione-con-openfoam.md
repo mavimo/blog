@@ -1,7 +1,11 @@
 ---
 title: Esempio di simulazione con OpenFOAM
-categories: [OpenFOAM]
+categories: [openfoam]
 tags: [dinamica, fluido in condotta]
+redirect: [openfoam/fluido_in_condotta, node/10]
+meta:
+    description: Realizziamo un esempio sull'utilizzo di OpenFOAM per l'analisi della dinamica di un fluido all'interno di una condotta.
+    tags: [openfoam, dinamica, fluido in condotta]
 ---
 Realizziamo un esempio sull'utilizzo di <a href="http://www.openfoam.org">OpenFOAM</a> per l'analisi della dinamica di un fluido all'interno di una condotta.
 Ogni nuovo caso da analizzare deve essere inserito in una nuova directory realizzata appositamente, in cui saranno inseriti tutti i parametri per la simulazione.
@@ -44,7 +48,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 convertToMeters 0.1;
-vertices 
+vertices
 (
 );
 blocks
@@ -56,7 +60,7 @@ edges
 patches
 (
 );
-mergePatchPairs 
+mergePatchPairs
 (
 );
 // ************************************************************************* //
@@ -75,15 +79,15 @@ I numeri in rosso indicano i vertici posizionati a quota 0, mentre quelli in blu
 convertToMeters 0.1;
 vertices
 (
-    (0  0  0)    // Point 0 
-    (10 0  0)    // Point 1 
+    (0  0  0)    // Point 0
+    (10 0  0)    // Point 1
     (0  1  0)    // Point 2
-    (5  1  0)    // Point 3 
-    (6  1  0)    // Point 4 
-    (9  1  0)    // Point 5 
-    (9  2  0)    // Point 6 
-    (6  2  0)    // Point 7 
-    (5  2  0)    // Point 8 
+    (5  1  0)    // Point 3
+    (6  1  0)    // Point 4
+    (9  1  0)    // Point 5
+    (9  2  0)    // Point 6
+    (6  2  0)    // Point 7
+    (5  2  0)    // Point 8
     (0  2  0)    // Point 9
 ...
 ...
@@ -117,12 +121,12 @@ La parte finale per la generazione del dominio di calcolo &egrave; la realizzazi
 patches
 (
     // Faccia di ingresso
-    patch inlet 
+    patch inlet
     (
         (0 14 16 2)
     )
     // Faccia di uscita
-    patch outlet 
+    patch outlet
     (
         ( 10 24 25 11)
     )
@@ -134,7 +138,7 @@ La mesh finale ottenuta &egrave; visibile nell'immagine seguente:
 
 <img src="/files/image/10/mesh_side.png" alt="Immagine della mesh utilizzata." />
 
-Terminata la fase di realizzazione del dominio &egrave; necessario andare ad impostare le propriet&agrave; del fluido e della superficie (_boundary condiction_) per la simulazione. Le propriet&agrave; del fluido sono configurabili all'interno del file 
+Terminata la fase di realizzazione del dominio &egrave; necessario andare ad impostare le propriet&agrave; del fluido e della superficie (_boundary condiction_) per la simulazione. Le propriet&agrave; del fluido sono configurabili all'interno del file
 ~~~language-php
 $ gedit ~/OpenFOAM/**nome utente**-1.3/run/**nome simulazione**/constant/transportProperties<br />
 ~~~
@@ -166,7 +170,7 @@ nu              nu [0 2 -1 0 0 0 0] 0.01;
 
 dove nu indica la viscosit&agrave;, il successivo vettore indica gli esponenti delle unit&agrave; di misura in cui &egrave; espressa infine il valore che assume; nel nostro caso abbiamo impostato le propriet&agrave; per il fluido acqua. Le informazioni sulle condizioni iniziali del fluido all'inizio della simulazione si trovano all'interno della cartella
 ~~~language-php
-~/OpenFOAM/**nome utente**-1.3/run/**nome simulazione**/0 
+~/OpenFOAM/**nome utente**-1.3/run/**nome simulazione**/0
 ~~~
 
 ed in particolare avremo:

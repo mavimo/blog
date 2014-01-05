@@ -1,7 +1,11 @@
 ---
 title: Banshee e dispositivi MTP
-categories: [Linux]
-tags: [banshee, MTP, Zen Vision:M]
+categories: [linux]
+tags: [banshee, mtp, zen vision:m]
+redirect: [linux/banshee_dispositivi_mtp, node/32]
+meta:
+    description: Precedentemente abbiamo visto come utilizzare dispositivi MTP su linux <a href="/linux_dispositivi_mtp">senza interfaccia grafica usando le libmtp</a>, oppure usando uno dei migliori <a href="/amarok_mtp_ubuntu_gnome">riproduttori audio in circolazione per KDE</a>, ovvero <a href="http://amarok.kde.org/">AmaroK</a>. Quest'ultimo, seppur disponga di un ottima interfaccia grafica, è sviluppato per KDE, quindi per chi (come me) utilizza princpalmente gnome, diventa necessario portarsi dietro tutte le librerie di KDE, che sicuramente appesantiscono il sistema (per lo meno come spazio occupato :D ). Affrontiamo ora l'installazione di un software sviluppato per gnome che permetta di gestire i dispositivi MTP.
+    tags: [linux, banshee, mtp, zen vision:m]
 ---
 Precedentemente abbiamo visto come utilizzare dispositivi MTP su linux <a href="/linux_dispositivi_mtp">senza interfaccia grafica usando le libmtp</a>, oppure usando uno dei migliori <a href="/amarok_mtp_ubuntu_gnome">riproduttori audio in circolazione per KDE</a>, ovvero <a href="http://amarok.kde.org/">AmaroK</a>. Quest'ultimo, seppur disponga di un ottima interfaccia grafica, è sviluppato per KDE, quindi per chi (come me) utilizza princpalmente gnome, diventa necessario portarsi dietro tutte le librerie di KDE, che sicuramente appesantiscono il sistema (per lo meno come spazio occupato :D ). Affrontiamo ora l'installazione di un software sviluppato per gnome che permetta di gestire i dispositivi MTP.
 <!--break-->
