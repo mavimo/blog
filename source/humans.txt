@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Marco Vito Moscaritolo -- owner -- @mavimo
+
+# THANKS
+
+    Beau Simensen - @beausimensen
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    Normalize.css, jQuery
+    PHP, Sculpin
+    AWS, S3
