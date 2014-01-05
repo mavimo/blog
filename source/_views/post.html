@@ -1,4 +1,6 @@
 {% extends "default" %}
+{% block meta_description %}{{ page.meta.description|striptags }}{% endblock %}
+{% block meta_keywords %}{% for tag in page.meta.tags %}{{ tag }}{% if not loop.last %}, {% endif %}{% endfor %}{% endblock %}
 
 {% block content_wrapper %}
 <article class="is-post is-post-excerpt" itemscope itemtype="http://schema.org/BlogPosting">

@@ -7,8 +7,13 @@ pagination:
 use:
     - posts
 ---
+{% block meta_description %}Blog with Marco Vito Moscaritolo's rant. Information related to development, with particolar focus on PHP and Drupal.{% endblock %}
+{% block meta_keywords %}mavimo, blog, development, php, drupal{% endblock %}
+
+{% block content_wrapper %}
 {% for post in page.pagination.items %}
   {% include 'post_excerpt.html' %}
 {% endfor %}
 
 {% include 'pager.html' with {'prev' : 'Newer Posts', 'next' : 'Older Posts'} %}
+{% endblock %}

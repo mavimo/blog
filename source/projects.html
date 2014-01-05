@@ -6,6 +6,10 @@ pagination:
     max_per_page: 3
     provider: data.projects
 ---
+{% block meta_description %}Marco Vito Moscaritolo's projects. Information related to my personal projects.{% endblock %}
+{% block meta_keywords %}projects, personal, open source, development, php, drupal{% endblock %}
+
+{% block content_wrapper %}
 <h3>Projects</h3>
 
 <p>I'm involved in some open source projects, and relased some tools, you can find my projects above.</p>
@@ -22,3 +26,4 @@ pagination:
 </ul>
 
 {% include 'pager.html' with {'next' : 'Next Project', 'prev' : 'Previous Project'} %}
+{% endblock %}

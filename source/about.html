@@ -2,7 +2,10 @@
 layout: default
 title: About me
 ---
+{% block meta_description %}Information about Marco Vito Moscaritolo.{% endblock %}
+{% block meta_keywords %}marco vito moscaritolo, information, cv{% endblock %}
 
+{% block content_wrapper %}
 <div itemscope itemtype="http://schema.org/Person">
   <h2 itemprop="name">Marco Vito Moscaritolo</h2>
 
@@ -21,3 +24,4 @@ title: About me
 
   <p>and work as <span itemprop="jobTitle">developer</span> at <span itemprop="worksFor" itemscope itemtype="http://schema.org/Organization"><span itemprop="name">Agavee GmbH</span> (<a href="http://www.agavee.com" itemprop="url">www.agavee.com</a>)</span></p>
 </div>
+{% endblock %}
