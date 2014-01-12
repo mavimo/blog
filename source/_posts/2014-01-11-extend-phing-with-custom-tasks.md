@@ -1,6 +1,5 @@
 ---
 title: Extend Phing tasks with custom code
-draft: true
 categories: [php]
 tags: [phing, php, s3]
 image:
