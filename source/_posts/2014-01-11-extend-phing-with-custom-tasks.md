@@ -6,6 +6,9 @@ tags: [phing, php, s3]
 image:
     folder: phing-custom-task
     alt: Create custom phing task to upload S3 files.
+meta:
+    description: How to extend phing task to add new feature required in our projects, with sample based on AWS S3 put task.
+    tags: [php, phing, s3, task, automatization]
 ---
 I use [phing](http://phing.info) to manage task in my projects; phing is a task manager build in PHP that use XML configuration file. Phing is delivered with a [large amount of task](http://www.phing.info/docs/guide/stable/) available, but sometime they are not sufficient and is required extend or create new one.
 
