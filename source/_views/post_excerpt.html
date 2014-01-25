@@ -31,6 +31,7 @@
   </div>
 
   {% if post.meta.image %}
+  <a href="{{ site.url }}{{ post.url }}">
   <figure>
     <span data-picture data-alt="{{ post.meta.image.alt | striptags }}">
       {% set img_folder %}{{ site.url }}/images/posts/{{ post.meta.image.folder }}{% endset %}
@@ -51,6 +52,7 @@
     <!-- alternate text -->
     <figcaption>{{ post.meta.image.alt }}</figcaption>
   </figure>
+  </a>
   {% endif %}
 
   <div itemprop="articleBody">
