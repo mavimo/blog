@@ -1,6 +1,20 @@
 sculpin:
-    permalink: none
-sculpin_posts:
+  permalink: none
+
+sculpin_content_types:
+  posts:
+    type: path
+    path: _posts
+    layout: post
     permalink: :year/:month/:day/:filename.html
-sculpin_projects:
-    permalink: projects/:filename
+    taxonomies:
+      - tags
+      - categories
+
+  projects:
+    type: path
+    path: _projects
+    layout: project
+    permalink: projects/:filename.html
+    taxonomies:
+      - tags
